@@ -65,9 +65,14 @@
                 is-one-third-mobile
               "
             >
-              <figure class="image is-48x48">
-                <img src="@/assets/img/icon/social/IG.png" />
-              </figure>
+              <a
+                href="https://www.instagram.com/projectoasis.io/"
+                target="_blank"
+              >
+                <figure class="image is-48x48">
+                  <img src="@/assets/img/icon/social/IG.png" />
+                </figure>
+              </a>
             </div>
             <div
               class="
@@ -78,9 +83,11 @@
                 is-one-third-mobile
               "
             >
-              <figure class="image is-48x48">
-                <img src="@/assets/img/icon/social/twitter.png" />
-              </figure>
+              <a href="https://twitter.com/ProjectOasis_" target="_blank">
+                <figure class="image is-48x48">
+                  <img src="@/assets/img/icon/social/twitter.png" />
+                </figure>
+              </a>
             </div>
             <div
               class="
@@ -91,9 +98,11 @@
                 is-one-third-mobile
               "
             >
-              <figure class="image is-48x48">
-                <img src="@/assets/img/icon/social/discord.png" />
-              </figure>
+              <a href="https://discord.gg/478NAfvXre" target="_blank">
+                <figure class="image is-48x48">
+                  <img src="@/assets/img/icon/social/discord.png" />
+                </figure>
+              </a>
             </div>
             <div
               class="
@@ -104,9 +113,11 @@
                 is-one-third-mobile
               "
             >
-              <figure class="image is-48x48">
-                <img src="@/assets/img/icon/social/medium.png" />
-              </figure>
+              <a href="https://projectoasis.medium.com/" target="_blank">
+                <figure class="image is-48x48">
+                  <img src="@/assets/img/icon/social/medium.png" />
+                </figure>
+              </a>
             </div>
             <div
               class="
@@ -117,9 +128,11 @@
                 is-one-third-mobile
               "
             >
-              <figure class="image is-48x48">
-                <img src="@/assets/img/icon/social/tele.png" />
-              </figure>
+              <a href="https://t.me/projectoasis_official" target="_blank">
+                <figure class="image is-48x48">
+                  <img src="@/assets/img/icon/social/tele.png" />
+                </figure>
+              </a>
             </div>
           </div>
           <div class="columns is-mobile">
@@ -187,6 +200,9 @@ html {
 .is-transparent-bg {
   background-color: transparent !important;
 }
+a.navbar-item {
+    background-color: transparent !important;
+}
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 1rem;
@@ -209,14 +225,13 @@ div.home-slide .offsetslidelast {
   }
 }
 div.home-slide .vueperslide {
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   /* opacity: 0.3; */
   /* filter: blur(1px); */
   transform: scale(0.8);
   border-radius: 12px !important;
-  &.vueperslide--visible:first-child{
+  &.vueperslide--visible:first-child {
     margin-left: -37px !important;
-    
   }
   &.vueperslide--active {
     opacity: 1 !important;
@@ -225,7 +240,7 @@ div.home-slide .vueperslide {
   }
 }
 div.home-slide .vueperslide.vueperslide--active.vueperslide--visible {
-    width: 53.3333% !important;
+  width: 53.3333% !important;
 }
 .vueperslides__bullets.vueperslides__bullets--outside {
   display: none !important;

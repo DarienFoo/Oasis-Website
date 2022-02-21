@@ -105,7 +105,9 @@
                     is-transparent-bg
                   "
                 >
-                  <a target="_blank" href="http://demo.projectoasis.io/"
+                  <a
+                    target="_blank"
+                    href="http://demo.projectoasis.io/"
                     class="
                       button
                       home-btn
@@ -128,7 +130,11 @@
                     is-transparent-bg
                   "
                 >
-                  <a class="button home-btn is-transparent-bg" target="__blank" href="https://app.apeswap.finance/swap?outputCurrency=0xb19289b436b2f7a92891ac391d8f52580d3087e4">
+                  <a
+                    class="button home-btn is-transparent-bg"
+                    target="__blank"
+                    href="https://app.apeswap.finance/swap?outputCurrency=0xb19289b436b2f7a92891ac391d8f52580d3087e4"
+                  >
                     <span class="icon">
                       <img src="@/assets/img/button/icon/apeswap.png" />
                     </span>
@@ -144,7 +150,11 @@
                     is-transparent-bg
                   "
                 >
-                  <a target="_blank" class="button home-btn is-transparent-bg" href="https://pancakeswap.finance/swap?outputCurrency=0xb19289b436b2F7A92891ac391D8f52580d3087e4">
+                  <a
+                    target="_blank"
+                    class="button home-btn is-transparent-bg"
+                    href="https://pancakeswap.finance/swap?outputCurrency=0xb19289b436b2F7A92891ac391D8f52580d3087e4"
+                  >
                     <span class="icon">
                       <img src="@/assets/img/button/icon/pancake.png" />
                     </span>
@@ -165,29 +175,54 @@
               <div class="social-container">
                 <div class="columns">
                   <div class="column">
-                    <figure class="image is-48x48">
-                      <img src="@/assets/img/icon/social/IG.png" />
-                    </figure>
+                    <a
+                      href="https://www.instagram.com/projectoasis.io/"
+                      target="_blank"
+                    >
+                      <figure class="image is-48x48">
+                        <img src="@/assets/img/icon/social/IG.png" />
+                      </figure>
+                    </a>
                   </div>
                   <div class="column">
-                    <figure class="image is-48x48">
-                      <img src="@/assets/img/icon/social/twitter.png" />
-                    </figure>
+                    <a
+                      href="https://twitter.com/ProjectOasis_"
+                      target="_blank"
+                    >
+                      <figure class="image is-48x48">
+                        <img src="@/assets/img/icon/social/twitter.png" />
+                      </figure>
+                    </a>
                   </div>
                   <div class="column">
+                    <a
+                      href="https://discord.gg/478NAfvXre"
+                      target="_blank"
+                    >                    
                     <figure class="image is-48x48">
                       <img src="@/assets/img/icon/social/discord.png" />
                     </figure>
+                    </a>
                   </div>
                   <div class="column">
+                    <a
+                      href="https://projectoasis.medium.com/"
+                      target="_blank"
+                    >
                     <figure class="image is-48x48">
                       <img src="@/assets/img/icon/social/medium.png" />
                     </figure>
+                    </a>
                   </div>
                   <div class="column">
-                    <figure class="image is-48x48">
-                      <img src="@/assets/img/icon/social/tele.png" />
-                    </figure>
+                    <a
+                      href="https://t.me/projectoasis_official"
+                      target="_blank"
+                    >
+                      <figure class="image is-48x48">
+                        <img src="@/assets/img/icon/social/tele.png" />
+                      </figure>
+                    </a>
                   </div>
                 </div>
               </div>

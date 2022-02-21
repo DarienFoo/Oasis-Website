@@ -35,14 +35,14 @@
         </div>
         <div class="navbar">
           <a class="navbar-item" v-scroll-to="'#gameSection'">Game</a>
-          <a class="navbar-item">About</a>
+          <!-- <a class="navbar-item">About</a> -->
           <a class="navbar-item" v-scroll-to="'#chooseUs'">Why Us?</a>
           <a class="navbar-item" v-scroll-to="'#tekonomiks'">Tokenomics</a>
           <a class="navbar-item" v-scroll-to="'#roadmaps'">Roadmap</a>
           <a class="navbar-item" v-scroll-to="'#team'">Team</a>
           <a class="navbar-item" v-scroll-to="'#partners'">Partners</a>
-          <a class="navbar-item">Litepaper</a>
-          <a class="navbar-item">One Pager</a>
+          <a class="navbar-item" href="https://projectoasis.io/assets/img/Oasis-Litepaper.pdf" target="_blank">Litepaper</a>
+          <a class="navbar-item" href="https://projectoasis.io/assets/img/Oasis-1pager-3Oct.pdf" target="_blank">One Pager</a>
         </div>
         <div class="navbar-end is-hidden-mobile">
           <a class="navbar-item">
