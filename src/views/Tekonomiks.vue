@@ -1,0 +1,113 @@
+<template>
+  <div class="hero-body p-0 container">
+    <div class="ml-0 mr-0 column is-12" style="" id="flex">
+      <div class="columns is-mobile is-centered has-padding-tokenomics">
+        <div class="column is-half is-flex is-justify-content-center">
+          <div
+            class="
+              social-container
+              is-flex is-justify-content-center
+              mb-0
+              tokenomics-header
+            "
+          >
+            <span style="font-size: 2em" class="is-extra-bold">Tokenomics</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="info-container columns is-multiline container-token"
+        style="padding: 5em 0em 3em 0em"
+      >
+        <div class="info-left column is-12 is-5-desktop container main p-0 m-0">
+          <div class="is-flex is-justify-content-center image-section-token">
+            <img
+              class=""
+              src="@/assets/img/tokenomiks/chart.png"
+            />
+          </div>
+        </div>
+        <div class="info-right column is-12 is-7-desktop tokenomics-right">
+          <div class="tekonomics-container is-flex is-justify-content-center">
+            <div class="no-padding-mobile tokenomics-data">
+              <div class="columns is-mobile is-vcentered">
+                <div
+                  class="content token-desc has-text-weight-bold has-text-black is-medium-font"
+                >
+                  The team at OASIS believes that the social gamification of
+                  DeFi will attract a new generation of DeFi adopters and enrich
+                  the overall gaming experience in OASIS. The enticing
+                  proposition is:
+                </div>
+              </div>
+
+              <div class="columns is-mobile is-vcentered has-border-3px mb-0">
+                <div class="column is-3 p-0 m-0">
+                  <figure class="image is-96x96">
+                    <img src="@/assets/img/tokenomiks/coinrestart.png" alt="" />
+                  </figure>
+                </div>
+                <div class="column">
+                  <span class="title tokenomiks-title is-medium-font"
+                    >Circulating Supply Amount </span
+                  ><br />
+                  <span class="subtitle is-size-6 has-text-black"
+                    ># of coins circulating in the market/general public's
+                    hands, not controlled by team
+                  </span>
+                </div>
+              </div>
+
+              <div class="columns is-mobile is-vcentered has-border-3px mb-0">
+                <div class="column is-3 p-0 m-0">
+                  <figure class="image is-96x96">
+                    <img
+                      src="@/assets/img/tokenomiks/coingangster.png"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="column">
+                  <span class="title tokenomiks-title is-medium-font">Total Supply Amount</span
+                  ><br />
+                  <span class="subtitle is-size-6 has-text-black"
+                    ># of coins minted, minus any coins burned
+                  </span>
+                </div>
+              </div>
+
+              <div class="columns is-mobile is-vcentered">
+                <div class="column is-3 p-0 m-0">
+                  <figure class="image is-96x96">
+                    <img src="@/assets/img/tokenomiks/coinbag.png" alt="" />
+                  </figure>
+                </div>
+                <div class="column">
+                  <span class="title tokenomiks-title is-medium-font">Max Supply Amount</span
+                  ><br />
+                  <span class="subtitle is-size-6 has-text-black"
+                    ># of coins that will ever exist (hard-coded)
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  components: {},
+  data() {
+    return {};
+  },
+  mounted() {
+    $(document).ready(function () {});
+  },
+};
+</script>
+<style lang="scss">
+@import "../assets/css/tekonomics.css";
+</style>

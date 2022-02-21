@@ -1,0 +1,77 @@
+section#tekonomiks {
+    background: #0099DB !important;
+}
+
+.tokenomics-header {
+    width: 71% !important;
+}
+
+.tokenomiks-title {
+    font-size: 0.8em;
+}
+
+.has-padding-tokenomics {
+    padding: 3em 0em 0em 0em;
+}
+
+.tokenomics-data {
+    padding: 3em 5em 3em 5em !important
+}
+
+.token-desc {
+    font-size: 0.88em !important;
+}
+
+.tokenomiks-title {
+    font-size: 0.96em;
+}
+
+.tokenomics-right {
+    padding: 0em 0em 0em 4em;
+}
+
+
+.tekonomics-container {
+    padding: 1em;
+    background-image: url("../img/container/choseUs/image-choose.png") !important;
+    background-color: transparent;
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .info-right.column.is-12.is-7-desktop.tokenomics-right {
+        padding: 0.3em !important;
+    }
+
+    .image-section-token {
+        padding-top: 15em !important;
+    }
+
+    .image-section-token {
+        padding: 6em 0em 6em 0em;
+    }
+
+    .no-padding-mobile.tokenomics-data {
+        padding: 2em !important;
+    }
+
+    .tokenomics-header {
+        width: 100% !important;
+    }
+
+    .tokenomics-header {
+        padding: 0.4em;
+    }
+
+    .tokenomics-right {
+        padding: 1em;
+    }
+
+    .container-token {
+        padding: 0em !important;
+    }
+
+    .image-section-token {
+        margin: auto !important;
+    }
+}

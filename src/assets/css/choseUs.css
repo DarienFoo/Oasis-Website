@@ -1,0 +1,85 @@
+.info-right.column.is-12.is-6-desktop.has-padding-choses-section {
+    /* padding: 0em 3em !important; */
+    padding: 8em 3em !important
+}
+
+.chose-section {
+    background-image: url("../img/bg/oasis-web-bg-052.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.has-padding-box-section {
+    padding: 0em 3em 0em 3em;
+}
+.chose-desc {
+    font-family: 'Baloo-Medium', cursive;
+    padding: 0em 3em 0em 2em;
+    font-size: 0.8em;
+    color: black !important;
+}
+.chose-title {
+    padding: 0em 0em 0em 1.3em;
+}
+
+
+.image-click-container {
+    padding: 4.5em 3.4em 4.5em 3.4em;
+    margin-top: -1em !important;
+    margin-left: -0.3em !important;
+    background-image: url("../img/container/choseUs/image-choose.png") !important;
+    background-color: transparent;
+    background-size: 100% 100%;
+}
+
+.has-padding-choses-section {
+    padding: 2em 0em 0em 6em;
+}
+.chose-card-header {
+    background-image: url("../img/container/choseUs/card-header-box.png") !important;
+    background-color: transparent;
+    background-size: 100% 100%;
+    padding-left: 25px;
+}
+
+.chose-text {
+    padding-top: 10px;
+    font-size: 1.3em;
+    padding-bottom: 10px;
+}
+
+.card.chose-us {
+    background-image: url("../img/container/choseUs/card-box.png") !important;
+    background-color: transparent;
+    background-size: 100% 100%;
+}
+
+.input-validation-error::before {
+    font-family: "Font Awesome 5 Free";
+    color: red;
+    position: relative;
+    content: "\f06a";
+    font-weight: 900;
+}
+
+@media screen and (max-width: 700px) {
+    .chose-text {
+        font-size: 1.1em !important;
+    }
+    .partner-padding div {
+        padding: 1em !important;
+    }
+    .info-right.column.is-12.is-6-desktop.has-padding-choses-section {
+        padding: 2em !important;
+    }
+    .image-click-container {
+        margin: 1.4em;
+        padding: 2em;
+        margin-left: 1.4em !important;
+    }
+    .collapse-main-section {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+}
