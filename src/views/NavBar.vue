@@ -47,7 +47,8 @@
         <div class="navbar-end is-hidden-mobile">
           <a class="navbar-item">
             <button type="submit" class="button balance is-fullwidth" disabled style="opacity: 1 !important">
-              <span> {{this.oasisPrice.data['project-oasis'].usd.toFixed(3)}} $</span>
+
+              <span> {{this.oasisPrice}} $</span>
             </button>
           </a>
         </div>
@@ -60,14 +61,14 @@ import axios from 'axios';
 export default {
   data() {
     return {
-      oasisPrice: [],
+      oasisPrice: '',
       showNav: false,
     };
   },
   methods: {},
   mounted () {
     axios.get('https://api.coingecko.com/api/v3/simple/price/?ids=project-oasis&vs_currencies=usd')
-    .then(response => (this.oasisPrice = response))
+    .then(response => (this.oasisPrice = response.data['project-oasis'].usd.toFixed(3)))
   }
 };
 </script>

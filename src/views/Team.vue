@@ -274,7 +274,6 @@ export default {
     showTeam(title) {
       let chose_data = this.teamList[title];
       this.teamInfo = chose_data;
-      console.log("hello", chose_data[0].img_url);
    },
   },
 };

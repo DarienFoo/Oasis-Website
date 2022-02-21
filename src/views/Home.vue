@@ -46,7 +46,6 @@
               > -->
               <vueper-slides
                 class="no-shadow"
-                @before-slide="beforeSlide"
                 :visible-slides="3"
                 :slide-ratio="1 / 4"
                 :dragging-distance="35"
@@ -246,10 +245,10 @@ export default {
     };
   },
   methods: {
-    beforeSlide(eventName, params) {
-      this.first_slide = params.nextSlide.index === 0;
-      this.last_slide = params.nextSlide.index === this.slides.length - 1;
-    },
+    // beforeSlide(eventName, params) {
+    //   this.first_slide = params.nextSlide.index === 0;
+    //   this.last_slide = params.nextSlide.index === this.slides.length - 1;
+    // },
   },
 };
 </script>

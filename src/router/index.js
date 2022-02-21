@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import ChoseUs from '@/components/HelloWorld'
 import VueGlide from 'vue-glide-js'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'

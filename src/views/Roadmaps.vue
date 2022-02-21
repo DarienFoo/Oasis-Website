@@ -143,7 +143,6 @@ export default {
       let chose_data = this.roadmapsQ.filter((user) => {
         return user.title.toLowerCase().includes(title.toLowerCase());
       });
-      console.log("hello", chose_data);
       $(".image-roadmap-section").attr("src", chose_data[0].img_url);
     },
   },
