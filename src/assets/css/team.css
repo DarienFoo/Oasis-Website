@@ -50,6 +50,33 @@
     margin-left: -2.5em;
 }
 
+.slider-nav .slick-next:before {
+    content: '' !important;
+    background-image: url("../img/icon/arrow-right.png") !important;
+    background-color: transparent;
+    background-size: 100% 100%;
+    /* padding: 0em 1em 4em 4em;
+    right: -3.5em;
+    top: -1.4em;
+    position: absolute; */
+    padding: 0em 6em 4.6em 0em;
+    right: -5.1em;
+    position: absolute;
+    top: -1.7em !important;
+}
+
+.slider-nav .slick-prev:before {
+    content: '' !important;
+    background-image: url("../img/icon/arrow-left.png") !important;
+    background-color: transparent;
+    background-size: 100% 100%;
+    padding: 0em 6em 4.6em 0em;
+    margin-left: -5.5em;
+    position: absolute;
+    top: -1.7em !important;
+
+}
+
 .team-s button.vueperslides__arrow.vueperslides__arrow--next {
     background-image: url("../img/icon/arrow-right.png") !important;
     background-color: transparent;
@@ -79,12 +106,17 @@
 }
 
 .team-info-char .slick-list {
-    width: auto !important;
+    width: 94% !important;
     overflow: inherit !important;
 }
 .team-info-char div.slick-slide {
     margin: 8px !important;
     width: 206px !important;
+}
+.team-info-char div.slick-track {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
 }
 .slick-list {
     width: 95%;
@@ -156,6 +188,20 @@ img.slick-next.slick-arrow {
 }
 
 @media screen and (max-width: 700px) {
+    div#slick1 div.slick-track,div#slick2 div.slick-track, div#slickCouncel div.slick-track {
+        display: block !important;
+        margin: 0px 45px !important;
+    }
+    .team-info-char div.slick-slide {
+        width: 206px !important;
+    }
+    /* .team-info-char div.slick-slide {
+        margin: 0px 45px !important;
+        width: 248px !important;
+    }
+    .team-info-char div.slick-track {
+        width: auto !important;
+    } */
     .teamview {
         padding: 0px !important;
     }
