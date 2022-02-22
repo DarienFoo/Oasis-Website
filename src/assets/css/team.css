@@ -78,6 +78,14 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.team-info-char .slick-list {
+    width: auto !important;
+    overflow: inherit !important;
+}
+.team-info-char div.slick-slide {
+    margin: 8px !important;
+    width: 206px !important;
+}
 .slick-list {
     width: 95%;
     margin: 0 auto;

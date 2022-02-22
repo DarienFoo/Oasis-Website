@@ -22,9 +22,8 @@
           </div>
         </div>
       </div>
-      <div class="">        
-      </div>
-      <div class="team-s">        
+      <div class=""></div>
+      <div class="team-s">
         <vueper-slides
           class="no-shadow"
           ref="vueperslides1"
@@ -38,9 +37,7 @@
           :visible-slides="3"
           :slide-ratio="1 / 4"
           :bullets="false"
-          :arrows="false"
           fixed-height="100px"
-          
         >
           <vueper-slide
             v-for="i in items"
@@ -63,10 +60,10 @@
             </template>
           </vueper-slide>
         </vueper-slides>
-
-        <vueper-slides
+        <!-- <vueper-slides
           class="no-shadow"
           ref="vueperslides2"
+          :arrows="false"          
           :slide-ratio="1 / 8"
           :dragging-distance="50"
           :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }"
@@ -117,7 +114,33 @@
               </div>
             </template>
           </vueper-slide>
-        </vueper-slides>
+        </vueper-slides> -->
+      </div>
+      <div id="slick1" class="team-info-char">
+        
+        <div class="team-left-container" v-for="i in teamInfo" :key="i.id">
+          <div class="container">
+            <img :src="i.img_url" />
+            <p
+              class="
+                is-extra-bold
+                title
+                team-title
+                is-flex is-justify-content-center
+                mb-0
+                pb-0
+              "
+            >
+              {{ i.name }}
+            </p>
+            <p
+              class="subs subs-team"
+              style="font-size: 0.6em !important; text-align: center !important"
+            >
+              {{ i.desc }}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -128,10 +151,87 @@ import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 import { VueperSlides, VueperSlide } from "vueperslides";
 import "vueperslides/dist/vueperslides.css";
+
+import Slick from "vue-slick";
+import "slick-carousel/slick/slick.css";
 export default {
   components: { VueSlickCarousel, VueperSlides, VueperSlide },
   data() {
     return {
+      rowSlick: 0,
+      teamList: {
+        "Tech Magicians": [
+          {
+          name: "Jasper",
+          img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
+          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+        {
+          name: "Jasper 2",
+          img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
+          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+        {
+          name: "Jasper 3",
+          img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
+          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+        {
+          name: "Jasper 4",
+          img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
+          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        }
+        ],
+        "Advisor": [
+          {
+            name: "Advisor 1",
+            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            name: "Advisor 2",
+            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            name: "Advisor 3",
+            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            name: "Advisor 4",
+            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+        ],
+        "Cool Councel": [
+          {
+            name: "Councel 1",
+            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            name: "Councel 2",
+            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            name: "Councel 3",
+            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            name: "Councel 4",
+            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            name: "Councel 5",
+            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+        ],
+      },
       items: [
         {
           title: "Tech Magicians",
@@ -151,7 +251,7 @@ export default {
         {
           title: "Tech Magicians",
         },
-      ],      
+      ],
       teamInfo: [
         {
           name: "Jasper",
@@ -159,41 +259,20 @@ export default {
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },
         {
-          name: "Jasper",
+          name: "Jasper 2",
           img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },
         {
-          name: "Jasper",
+          name: "Jasper 3",
           img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },
         {
-          name: "Jasper",
+          name: "Jasper 4",
           img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-
-        {
-          name: "Jasper",
-          img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-        {
-          name: "Jasper",
-          img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-        {
-          name: "Jasper",
-          img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-        {
-          name: "Jasper",
-          img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
+        }
       ],
 
       options: {
@@ -268,13 +347,48 @@ export default {
     };
   },
   mounted() {
-    this.$nextTick(this.$forceUpdate);
+    this.slickJS("Tech Magicians");
+    // this.$nextTick(this.$forceUpdate);
   },
   methods: {
     showTeam(title) {
+      // this.rowSlick = 1;
+      if (this.teamList[title].length > 4) {
+        this.rowSlick = 2;
+      } else {
+        this.rowSlick = 1;
+      }
       let chose_data = this.teamList[title];
       this.teamInfo = chose_data;
-   },
+
+      $('#slick1').slick('slickSetOption', 'rows', this.rowSlick, 'slidesToShow', '5','dots' , false, 'arrows' , true,'infinite', false,'speed', 300,'slidesToShow', 4,'slidesToScroll', 1);
+            $('#slick1').slick( 'refresh' );
+
+      // this.slickJS(title);
+    },
+    slickJS(title) {
+      // if (this.teamList[title].length >= 4) {
+      //   this.rowSlick = 2;
+      // } else {
+      //   alert("low 1 proceed");
+      //   this.rowSlick = 1;
+      // }
+
+      if (this.teamInfo.length >= 5) {
+        this.rowSlick = 2;
+      } else {
+        this.rowSlick = 1;
+      }
+
+      $("#slick1").slick({
+        rows: this.rowSlick,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+      });
+    },
   },
 };
 </script>
@@ -284,12 +398,12 @@ export default {
   /* .slick-slide.slick-active {
     width: 50% !important;
 } */
-  .slick-slider.slick-initialized.slick-vertical
-    div.slick-list
-    div.slick-track
-    div.slick-slide {
-    width: 50% !important;
-  }
+  // .slick-slider.slick-initialized.slick-vertical
+  //   div.slick-list
+  //   div.slick-track
+  //   div.slick-slide {
+  //   width: 50% !important;
+  // }
 
   .subs {
     font-size: 0.5em !important;
