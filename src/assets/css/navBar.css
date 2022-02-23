@@ -134,3 +134,50 @@ a.navbar-item:hover {
         margin-top: 14px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+  
+  .header-nav {
+    height: 100px;
+    padding: 20px 0;
+  }
+  
+
+  
+  .header-nav nav div.navbar a {
+    position: relative;
+    height: 2.3em;
+    top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+}
+  
+  a.navbar-item.text-items::after {
+    content: attr(data-text);
+    color: red;
+    transition: transform 0.3s !important;
+  }
+  
+  a.navbar-item.text-items::before {
+    content: attr(data-text);
+    transition: transform 0.3s !important;
+  }
+  
+  a.navbar-item.text-items:hover::before {
+    transform: translateY(-1.85em) !important;
+  }
+  
+  a.navbar-item.text-items:hover::after {
+    transform: translateY(-1.55em) !important;
+  }
+}
+
+a.navbar-item.text-items::before {
+    content: attr(data-text);
+  }

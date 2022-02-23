@@ -1,5 +1,5 @@
 <template>
-  <div class="has-margin">
+  <div class="has-margin header-nav">
     <nav class="" role="navigation" aria-label="main navigation">
       <div class="container navbar-brand" style="width: 100%;">
         <div
@@ -19,12 +19,7 @@
         class="navbar-menu container navbar-menu"
         :class="{ 'is-active': showNav }"
         id="navMenu"
-      >      
-      <!-- <div
-        class="navbar-menu container-fluid navbar-menu p-1 m-2"
-        :class="{ 'is-active': showNav }"
-        id="navMenu"
-      > -->
+      >     
         <div class="navbar-start pl-5 is-hidden-mobile">
           <a href="https://www.coingecko.com/en/coins/projectoasis" target="_blank" class="navbar-item">
             <img src="@/assets/img/logo/coingecko.png" width="45" />
@@ -34,15 +29,14 @@
           </a>
         </div>
         <div class="navbar">
-          <a class="navbar-item" v-scroll-to="'#gameSection'">Game</a>
-          <!-- <a class="navbar-item">About</a> -->
-          <a class="navbar-item" v-scroll-to="'#chooseUs'">Why Us?</a>
-          <a class="navbar-item" v-scroll-to="'#tekonomiks'">Tokenomics</a>
-          <a class="navbar-item" v-scroll-to="'#roadmaps'">Roadmap</a>
-          <a class="navbar-item" v-scroll-to="'#team'">Team</a>
-          <a class="navbar-item" v-scroll-to="'#partners'">Partners</a>
-          <a class="navbar-item" href="https://projectoasis.io/assets/img/Oasis-Litepaper.pdf" target="_blank">Litepaper</a>
-          <a class="navbar-item" href="https://projectoasis.io/assets/img/Oasis-1pager-3Oct.pdf" target="_blank">One Pager</a>
+          <a class="navbar-item text-items" data-text="Game" v-scroll-to="'#gameSection'"></a>
+          <a class="navbar-item text-items" data-text="Why Us?" v-scroll-to="'#chooseUs'"></a>
+          <a class="navbar-item text-items" data-text="Tokenomics" v-scroll-to="'#tekonomiks'"></a>
+          <a class="navbar-item text-items" data-text="Roadmap" v-scroll-to="'#roadmaps'"></a>
+          <a class="navbar-item text-items" data-text="Team" v-scroll-to="'#team'"></a>
+          <a class="navbar-item text-items " data-text="Partners" v-scroll-to="'#partners'"></a>
+          <a class="navbar-item text-items" href="https://projectoasis.io/assets/img/Oasis-Litepaper.pdf" target="_blank">Litepaper</a>
+          <a class="navbar-item text-items" href="https://projectoasis.io/assets/img/Oasis-1pager-3Oct.pdf" target="_blank">One Pager</a>
         </div>
         <div class="navbar-end is-hidden-mobile">
           <a class="navbar-item">
@@ -54,6 +48,7 @@
         </div>
       </div>
     </nav>
+
   </div>
 </template>
 <script>
