@@ -24,7 +24,7 @@
       </div>
       <div class="slider-nav">
         <div
-          class="column"
+          class="column p-1"
           style="width: 105% !important"
           v-for="i in items"
           :key="i.id"
@@ -99,7 +99,11 @@
             </div>
           </div>
         </div>
-        <div id="slickCouncel" class="team-info-char" style="width: 100% !important">
+        <div
+          id="slickCouncel"
+          class="team-info-char"
+          style="width: 100% !important"
+        >
           <div
             class="team-left-container"
             v-for="i in teamList['Cool Councel']"
@@ -143,7 +147,7 @@ import "vueperslides/dist/vueperslides.css";
 import Slick from "vue-slick";
 import "slick-carousel/slick/slick.css";
 export default {
-  components: {  VueperSlides, VueperSlide },
+  components: { VueperSlides, VueperSlide },
   data() {
     return {
       rowSlick: 0,
@@ -244,13 +248,12 @@ export default {
           title: "Fourth",
         },
       ],
-     
     };
   },
   mounted() {
     this.slickJS("Tech Magicians");
   },
-  methods: {    
+  methods: {
     slickJS(title) {
       if (this.teamList[title].length >= 5) {
         this.rowSlick = 2;
@@ -264,7 +267,6 @@ export default {
         infinite: false,
         speed: 300,
         slidesToShow: 4,
-        
       });
       $("#slick2").slick({
         rows: 1,
@@ -274,7 +276,7 @@ export default {
         speed: 300,
         slidesToShow: 4,
       });
-      
+
       $("#slickCouncel").slick({
         rows: 2,
         dots: false,
@@ -289,13 +291,16 @@ export default {
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: ".slider-nav",        
+        asNavFor: ".slider-nav",
       });
       $(".slider-nav").slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
         slidesToShow: 3,
         slideToScroll: 1,
         asNavFor: ".slider-for",
         dots: false,
+        centerMode: true,
         arrows: true,
         focusOnSelect: true,
         responsive: [

@@ -107,7 +107,7 @@
                 >
                   <a
                     target="_blank"
-                    href="http://demo.projectoasis.io/"
+                    href="https://game.projectoasis.io/"
                     class="
                       button
                       home-btn
