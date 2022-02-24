@@ -6,6 +6,7 @@
           class="
             column
             is-half-desktop is-flex is-justify-content-center is-12-mobile
+            team-title-header
           "
         >
           <div
@@ -55,13 +56,20 @@
               >
                 {{ i.name }}
               </p>
-              <p
+              <!-- <p
                 class="subs subs-team"
                 style="
                   font-size: 0.6em !important;
                   text-align: center !important;
                 "
-              >
+              > -->
+              <p
+                class="subs"
+                style="
+                  font-size: 0.6em !important;
+                  text-align: center !important;
+                "
+              >              
                 {{ i.desc }}
               </p>
             </div>
@@ -88,7 +96,7 @@
                 {{ i.name }}
               </p>
               <p
-                class="subs subs-team"
+                class="subs"
                 style="
                   font-size: 0.6em !important;
                   text-align: center !important;
@@ -99,6 +107,7 @@
             </div>
           </div>
         </div>
+
         <div
           id="slickCouncel"
           class="team-info-char"
@@ -124,7 +133,7 @@
                 {{ i.name }}
               </p>
               <p
-                class="subs subs-team"
+                class="subs"
                 style="
                   font-size: 0.6em !important;
                   text-align: center !important;
@@ -267,7 +276,16 @@ export default {
         infinite: false,
         speed: 300,
         slidesToShow: 4,
+        responsive: [
+          {
+            breakpoint: 478,
+            settings: {
+              slidesToShow: 3
+            },
+          },
+        ],
       });
+
       $("#slick2").slick({
         rows: 1,
         dots: false,
@@ -275,6 +293,15 @@ export default {
         infinite: false,
         speed: 300,
         slidesToShow: 4,
+        responsive: [
+          {
+            breakpoint: 478,
+            settings: {
+              slidesPerRow: 2,
+              rows: 2,
+            },
+          },
+        ],
       });
 
       $("#slickCouncel").slick({
@@ -294,8 +321,8 @@ export default {
         asNavFor: ".slider-nav",
       });
       $(".slider-nav").slick({
-        autoplay: true,
-        autoplaySpeed: 5000,
+        // autoplay: true,
+        // autoplaySpeed: 5000,
         slidesToShow: 3,
         slideToScroll: 1,
         asNavFor: ".slider-for",

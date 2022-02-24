@@ -116,6 +116,20 @@ button.button.home-btn span.icon {
 }
 
 @media screen and (max-width: 700px) {
+  .left-padding-mobile {
+    padding-top: 8em !important;
+  }
+  .play-now.column.is-4-desktop.is-12-mobile.buy-apeswap.pr-1.is-transparent-bg,
+  .column.is-5-desktop.is-12-mobile.buy-apeswap.pr-6.is-transparent-bg {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .home-oasis {
+    padding-top: 19% !important;
+  }
+  span.is-extra-bold {
+    font-size: 1em !important;
+}
   div#app {
     overflow-x: hidden;
     width: 100% !important;
@@ -221,4 +235,33 @@ button.button.home-btn span.icon {
 
 .next {
   right: -87px !important;
+}
+
+div#dropdown-menu-home {
+  top: -5.3em !important;
+  left: -0.3em;
+}
+
+div#dropdown-menu-home div.dropdown-content {
+  background-image: url("../img/container/dropdown.png") !important;
+  background-color: transparent;
+  background-size: 100% 100%;
+}
+
+.pancake-btn {
+  background: url("../img/button/pancake_btn.png") no-repeat scroll 0 0 transparent;
+}
+.apeswap-btn {
+  background: url("../img/button/apeswap_btn.png") no-repeat scroll 0 0 transparent;
+}
+.pancake-btn, .apeswap-btn {
+  cursor: pointer;
+  font-weight: bold;
+  background-size: cover;
+  width: 189px;
+  background-color: transparent;
+  border: none;
+  font-size: 1em !important;
+  margin: 2%;
+    height: 3em;
 }

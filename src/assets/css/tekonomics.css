@@ -39,6 +39,9 @@ section#tekonomiks {
 }
 
 @media screen and (max-width: 700px) {
+    figure.image.is-96x96 {
+        padding: 1.2em !important;
+    }
     .info-right.column.is-12.is-7-desktop.tokenomics-right {
         padding: 0.3em !important;
     }

@@ -70,3 +70,13 @@ span.title.tokenomiks-title.is-medium-font {
         background: none !important;
     }
 }
+
+.coming-soon {
+    margin: 2em;
+    height: 75%;
+    padding: 10em;
+}
+
+.coming-soon {
+    display: none;
+}

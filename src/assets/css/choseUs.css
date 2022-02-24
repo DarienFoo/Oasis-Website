@@ -64,11 +64,17 @@
 }
 
 @media screen and (max-width: 700px) {
+    section.hero.coming-soon {
+        padding: 5em !important;
+    }
     .chose-text {
         font-size: 1.1em !important;
     }
-    .partner-padding div {
+    /* .partner-padding div {
         padding: 1em !important;
+    } */
+    .slickPartners {
+        padding: 0px !important;
     }
     .info-right.column.is-12.is-6-desktop.has-padding-choses-section {
         padding: 2em !important;
@@ -82,4 +88,28 @@
         padding: 0px !important;
         margin: 0px !important;
     }
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+.fade-out {
+	opacity: 0;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

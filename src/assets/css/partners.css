@@ -28,3 +28,26 @@
 .disclaimer-title {
     font-size:1em !important
 }
+
+button.slick-next.slick-arrow:before {
+    content: '' !important;
+    background-image: url("../img/icon/arrow-right.png") !important;
+    background-color: transparent;
+    background-size: 100% 100%;
+    padding: 0em 6em 4.6em 0em;
+    right: -5.1em;
+    position: absolute;
+    top: -1.7em !important;
+}
+
+button.slick-prev.slick-arrow.slick-disabled:before, button.slick-prev.slick-arrow:before {
+    content: '' !important;
+    background-image: url("../img/icon/arrow-left.png") !important;
+    background-color: transparent;
+    background-size: 100% 100%;
+    padding: 0em 6em 4.6em 0em;
+    margin-left: -5.5em;
+    position: absolute;
+    top: -1.7em !important;
+
+}

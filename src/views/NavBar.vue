@@ -1,33 +1,42 @@
 <template>
   <div class="has-margin header-nav">
     <nav class="" role="navigation" aria-label="main navigation">
-      <div class="container navbar-brand" style="width: 100%;">
+      <div class="navbar container navbar-brand" style="width: 100%">
         <div
           class="navbar-burger burger"
           data-target="navMenu"
           @click="showNav = !showNav"
           :class="{ 'is-active': showNav }"
         ></div>
-        <a class="navbar-item">
+        <a class="navbar-item logo-ui">
           <figure class="image is-64x64 logo">
             <img src="@/assets/img/logo.png" />
           </figure>
         </a>
       </div>
-      
+
       <div
         class="navbar-menu container navbar-menu"
         :class="{ 'is-active': showNav }"
         id="navMenu"
-      >     
+      >
         <div class="navbar-start pl-5 is-hidden-mobile">
-          <a href="https://www.coingecko.com/en/coins/projectoasis" target="_blank" class="navbar-item">
+          <a
+            href="https://www.coingecko.com/en/coins/projectoasis"
+            target="_blank"
+            class="navbar-item"
+          >
             <img src="@/assets/img/logo/coingecko.png" width="45" />
           </a>
-          <a href="https://coinmarketcap.com/currencies/projectoasis/" target="_blank" class="navbar-item">
+          <a
+            href="https://coinmarketcap.com/currencies/projectoasis/"
+            target="_blank"
+            class="navbar-item"
+          >
             <img src="@/assets/img/logo/medium.png" width="45" />
           </a>
         </div>
+
         <div class="navbar">
           <a class="navbar-item text-items" data-text="Game" v-scroll-to="'#gameSection'"></a>
           <a class="navbar-item text-items" data-text="Why Us?" v-scroll-to="'#chooseUs'"></a>
@@ -38,13 +47,13 @@
           <a class="navbar-item text-items" href="https://projectoasis.io/assets/img/Oasis-Litepaper.pdf" target="_blank">Litepaper</a>
           <a class="navbar-item text-items" href="https://projectoasis.io/assets/img/Oasis-1pager-3Oct.pdf" target="_blank">One Pager</a>
         </div>
-        <div class="navbar-end is-hidden-mobile">
-          <a class="navbar-item">
-            <button type="submit" class="button balance is-fullwidth" disabled style="opacity: 1 !important">
 
+        <div class="navbar-end is-hidden-mobile">
+          <div class="navbar-item">
+            <a target="_blank" href="https://www.coingecko.com/en/coins/projectoasis" type="submit" class="button balance is-fullwidth" style="z-index: 999999999999;opacity: 1 !important">
               <span> {{this.oasisPrice}} $</span>
-            </button>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </nav>

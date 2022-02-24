@@ -16,28 +16,52 @@
         </div>
       </div>
       <div
-        class="info-container columns is-multiline container-token partner-padding"
+        class="
+          info-container
+          container-token
+          partner-padding
+        "
         style="padding: 2em 0em 3em 0em"
       >
-        <div class="columns is-multiline is-mobile column is-12" style="padding: 0em 4em 0em ">
-          <div
-              class="column is-3-fullhd is-3-desktop is-6-tablet is-half-mobile"
+        <div
+          class="is-mobile column is-12 slickPartners"
+          style="padding: 0em 4em 0em"
+        >
+          <div id="slickPartners">
+            <div
+              class=""
               v-for="partnerList in partners"
               :key="partnerList.id"
             >
-              <a :href="partnerList.link" target="__blank">
-                <p class="is-hidden">{{ partnerList.img_url }}</p>
-                <figure class="image is-5by3">
-                  <img :src="partnerList.img_url" />
-                </figure>
-              </a>
+              <div class="container">
+                <a :href="partnerList.link" target="__blank">
+                  <p class="is-hidden">{{ partnerList.img_url }}</p>
+                  <figure class="image is-5by3">
+                    <img :src="partnerList.img_url" />
+                  </figure>
+                </a>
+              </div>
             </div>
+          </div>
+          <!-- <div
+            class="column is-3-fullhd is-3-desktop is-6-tablet is-half-mobile"
+            v-for="partnerList in partners"
+            :key="partnerList.id"
+          >
+            <a :href="partnerList.link" target="__blank">
+              <p class="is-hidden">{{ partnerList.img_url }}</p>
+              <figure class="image is-5by3">
+                <img :src="partnerList.img_url" />
+              </figure>
+            </a>
+          </div> -->
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 </template>
 <script>
+import "slick-carousel/slick/slick.css";
 export default {
   components: {},
   data() {
@@ -91,10 +115,69 @@ export default {
           img_url: require("@/assets/img/partners/cakemonster.png"),
           link: "#",
         },
+
+
+        {
+          img_url: require("@/assets/img/partners/startercapital.png"),
+          link: "#",
+        },
+
+        {
+          img_url: require("@/assets/img/partners/metaverse.png"),
+          link: "#",
+        },
+        {
+          img_url: require("@/assets/img/partners/DaMoon.png"),
+          link: "#",
+        },
+        {
+          img_url: require("@/assets/img/partners/redHat.png"),
+          link: "#",
+        },
+        {
+          img_url: require("@/assets/img/partners/ge-fi.png"),
+          link: "#",
+        },
+        {
+          img_url: require("@/assets/img/partners/mintedlabs.png"),
+          link: "#",
+        },
+        {
+          img_url: require("@/assets/img/partners/rd.png"),
+          link: "#",
+        },
+        
+        
+        
       ],
     };
   },
-  mounted() {},
+  mounted() {
+    this.slickJS();
+  },
+  methods: {
+    slickJS() {
+      $("#slickPartners").slick({
+        rows: 3,
+        autoplay: true,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        responsive: [
+          {
+            breakpoint: 478,
+            settings: {
+              slidesPerRow: 2,
+              rows: 4,
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    },
+  },
 };
 </script>
 <style lang="scss">

@@ -188,11 +188,31 @@ img.slick-next.slick-arrow {
 }
 
 @media screen and (max-width: 700px) {
+    .team-info-char div.slick-slide {
+        margin: auto !important;
+    }
+    .team-title {
+        font-size: 1em !important;
+    }
+    /* .team-left-container {
+        width: auto !important;
+    } */
+    .team-left-container {
+        width: 9em !important;
+    }
+    .slick-list.draggable {
+        /* width: auto !important; */
+        margin-left: 0.6em !important;
+    }
+    .team-title-header {
+        padding: 2em 6em 0em 6em !important;
+    }
     div#slick1 div.slick-track,div#slick2 div.slick-track, div#slickCouncel div.slick-track {
         display: block !important;
-        margin: 0px 45px !important;
+        /* margin: 0px 45px !important; */
     }
     .team-info-char div.slick-slide {
+        display: flex !important;
         width: 206px !important;
     }
     /* .team-info-char div.slick-slide {

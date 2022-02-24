@@ -2,7 +2,7 @@
   <div class="hero-body p-0 container">
     <div class="ml-0 mr-0 column is-12" style="" id="flex">
       <div
-        class="info-container columns is-multiline"
+        class="columns is-multiline"
         style="padding: 5em 0em 3em 0em"
       >
         <div class="info-left column is-12 is-6-desktop container main p-0 m-0">
@@ -120,12 +120,14 @@ export default {
     },
     replaceImage(title) {
       console.log("title", title);
-
+      // $(".image-section").fadeOut(1000)
       let chose_data = this.collapsesChoose.filter((user) => {
         return user.title.toLowerCase().includes(title.toLowerCase());
       });
       this.convertHTMLCode(chose_data[0].description);
-      $(".image-section").attr("src", chose_data[0].img_url);
+      // $(".image-section" ).addClass("fade-in")
+
+      $(".image-section").attr("src", chose_data[0].img_url).fadeOut("2000").fadeIn("1000");
     },
   },
 };

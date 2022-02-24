@@ -1,0 +1,264 @@
+/* .info-container {
+  border: 3px solid black;
+  background: #aaa;
+} */
+/* .home-slide .vueperslide.vueperslide--active.vueperslide--visible {
+  margin-left: -149px;
+} */
+button.button.home-btn.is-transparent-bg {
+  padding: 4% !important;
+}
+button.vueperslides__arrow.vueperslides__arrow--next svg,
+button.vueperslides__arrow.vueperslides__arrow--prev svg {
+  width: 30px;
+  border: none !important;
+  background-color: transparent !important;
+  outline: none;
+}
+
+button.vueperslides__arrow.vueperslides__arrow--next {
+  background-image: url("../img/icon/next.png") !important;
+  background-color: transparent;
+  background-size: 100% 100%;
+  padding: 0em 1em 4em 4em;
+  margin-right: -2.5em;
+}
+
+button.vueperslides__arrow.vueperslides__arrow--prev {
+  background-image: url("../img/icon/prev.png") !important;
+  background-color: transparent;
+  background-size: 100% 100%;
+  padding: 0em 5em 4em 0em;
+  margin-left: -2.5em;
+}
+
+.background-carousel {
+  background-image: url("../img/container/slider/background.png") !important;
+  background-color: transparent;
+  background-size: 100% 100%;
+  padding: 4em 5em 4em 3em;
+}
+
+.has-margin {
+  margin-right: 2em !important;
+  margin-left: 2em !important;
+}
+
+.box.info {
+  background-image: url("../img/container/info.png") !important;
+  padding: 9.5% 11.5% 12.5% 12.5%;
+  background-color: transparent;
+  background-size: 100% 100%;
+}
+
+.whats-new {
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/container/whatsnew.png") !important;
+}
+
+.slider-bg {
+  background-image: url("../img/container/slider/background.png") !important;
+  background-color: transparent;
+  background-size: 100% 100%;
+}
+
+.social-container {
+  padding: 1.4em 4em 1.4em 4em;
+  background-image: url("../img/container/info-container.png") !important;
+  background-color: transparent;
+  background-size: 100% 100%;
+}
+
+.c-backdrop.vcc {
+  background: transparent !important;
+}
+
+.container-series {
+  margin: 1em 1em -2em 1em;
+  border-radius: 56px;
+  border: 5px solid #000000;
+  background: white;
+}
+
+.whats-new span {
+  line-height: -17px;
+  position: relative;
+  top: 0.3em;
+  left: 0.3em;
+}
+
+.home-btn {
+  background: url("../img/button/home.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  font-weight: bold;
+  background-size: cover;
+  width: 189px;
+  background-color: transparent;
+  border: none;
+  font-size: 1em !important;
+}
+
+button.button.home-btn span.icon {
+  margin: 11px 10px 14px 0px !important;
+  width: 26px;
+}
+
+.home-btn {
+  color: #fff !important;
+}
+
+.container-social {
+  position: relative;
+  top: -83px;
+  left: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .play-now.column.is-4-desktop.is-12-mobile.buy-apeswap.pr-1.is-transparent-bg,
+  .column.is-5-desktop.is-12-mobile.buy-apeswap.pr-6.is-transparent-bg {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .home-oasis {
+    padding-top: 19% !important;
+  }
+  span.is-extra-bold {
+    font-size: 1em !important;
+}
+  div#app {
+    overflow-x: hidden;
+    width: 100% !important;
+}
+  .info-right.column.is-12.is-7-desktop {
+    padding: 0em;
+    height: 46vh;
+  }
+
+  .info-left.column.is-12.is-5-desktop.container.main {
+    padding-top: 0em;
+  }
+
+  .mobile-footer {
+    display: flex;
+    justify-content: center;
+    padding: 0em 0em 0em 2em;
+  }
+
+  .column.is-4-desktop.is-12-mobile.buy-apeswap.pr-6,
+  .column.is-4-desktop.is-12-mobile.buy-on-pancakeswap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .has-padding-desktop-section {
+    padding: 0% !important;
+  }
+
+  .padding-partners {
+    padding: 0% !important;
+  }
+
+  .has-padding-desktop {
+    padding: 0px !important;
+  }
+
+  .play-now {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .hero-body.is-align-items-start.pb-0.pt-2 {
+    padding: 0% !important;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .p-6.m-6.collapse-main-section {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  .play-now {
+    margin-right: 19px !important;
+  }
+
+
+  button.button.home-btn span.icon {
+    margin: 0px !important;
+    width: 17px;
+  }
+
+  .buy-apeswap {
+    margin-left: -3%;
+  }
+
+  .info-container {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+
+  #flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-left {
+    order: 1;
+  }
+
+  .info-right {
+    order: 2;
+  }
+
+  .p-6.main {
+    padding: 0px !important;
+  }
+}
+
+.prev,
+.next {
+  background: transparent;
+  border: none;
+  position: relative;
+  top: 6em !important;
+
+}
+
+.prev {
+  left: -7em !important;
+}
+
+.next {
+  right: -87px !important;
+}
+
+div#dropdown-menu-home {
+  top: -5.3em !important;
+  left: -0.3em;
+}
+
+div#dropdown-menu-home div.dropdown-content {
+  background-image: url("../img/container/dropdown.png") !important;
+  background-color: transparent;
+  background-size: 100% 100%;
+}
+
+.pancake-btn {
+  background: url("../img/button/pancake_btn.png") no-repeat scroll 0 0 transparent;
+}
+.apeswap-btn {
+  background: url("../img/button/apeswap_btn.png") no-repeat scroll 0 0 transparent;
+}
+.pancake-btn, .apeswap-btn {
+  cursor: pointer;
+  font-weight: bold;
+  background-size: cover;
+  width: 189px;
+  background-color: transparent;
+  border: none;
+  font-size: 1em !important;
+  margin: 2%;
+    height: 3em;
+}
