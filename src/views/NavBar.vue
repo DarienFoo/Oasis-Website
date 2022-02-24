@@ -25,6 +25,7 @@
             href="https://www.coingecko.com/en/coins/projectoasis"
             target="_blank"
             class="navbar-item"
+            style="z-index: 9999999999;"
           >
             <img src="@/assets/img/logo/coingecko.png" width="45" />
           </a>
@@ -32,20 +33,36 @@
             href="https://coinmarketcap.com/currencies/projectoasis/"
             target="_blank"
             class="navbar-item"
+            style="z-index: 9999999999;"            
           >
             <img src="@/assets/img/logo/medium.png" width="45" />
           </a>
         </div>
 
         <div class="navbar">
-          <a class="navbar-item text-items" data-text="Game" v-scroll-to="'#gameSection'"></a>
-          <a class="navbar-item text-items" data-text="Why Us?" v-scroll-to="'#chooseUs'"></a>
-          <a class="navbar-item text-items" data-text="Tokenomics" v-scroll-to="'#tekonomiks'"></a>
-          <a class="navbar-item text-items" data-text="Roadmap" v-scroll-to="'#roadmaps'"></a>
-          <a class="navbar-item text-items" data-text="Team" v-scroll-to="'#team'"></a>
+
+          <a class="navbar-item text-items" data-text="Game" v-scroll-to="'#gameSection'">
+              <img class="icon-nav" src="@/assets/img/navbar/logo/game.png" width="25">
+          </a>
+          <a class="navbar-item text-items" data-text="Why Us?" v-scroll-to="'#chooseUs'">
+              <img class="icon-nav" src="@/assets/img/navbar/logo/whyus.png" width="25">            
+          </a>
+          <a class="navbar-item text-items" data-text="Tokenomics" v-scroll-to="'#tekonomiks'">
+              <img class="icon-nav" src="@/assets/img/navbar/logo/token.png" width="25">                        
+          </a>
+          <a class="navbar-item text-items" data-text="Roadmap" v-scroll-to="'#roadmaps'">
+              <img class="icon-nav" src="@/assets/img/navbar/logo/roadmap.png" width="25">                                    
+          </a>
+          <a class="navbar-item text-items" data-text="Team" v-scroll-to="'#team'">
+              <img class="icon-nav" src="@/assets/img/navbar/logo/team.png" width="25">                                    
+          </a>
           <a class="navbar-item text-items " data-text="Partners" v-scroll-to="'#partners'"></a>
-          <a class="navbar-item text-items" data-text="Litepaper" href="https://projectoasis.io/assets/img/Oasis-Litepaper.pdf" target="_blank"></a>
-          <a class="navbar-item text-items" data-text="One Pager" href="https://projectoasis.io/assets/img/Oasis-1pager-3Oct.pdf" target="_blank"></a>
+          <a class="navbar-item text-items" data-text="Litepaper" href="https://projectoasis.io/assets/img/Oasis-Litepaper.pdf" target="_blank">
+              <img class="icon-nav" src="@/assets/img/navbar/logo/litepaper.png" width="25">                                  
+          </a>
+          <a class="navbar-item text-items" data-text="One Pager" href="https://projectoasis.io/assets/img/Oasis-1pager-3Oct.pdf" target="_blank">
+              <img class="icon-nav" src="@/assets/img/navbar/logo/onepager.png" width="25">                                  
+          </a>
         </div>
 
         <div class="navbar-end is-hidden-mobile">

@@ -187,7 +187,24 @@ img.slick-next.slick-arrow {
     padding: 0em 0em 0em 0em;
 }
 
+  @media only screen and (min-width: 390px) and (max-width: 884px){
+    .slick-list.draggable {
+        margin-left: 1em !important;
+    }
+    }  
+
 @media screen and (max-width: 700px) {
+
+    div#slick1 .slick-slide {
+        width: 338px;
+        position: relative;
+        left: -13px;
+        top: 0px;
+        z-index: 999;
+        opacity: 1;
+    }
+
+
     .team-info-char div.slick-slide {
         margin: auto !important;
     }
@@ -199,11 +216,11 @@ img.slick-next.slick-arrow {
     } */
     .team-left-container {
         width: 9em !important;
+        margin: 0.4em;
     }
-    .slick-list.draggable {
-        /* width: auto !important; */
+    /* .slick-list.draggable {
         margin-left: 0.6em !important;
-    }
+    } */
     .team-title-header {
         padding: 2em 6em 0em 6em !important;
     }

@@ -76,15 +76,14 @@ button {
     padding: 39px;
 }
 
-a.navbar-item:hover {
-    background: transparent !important;
-}
 
 .navbar-burger {
     margin-left: 0 !important;
     margin-right: auto;
 }
-
+.icon-nav {
+    display: none !important;
+}
 @media only screen and (max-width: 769px) {
     a.navbar-item.pl-6.ml-6 {
         margin: 0px !important;
@@ -92,6 +91,37 @@ a.navbar-item:hover {
 }
 
 @media screen and (max-width: 700px) {
+    a.navbar-item:hover {
+        background-color: auto !important;
+    }
+    a.navbar-item.text-items::before {
+        top: 0.2em !important;
+        position: relative;
+    }
+    .icon-nav {
+        display: block !important;
+        position: relative;
+        top: -1.3em !important;
+        left: -2em !important;
+    }
+    a.navbar-item.text-items {
+          /* background: url("../img/button/home.png") no-repeat scroll 0 0 transparent; */
+  background: url("../img/button/home.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  color: white !important;
+
+  padding-left: 3em !important;
+  height: 47px;
+  /* text-align: center; */
+  font-weight: bold;
+  background-size: cover;
+  /* width: 216px; */
+  margin: 0.4em 0em;
+  background-size: 100% 100% !important;
+  background-color: transparent;
+  border: none;
+  font-size: 1em !important;
+    }
     .home-btn {
         height: 48px !important;
     }
@@ -139,7 +169,9 @@ a.navbar-item:hover {
 }
 
 @media screen and (min-width: 1200px) {
-  
+    a.navbar-item:hover {
+        background: transparent !important;
+    }
   .header-nav {
     height: 100px;
     padding: 20px 0;
