@@ -113,6 +113,7 @@
                     target="_blank"
                     href="https://game.projectoasis.io/"
                     class="button home-btn play is-transparent-bg"
+                        style="height:47px"                    
                   >
                     <span class="icon">
                       <img src="@/assets/img/button/icon/play.png" />
@@ -151,6 +152,7 @@
                         class="button home-btn is-transparent-bg"
                         aria-haspopup="true"
                         aria-controls="dropdown-menu4"
+                        style="height:47px"
                       >
                         <span class="icon">
                           <img src="@/assets/img/button/icon/apeswap.png" />
@@ -170,7 +172,7 @@
                               target="_blank"
                               href="https://pancakeswap.finance/swap?outputCurrency=0xb19289b436b2F7A92891ac391D8f52580d3087e4"
                               class="button pancake-btn play is-transparent-bg"
-                              style="width: 100% !important;"                              
+                              style="width: 100% !important;height: 45px;"                              
                             >
                             </a>
 
@@ -178,7 +180,7 @@
                               target="_blank"
                               href="https://app.apeswap.finance/swap?outputCurrency=0xb19289b436b2f7a92891ac391d8f52580d3087e4"
                               class="button apeswap-btn play is-transparent-bg"
-                              style="width: 100% !important;"                              
+                              style="width: 100% !important;height: 40px;"                              
                             >
                             </a>                          
 

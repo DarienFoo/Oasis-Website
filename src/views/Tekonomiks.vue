@@ -21,10 +21,9 @@
       >
         <div class="info-left column is-12 is-5-desktop container main p-0 m-0">
           <div class="is-flex is-justify-content-center image-section-token">
-            <img
-              class=""
-              src="@/assets/img/tokenomiks/chart.png"
-            />
+            <a @click="showImageModal()">
+              <img class="" src="@/assets/img/tokenomiks/chart.png" />
+            </a>
           </div>
         </div>
         <div class="info-right column is-12 is-7-desktop tokenomics-right">
@@ -32,7 +31,12 @@
             <div class="no-padding-mobile tokenomics-data">
               <div class="columns is-mobile is-vcentered">
                 <div
-                  class="content token-desc has-text-weight-bold has-text-black is-medium-font"
+                  class="
+                    content
+                    token-desc
+                    has-text-weight-bold has-text-black
+                    is-medium-font
+                  "
                 >
                   The team at OASIS believes that the social gamification of
                   DeFi will attract a new generation of DeFi adopters and enrich
@@ -68,7 +72,8 @@
                   </figure>
                 </div>
                 <div class="column">
-                  <span class="title tokenomiks-title is-medium-font">Total Supply Amount</span
+                  <span class="title tokenomiks-title is-medium-font"
+                    >Total Supply Amount</span
                   ><br />
                   <span class="subtitle is-size-6 has-text-black"
                     ># of coins minted, minus any coins burned
@@ -83,7 +88,8 @@
                   </figure>
                 </div>
                 <div class="column">
-                  <span class="title tokenomiks-title is-medium-font">Max Supply Amount</span
+                  <span class="title tokenomiks-title is-medium-font"
+                    >Max Supply Amount</span
                   ><br />
                   <span class="subtitle is-size-6 has-text-black"
                     ># of coins that will ever exist (hard-coded)
@@ -95,6 +101,14 @@
         </div>
       </div>
     </div>
+
+    <div class="modal" id="modalImage">
+      <div class="modal-background"></div>
+      <div class="modal-content container is-flex is-justify-content-center is-align-items-center">
+          <img class="" src="@/assets/img/tokenomiks/chart.png" width="600"/>
+      </div>
+      <button class="modal-close is-large" @click="closeModal()" aria-label="close"></button>
+    </div>
   </div>
 </template>
 <script>
@@ -102,6 +116,14 @@ export default {
   components: {},
   data() {
     return {};
+  },
+  methods: {
+    showImageModal() {
+      $("#modalImage").addClass("is-active");
+    },
+    closeModal() {
+      $("#modalImage").removeClass("is-active");      
+    }
   },
   mounted() {
     $(document).ready(function () {});

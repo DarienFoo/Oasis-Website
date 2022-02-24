@@ -100,7 +100,7 @@
           </figure>
           <section class="hero coming-soon">
             <div class="is-flex is-justify-content-center" style="height: 100% !important;align-items: center !important">
-               <span style="font-size: 2em" class="is-extra-bold">COMING SOON</span>
+               <span style="font-size: 2em;padding: 0.8em;" class="is-extra-bold">COMING SOON</span>
             </div>
           </section>
         </div>

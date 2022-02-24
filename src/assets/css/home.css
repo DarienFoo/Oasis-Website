@@ -90,8 +90,10 @@ button.vueperslides__arrow.vueperslides__arrow--prev {
 }
 
 .home-btn {
-  background: url("../img/button/home.png") no-repeat scroll 0 0 transparent;
+  /* background: url("../img/button/home.png") no-repeat scroll 0 0 transparent; */
+  background: url("../img/button/balance-container.png") no-repeat scroll 0 0 transparent;
   cursor: pointer;
+  height: 47px;
   font-weight: bold;
   background-size: cover;
   width: 189px;
@@ -106,7 +108,7 @@ button.button.home-btn span.icon {
 }
 
 .home-btn {
-  color: #fff !important;
+  color: #633F37 !important;
 }
 
 .container-social {

@@ -44,8 +44,8 @@
           <a class="navbar-item text-items" data-text="Roadmap" v-scroll-to="'#roadmaps'"></a>
           <a class="navbar-item text-items" data-text="Team" v-scroll-to="'#team'"></a>
           <a class="navbar-item text-items " data-text="Partners" v-scroll-to="'#partners'"></a>
-          <a class="navbar-item text-items" href="https://projectoasis.io/assets/img/Oasis-Litepaper.pdf" target="_blank">Litepaper</a>
-          <a class="navbar-item text-items" href="https://projectoasis.io/assets/img/Oasis-1pager-3Oct.pdf" target="_blank">One Pager</a>
+          <a class="navbar-item text-items" data-text="Litepaper" href="https://projectoasis.io/assets/img/Oasis-Litepaper.pdf" target="_blank"></a>
+          <a class="navbar-item text-items" data-text="One Pager" href="https://projectoasis.io/assets/img/Oasis-1pager-3Oct.pdf" target="_blank"></a>
         </div>
 
         <div class="navbar-end is-hidden-mobile">

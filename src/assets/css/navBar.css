@@ -92,6 +92,9 @@ a.navbar-item:hover {
 }
 
 @media screen and (max-width: 700px) {
+    .home-btn {
+        height: 48px !important;
+    }
     div#navMenu {
         /* margin: 0% 13% 0% 13% !important; */
         margin: 0% 10% 0% 6% !important;
@@ -160,7 +163,7 @@ a.navbar-item:hover {
   
   a.navbar-item.text-items::after {
     content: attr(data-text);
-    color: #2C6344;
+    color: #73D82A;
     transition: transform 0.3s !important;
   }
   
