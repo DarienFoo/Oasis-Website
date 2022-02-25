@@ -11,7 +11,17 @@
         "
         style=""
       >
-        <div class="info-left column is-12 is-5-desktop container main left-padding-mobile" style="padding-top: 5em;">
+        <div
+          class="
+            info-left
+            column
+            is-12 is-5-desktop
+            container
+            main
+            left-padding-mobile
+          "
+          style="padding-top: 5em"
+        >
           <div class="box is-size-1 is-size-3-mobile info mb-0">
             <h1 class="is-size-3 has-text-weight-bold is-extra-bold">
               ProjectOasis?
@@ -80,9 +90,12 @@
               loop
               autoplay
             ></lottie-player> -->
-            <img src="@/assets/img/oasis-web-animatedrocky-2.gif" width="500"/>
+            <img src="@/assets/img/oasis-web-animatedrocky-2.gif" width="500" />
           </div>
-          <div class="container-social is-transparent-bg" style="padding-top: 4em;">
+          <div
+            class="container-social is-transparent-bg"
+            style="padding-top: 4em"
+          >
             <div
               class="
                 is-flex is-justify-content-center
@@ -113,7 +126,7 @@
                     target="_blank"
                     href="https://game.projectoasis.io/"
                     class="button home-btn play is-transparent-bg"
-                        style="height:47px"                    
+                    style="height: 47px"
                   >
                     <span class="icon">
                       <img src="@/assets/img/button/icon/play.png" />
@@ -152,7 +165,7 @@
                         class="button home-btn is-transparent-bg"
                         aria-haspopup="true"
                         aria-controls="dropdown-menu4"
-                        style="height:47px"
+                        style="height: 47px"
                       >
                         <span class="icon">
                           <img src="@/assets/img/button/icon/apeswap.png" />
@@ -167,25 +180,22 @@
                     >
                       <div class="dropdown-content">
                         <div class="dropdown-item">
-                          
-                            <a
-                              target="_blank"
-                              href="https://pancakeswap.finance/swap?outputCurrency=0xb19289b436b2F7A92891ac391D8f52580d3087e4"
-                              class="button pancake-btn play is-transparent-bg"
-                              style="width: 100% !important;height: 45px;"                              
-                            >
-                            </a>
+                          <a
+                            target="_blank"
+                            href="https://pancakeswap.finance/swap?outputCurrency=0xb19289b436b2F7A92891ac391D8f52580d3087e4"
+                            class="button pancake-btn play is-transparent-bg"
+                            style="width: 100% !important; height: 45px"
+                          >
+                          </a>
 
-                            <a
-                              target="_blank"
-                              href="https://app.apeswap.finance/swap?outputCurrency=0xb19289b436b2f7a92891ac391d8f52580d3087e4"
-                              class="button apeswap-btn play is-transparent-bg"
-                              style="width: 100% !important;height: 40px;"                              
-                            >
-                            </a>                          
+                          <a
+                            target="_blank"
+                            href="https://app.apeswap.finance/swap?outputCurrency=0xb19289b436b2f7a92891ac391d8f52580d3087e4"
+                            class="button apeswap-btn play is-transparent-bg"
+                            style="width: 100% !important; height: 40px"
+                          >
+                          </a>
 
-                            
-                            
                           <!-- <a class="button is-info is-outlined is-fullwidth" target="_blank" href="https://app.apeswap.finance/swap?outputCurrency=0xb19289b436b2f7a92891ac391d8f52580d3087e4">Apeswap</a>
                           <a class="button is-danger is-outlined is-fullwidth" target="_blank" href="https://pancakeswap.finance/swap?outputCurrency=0xb19289b436b2F7A92891ac391D8f52580d3087e4">Pancake</a>                           -->
                         </div>
@@ -261,44 +271,19 @@
             >
               <div class="social-container">
                 <div class="columns">
-                  <div class="column">
+                  <div class="column" v-for="(itemSocial, socialLink) in socialitems" :key="itemSocial.id">
                     <a
-                      href="https://www.instagram.com/projectoasis.io/"
+                      :href="itemSocial.img.link"
                       target="_blank"
                     >
                       <figure class="image is-48x48">
-                        <img src="@/assets/img/icon/social/IG.png" />
-                      </figure>
-                    </a>
-                  </div>
-                  <div class="column">
-                    <a href="https://twitter.com/ProjectOasis_" target="_blank">
-                      <figure class="image is-48x48">
-                        <img src="@/assets/img/icon/social/twitter.png" />
-                      </figure>
-                    </a>
-                  </div>
-                  <div class="column">
-                    <a href="https://discord.gg/478NAfvXre" target="_blank">
-                      <figure class="image is-48x48">
-                        <img src="@/assets/img/icon/social/discord.png" />
-                      </figure>
-                    </a>
-                  </div>
-                  <div class="column">
-                    <a href="https://projectoasis.medium.com/" target="_blank">
-                      <figure class="image is-48x48">
-                        <img src="@/assets/img/icon/social/medium.png" />
-                      </figure>
-                    </a>
-                  </div>
-                  <div class="column">
-                    <a
-                      href="https://t.me/projectoasis_official"
-                      target="_blank"
-                    >
-                      <figure class="image is-48x48">
-                        <img src="@/assets/img/icon/social/tele.png" />
+                        <img
+                          :src="
+                            hovered === socialLink ? itemSocial.img.hover : itemSocial.img.original
+                          "
+                          @mouseover="hovered = socialLink"
+                          @mouseleave="hovered = null"
+                        />
                       </figure>
                     </a>
                   </div>
@@ -325,6 +310,44 @@ export default {
   data() {
     return {
       // nextSlide: [],
+      hovered: null,
+      socialitems: {
+        first: {
+          img: {
+            link: "https://www.instagram.com/projectoasis.io/",
+            original: require("@/assets/img/icon/social/IG.png"),
+            hover: require("@/assets/img/icon/social/ig-hover.png"),
+          },
+        },
+        second: {
+          img: {
+            link: "https://twitter.com/ProjectOasis_",            
+            original: require("@/assets/img/icon/social/twitter.png"),
+            hover: require("@/assets/img/icon/social/twitter-hover.png"),
+          },
+        },
+        third: {
+          img: {
+            link: "https://discord.gg/478NAfvXre",            
+            original: require("@/assets/img/icon/social/discord.png"),
+            hover: require("@/assets/img/icon/social/discord-hover.png"),
+          },
+        },        
+        fourth: {
+          img: {
+            link: "https://projectoasis.medium.com/",            
+            original: require("@/assets/img/icon/social/medium.png"),
+            hover: require("@/assets/img/icon/social/medium-hover.png"),
+          },
+        },
+        fifth: {
+          img: {
+            link: "https://t.me/projectoasis_official",            
+            original: require("@/assets/img/icon/social/tele.png"),
+            hover: require("@/assets/img/icon/social/tele-hover.png"),
+          },
+        },                
+      },
       arrow: true,
       arrowHover: false,
       drag: true,

@@ -121,6 +121,7 @@ button.button.home-btn span.icon {
     padding-top: 14em !important;
 }
 }
+
 @media screen and (max-width: 700px) {
   .left-padding-mobile {
     padding-top: 8em !important;

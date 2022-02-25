@@ -128,7 +128,17 @@ button {
     div#navMenu {
         /* margin: 0% 13% 0% 13% !important; */
         margin: 0% 10% 0% 6% !important;
+        right:0;
+        animation: dude .75s 1 forwards;
     }
+    @keyframes dude {
+        0% {
+          right: 100%;
+        }
+        100% {
+          right: 0;
+        }
+      }
     .no-padding-mobile {
         padding: 1em !important;
 

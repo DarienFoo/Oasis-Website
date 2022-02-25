@@ -64,73 +64,20 @@
                 is-4-tablet
                 is-one-third-mobile
               "
+              v-for="(itemSocial, socialLink) in socialitems"
+              :key="itemSocial.id"
             >
-              <a
-                href="https://www.instagram.com/projectoasis.io/"
-                target="_blank"
-              >
+              <a :href="itemSocial.img.link" target="_blank">
                 <figure class="image is-48x48">
-                  <img src="@/assets/img/icon/social/IG.png" />
-                </figure>
-              </a>
-            </div>
-            <div
-              class="
-                column
-                is-narrow-fullhd
-                is-narrow-desktop
-                is-4-tablet
-                is-one-third-mobile
-              "
-            >
-              <a href="https://twitter.com/ProjectOasis_" target="_blank">
-                <figure class="image is-48x48">
-                  <img src="@/assets/img/icon/social/twitter.png" />
-                </figure>
-              </a>
-            </div>
-            <div
-              class="
-                column
-                is-narrow-fullhd
-                is-narrow-desktop
-                is-4-tablet
-                is-one-third-mobile
-              "
-            >
-              <a href="https://discord.gg/478NAfvXre" target="_blank">
-                <figure class="image is-48x48">
-                  <img src="@/assets/img/icon/social/discord.png" />
-                </figure>
-              </a>
-            </div>
-            <div
-              class="
-                column
-                is-narrow-fullhd
-                is-narrow-desktop
-                is-4-tablet
-                is-one-third-mobile
-              "
-            >
-              <a href="https://projectoasis.medium.com/" target="_blank">
-                <figure class="image is-48x48">
-                  <img src="@/assets/img/icon/social/medium.png" />
-                </figure>
-              </a>
-            </div>
-            <div
-              class="
-                column
-                is-narrow-fullhd
-                is-narrow-desktop
-                is-4-tablet
-                is-one-third-mobile
-              "
-            >
-              <a href="https://t.me/projectoasis_official" target="_blank">
-                <figure class="image is-48x48">
-                  <img src="@/assets/img/icon/social/tele.png" />
+                  <img
+                    :src="
+                      hovered === socialLink
+                        ? itemSocial.img.hover
+                        : itemSocial.img.original
+                    "
+                    @mouseover="hovered = socialLink"
+                    @mouseleave="hovered = null"
+                  />
                 </figure>
               </a>
             </div>
@@ -176,7 +123,7 @@
             >Legal Disclaimer</span
           >
 
-          <p style="font-size:9px">
+          <p style="font-size: 9px">
             The information on this website, provided by Project Oasis, does not
             constitute investment, financial, or trading advice, and should not
             be treated as such. We cannot, and do not, recommend that you should
@@ -193,24 +140,36 @@
             not purchase OASIS tokens ($OASIS) as we cannot guarantee compliance
             with your local regulations. You must always ensure that you comply
             with you local regulations wwhen purchasing OASIS tokens ($OASIS) or
-            any other cryptocurrencies. 
-            
-            <br/><br/>
-            All information provided on this website
-            is not intended and does not constitute any invitation, solicitation
-            or offer to buy and sell any cryptocurrencies, digital assets and /
-            or securities. You acknowledge that you are obtaining and perusing
-            all information on this website based on your own volition ad
-            self-initiative.
+            any other cryptocurrencies.
+
+            <br /><br />
+            All information provided on this website is not intended and does
+            not constitute any invitation, solicitation or offer to buy and sell
+            any cryptocurrencies, digital assets and / or securities. You
+            acknowledge that you are obtaining and perusing all information on
+            this website based on your own volition ad self-initiative.
           </p>
 
-          <br/><br/>
+          <br /><br />
           <span style="font-size: 2em" class="is-extra-bold"
             >Risk Disclaimer</span
           >
 
-          <p style="font-size:9px">
-            You shall be aware that there are always risks associated with Smart Contracts, and you shall use them at your own risk. Project oasis is not a registered broker, analyst or investment advisor. All the information provided on projectoasis.io is provided purely for informational and educational purposes and should not be treated as legal or financial advice. All information we provide should be independently verified and confirmed on your own, or through a legal, financial advisor. We do not accept any liability for any loss or damages whatsoever caused in relation to the information or services we provide. You should be aware that there are always risks involved when trading in any financial market and you should never trade or invest money that you cannot afford to lose. If any doubt you should always consult with a professional financial advisor before making any investment decisions.
+          <p style="font-size: 9px">
+            You shall be aware that there are always risks associated with Smart
+            Contracts, and you shall use them at your own risk. Project oasis is
+            not a registered broker, analyst or investment advisor. All the
+            information provided on projectoasis.io is provided purely for
+            informational and educational purposes and should not be treated as
+            legal or financial advice. All information we provide should be
+            independently verified and confirmed on your own, or through a
+            legal, financial advisor. We do not accept any liability for any
+            loss or damages whatsoever caused in relation to the information or
+            services we provide. You should be aware that there are always risks
+            involved when trading in any financial market and you should never
+            trade or invest money that you cannot afford to lose. If any doubt
+            you should always consult with a professional financial advisor
+            before making any investment decisions.
           </p>
         </section>
         <!-- <footer class="modal-card-foot">
@@ -234,6 +193,48 @@ import Partners from "./views/Partners";
 
 export default {
   name: "App",
+  data() {
+    return {
+            hovered: null,
+      socialitems: {
+        first: {
+          img: {
+            link: "https://www.instagram.com/projectoasis.io/",
+            original: require("@/assets/img/icon/social/IG.png"),
+            hover: require("@/assets/img/icon/social/ig-hover.png"),
+          },
+        },
+        second: {
+          img: {
+            link: "https://twitter.com/ProjectOasis_",            
+            original: require("@/assets/img/icon/social/twitter.png"),
+            hover: require("@/assets/img/icon/social/twitter-hover.png"),
+          },
+        },
+        third: {
+          img: {
+            link: "https://discord.gg/478NAfvXre",            
+            original: require("@/assets/img/icon/social/discord.png"),
+            hover: require("@/assets/img/icon/social/discord-hover.png"),
+          },
+        },        
+        fourth: {
+          img: {
+            link: "https://projectoasis.medium.com/",            
+            original: require("@/assets/img/icon/social/medium.png"),
+            hover: require("@/assets/img/icon/social/medium-hover.png"),
+          },
+        },
+        fifth: {
+          img: {
+            link: "https://t.me/projectoasis_official",            
+            original: require("@/assets/img/icon/social/tele.png"),
+            hover: require("@/assets/img/icon/social/tele-hover.png"),
+          },
+        },                
+      },
+    }
+  },
   components: {
     "webapp-header": header,
     "webapp-home": home,
