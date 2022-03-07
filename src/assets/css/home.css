@@ -21,7 +21,8 @@ button.vueperslides__arrow.vueperslides__arrow--next {
   background-color: transparent;
   background-size: 100% 100%;
   padding: 0em 1em 4em 4em;
-  margin-right: -2.5em;
+  /* margin-right: -2.5em; */
+  margin-right: -0.7em;
 }
 
 button.vueperslides__arrow.vueperslides__arrow--prev {
@@ -29,16 +30,29 @@ button.vueperslides__arrow.vueperslides__arrow--prev {
   background-color: transparent;
   background-size: 100% 100%;
   padding: 0em 5em 4em 0em;
-  margin-left: -2.5em;
+  /* margin-left: -2.5em; */
+  margin-left: -1em;
 }
 
 .background-carousel {
   background-image: url("../img/container/slider/background.png") !important;
   background-color: transparent;
   background-size: 100% 100%;
-  padding: 4em 5em 4em 3em;
+  padding: 3em 3em 0em 1em;
 }
-
+.box.home-slide {
+  background-image: url("../img/container/slider/background.png") !important;
+  padding: 9.5% 11.5% 16.5% 7.5%;
+  background-color: transparent;
+  background-size: 100% 100%;
+}
+/* .background-carousel {
+  background-image: url("../img/container/slider/background.png") !important;
+background-color: transparent;
+background-size: cover;
+height: 35vh;
+padding: 3em 3em 0em 1em;
+} */
 .has-margin {
   margin-right: 2em !important;
   margin-left: 2em !important;
@@ -123,9 +137,9 @@ button.button.home-btn span.icon {
 }
 
 @media screen and (max-width: 700px) {
-  .left-padding-mobile {
+  /* .left-padding-mobile {
     padding-top: 8em !important;
-  }
+  } */
   .play-now.column.is-4-desktop.is-12-mobile.buy-apeswap.pr-1.is-transparent-bg,
   .column.is-5-desktop.is-12-mobile.buy-apeswap.pr-6.is-transparent-bg {
     display: flex !important;

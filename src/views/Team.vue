@@ -23,7 +23,7 @@
           </div>
         </div>
       </div>
-      <div class="slider-nav">
+      <div class="slider slider-nav">
         <div
           class="column p-1"
           style="width: 105% !important"
@@ -35,116 +35,213 @@
           </button>
         </div>
       </div>
-      <div class="slider-for">
-        <div id="slick1" class="team-info-char">
-          <div
-            class="team-left-container"
-            v-for="i in teamList['Tech Magicians']"
-            :key="i.id"
-          >
-            <div class="container">
-              <img :src="i.img_url" />
-              <p
-                class="
-                  is-extra-bold
-                  title
-                  team-title
-                  is-flex is-justify-content-center
-                  mb-0
-                  pb-0
-                "
-              >
-                {{ i.name }}
-              </p>
-              <!-- <p
-                class="subs subs-team"
-                style="
-                  font-size: 0.6em !important;
-                  text-align: center !important;
-                "
-              > -->
-              <p
-                class="subs"
-                style="
-                  font-size: 0.6em !important;
-                  text-align: center !important;
-                "
-              >              
-                {{ i.desc }}
-              </p>
+      <div class="slider slider-for">
+        <div>
+          <div id="slick1" class="team-info-char">
+            <div
+              class="team-left-container"
+              v-for="i in teamList['Tech Magicians']"
+              :key="i.id"
+            >
+              <div class="container">
+                <img :src="i.img_url" />
+                <p
+                  class="
+                    is-extra-bold
+                    title
+                    team-title
+                    is-flex is-justify-content-center
+                    mb-0
+                    pb-0
+                  "
+                >
+                  {{ i.name }}
+                </p>
+                <p
+                  class="subs teams"
+                  style="font-size: 0.6em; text-align: center !important"
+                >
+                  {{ i.desc }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div id="slick2" class="team-info-char" style="width: 100% !important">
+        <div>
           <div
-            class="team-left-container"
-            v-for="i in teamList['Advisor']"
-            :key="i.id"
+            id="slick2"
+            class="team-info-char"
+            style="width: 100% !important"
           >
-            <div class="container">
-              <img :src="i.img_url" />
-              <p
-                class="
-                  is-extra-bold
-                  title
-                  team-title
-                  is-flex is-justify-content-center
-                  mb-0
-                  pb-0
-                "
-              >
-                {{ i.name }}
-              </p>
-              <p
-                class="subs"
-                style="
-                  font-size: 0.6em !important;
-                  text-align: center !important;
-                "
-              >
-                {{ i.desc }}
-              </p>
+            <div
+              class="team-left-container"
+              v-for="i in teamList['Advisor']"
+              :key="i.id"
+            >
+              <div class="container">
+                <img :src="i.img_url" />
+                <p
+                  class="
+                    is-extra-bold
+                    title
+                    team-title
+                    is-flex is-justify-content-center
+                    mb-0
+                    pb-0
+                  "
+                >
+                  {{ i.name }}
+                </p>
+                <p
+                  class="subs teams"
+                  style="font-size: 0.6em; text-align: center !important"
+                >
+                  {{ i.desc }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
-
-        <div
-          id="slickCouncel"
-          class="team-info-char"
-          style="width: 100% !important"
-        >
+        <div>
           <div
-            class="team-left-container"
-            v-for="i in teamList['Cool Councel']"
-            :key="i.id"
+            id="slickCouncel"
+            class="team-info-char"
+            style="width: 100% !important"
           >
-            <div class="container">
-              <img :src="i.img_url" />
-              <p
-                class="
-                  is-extra-bold
-                  title
-                  team-title
-                  is-flex is-justify-content-center
-                  mb-0
-                  pb-0
-                "
-              >
-                {{ i.name }}
-              </p>
-              <p
-                class="subs"
-                style="
-                  font-size: 0.6em !important;
-                  text-align: center !important;
-                "
-              >
-                {{ i.desc }}
-              </p>
+            <div
+              class="team-left-container"
+              v-for="i in teamList['Cool Councel']"
+              :key="i.id"
+            >
+              <div class="container">
+                <img :src="i.img_url" />
+                <p
+                  class="
+                    is-extra-bold
+                    title
+                    team-title
+                    is-flex is-justify-content-center
+                    mb-0
+                    pb-0
+                  "
+                >
+                  {{ i.name }}
+                </p>
+                <p
+                  class="subs teams"
+                  style="font-size: 0.6em; text-align: center !important"
+                >
+                  {{ i.desc }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div></div>
+        <div>
+          <div
+            id="slickMindBenders"
+            class="team-info-char"
+            style="width: 100%"
+          >
+            <div
+              class="team-left-container"
+              v-for="i in teamList['Mind Benders']"
+              :key="i.id"
+            >
+              <div class="container">
+                <img :src="i.img_url" />
+                <p
+                  class="
+                    is-extra-bold
+                    title
+                    team-title
+                    is-flex is-justify-content-center
+                    mb-0
+                    pb-0
+                  "
+                >
+                  {{ i.name }}
+                </p>
+                <p
+                  class="subs teams"
+                  style="font-size: 0.6em; text-align: center !important"
+                >
+                  {{ i.desc }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            id="slickLeonardo"
+            class="team-info-char"
+            style="width: 100%"
+          >
+            <div
+              class="team-left-container"
+              v-for="i in teamList['Leonardo']"
+              :key="i.id"
+            >
+              <div class="container">
+                <img :src="i.img_url" />
+                <p
+                  class="
+                    is-extra-bold
+                    title
+                    team-title
+                    is-flex is-justify-content-center
+                    mb-0
+                    pb-0
+                  "
+                >
+                  {{ i.name }}
+                </p>
+                <p
+                  class="subs teams"
+                  style="font-size: 0.6em; text-align: center !important"
+                >
+                  {{ i.desc }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            id="slickDreamers"
+            class="team-info-char"
+            style="width: 100%"
+          >
+            <div
+              class="team-left-container"
+              v-for="i in teamList['Dreamers']"
+              :key="i.id"
+            >
+              <div class="container">
+                <img :src="i.img_url" />
+                <p
+                  class="
+                    is-extra-bold
+                    title
+                    team-title
+                    is-flex is-justify-content-center
+                    mb-0
+                    pb-0
+                  "
+                >
+                  {{ i.name }}
+                </p>
+                <p
+                  class="subs teams"
+                  style="font-size: 0.6em; text-align: center !important"
+                >
+                  {{ i.desc }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -163,83 +260,95 @@ export default {
       teamList: {
         "Tech Magicians": [
           {
-            name: "Jasper",
-            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            name: "Noodle",
+            img_url: require("@/assets/img/teams/tech/Avatar-Tech-1.png"),
+            desc: "Backend Developer",
           },
           {
-            name: "Jasper 2",
-            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            name: "ReveLT",
+            img_url: require("@/assets/img/teams/tech/Avatar-Tech-2.png"),
+            desc: "Game Developer",
           },
           {
-            name: "Jasper 3",
-            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            name: "Cva",
+            img_url: require("@/assets/img/teams/tech/Avatar-Tech-3.png"),
+            desc: "Software Architect",
           },
           {
-            name: "Jasper 4",
-            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            name: "Allan",
+            img_url: require("@/assets/img/teams/tech/Avatar-Tech-4.png"),
+            desc: "Game Developer",
+          },
+        ],
+        "Mind Benders": [
+          {
+            name: "NFT Chad",
+            img_url: require("@/assets/img/teams/mind/Avatar-Mind-Dylan.png"),
+            desc: "Community Manager",
           },
           {
-            name: "Jasper 5",
-            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            name: "Halliday",
+            img_url: require("@/assets/img/teams/mind/Avatar-4.png"),
+            desc: "Game Director",
           },
           {
-            name: "Jasper 6",
-            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            name: "Cosmic",
+            img_url: require("@/assets/img/teams/mind/Avatar-Mind-2.png"),
+            desc: "Marketing",
+          },
+          {
+            name: "Furbolg",
+            img_url: require("@/assets/img/teams/mind/Avatar-Mind-3.png"),
+            desc: "Marketing",
+          },
+          {
+            name: "Imp Takolvski",
+            img_url: require("@/assets/img/teams/mind/Avatar-Mind-Gerald.png"),
+            desc: "Marketing",
+          },
+        ],
+        Leonardo: [
+          {
+            name: "VVG",
+            img_url: require("@/assets/img/teams/leonardo/Avatar-Art-AdiebWidigdo.png"),
+            desc: "UI & Graphic Designer",
+          },
+          {
+            name: "Nelle",
+            img_url: require("@/assets/img/teams/leonardo/Avatar-Art-2Nelle.png"),
+            desc: "Graphic Designer",
           },
         ],
         Advisor: [
           {
-            name: "Advisor 1",
-            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          },
-          {
-            name: "Advisor 2",
-            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          },
-          {
-            name: "Advisor 3",
-            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          },
-          {
-            name: "Advisor 4",
-            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            name: "Ken",
+            img_url: require("@/assets/img/teams/advisor/Advisor-ken-T2.png"),
+            desc: "Founder of RD Group",
           },
         ],
         "Cool Councel": [
           {
-            name: "Councel 1",
-            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            name: "Jasper",
+            img_url: require("@/assets/img/teams/councel/Jasper.png"),
+            desc: "Legal",
+          },
+        ],
+
+        Dreamers: [
+          {
+            name: "FS",
+            img_url: require("@/assets/img/teams/dreamers/Avatar-Dreamers-1-J.png"),
+            desc: "Co-founder",
           },
           {
-            name: "Councel 2",
-            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            name: "Vince",
+            img_url: require("@/assets/img/teams/dreamers/Avatar-Dreamers-W.png"),
+            desc: "Founder",
           },
           {
-            name: "Councel 3",
-            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          },
-          {
-            name: "Councel 4",
-            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          },
-          {
-            name: "Councel 5",
-            img_url: require("@/assets/img/teams/Avatar-Dreamers-1-J.png"),
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            name: "Luve",
+            img_url: require("@/assets/img/teams/dreamers/Avatar-Dreamers-2-S.png"),
+            desc: "Co-founder",
           },
         ],
       },
@@ -248,13 +357,19 @@ export default {
           title: "Tech Magicians",
         },
         {
+          title: "Mind Benders",
+        },
+        {
+          title: "Leonardo Da Picasso",
+        },
+        {
           title: "Advisor",
         },
         {
           title: "Cool Councel",
         },
         {
-          title: "Fourth",
+          title: "Dreamers",
         },
       ],
     };
@@ -274,13 +389,20 @@ export default {
         dots: false,
         arrows: true,
         infinite: false,
-        speed: 300,
+        speed: 100,
         slidesToShow: 4,
         responsive: [
           {
             breakpoint: 478,
             settings: {
-              slidesToShow: 3
+              slidesToShow: 3,
+            },
+          },
+
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
             },
           },
         ],
@@ -313,23 +435,79 @@ export default {
         slidesToShow: 4,
       });
 
+      $("#slickMindBenders").slick({
+        rows: 2,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        responsive: [
+          {
+            breakpoint: 478,
+            settings: {
+              slidesPerRow: 3,
+              rows: 2,
+            },
+          },
+        ],
+      });
+
+      $("#slickLeonardo").slick({
+        rows: 1,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        responsive: [
+          {
+            breakpoint: 478,
+            settings: {
+              slidesPerRow: 2,
+              rows: 2,
+            },
+          },
+        ],
+      });
+
+      $("#slickDreamers").slick({
+        rows: 1,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        responsive: [
+          {
+            breakpoint: 478,
+            settings: {
+              slidesPerRow: 2,
+              rows: 2,
+            },
+          },
+        ],
+      });      
+
       $(".slider-for").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
         asNavFor: ".slider-nav",
+        autoplay: true,
+        autoplaySpeed: 5000,
       });
       $(".slider-nav").slick({
-        // autoplay: true,
-        // autoplaySpeed: 5000,
         slidesToShow: 3,
-        slideToScroll: 1,
+        slidesToScroll: 1,
         asNavFor: ".slider-for",
         dots: false,
         centerMode: true,
         arrows: true,
         focusOnSelect: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
         responsive: [
           {
             breakpoint: 1024,

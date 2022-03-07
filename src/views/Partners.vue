@@ -114,40 +114,7 @@ export default {
         {
           img_url: require("@/assets/img/partners/cakemonster.png"),
           link: "#",
-        },
-
-
-        {
-          img_url: require("@/assets/img/partners/startercapital.png"),
-          link: "#",
-        },
-
-        {
-          img_url: require("@/assets/img/partners/metaverse.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/DaMoon.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/redHat.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/ge-fi.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/mintedlabs.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/rd.png"),
-          link: "#",
-        },
-        
-        
+        },                
         
       ],
     };

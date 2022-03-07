@@ -85,7 +85,23 @@
           <div class="columns is-mobile">
             <div class="column is-12">
               <p>Copyright @ projectoasis.io</p>
-              <a @click="disclaimer()">Read our Legal and Risk Disclaimer</a>
+              <a @click="disclaimer()">Read our Legal and Risk Disclaimer</a>              
+              <div class="columns">
+                <div class="column is-4">
+                  <a
+                    href="https://docs.google.com/document/d/1Bi-FmAAvJgLVvybz4RbSpA6eZCH8weSOuM9YLHqDGq4/edit?usp=sharing"
+                    target="_blank"
+                    >Privacy Policy</a
+                  >
+                </div>
+                <div class="column is-half">
+                  <a
+                    href="https://docs.google.com/document/d/1dQsf8izuw5XUVdLvrTbiry3ka-gg53gO-RvVW7wzxlg/edit?usp=sharing"
+                    target="_blank"
+                    >Terms of Service</a
+                  >
+                </div>
+              </div>              
             </div>
           </div>
         </div>
@@ -195,7 +211,7 @@ export default {
   name: "App",
   data() {
     return {
-            hovered: null,
+      hovered: null,
       socialitems: {
         first: {
           img: {
@@ -206,34 +222,34 @@ export default {
         },
         second: {
           img: {
-            link: "https://twitter.com/ProjectOasis_",            
+            link: "https://twitter.com/ProjectOasis_",
             original: require("@/assets/img/icon/social/twitter.png"),
             hover: require("@/assets/img/icon/social/twitter-hover.png"),
           },
         },
         third: {
           img: {
-            link: "https://discord.gg/478NAfvXre",            
+            link: "https://discord.gg/478NAfvXre",
             original: require("@/assets/img/icon/social/discord.png"),
             hover: require("@/assets/img/icon/social/discord-hover.png"),
           },
-        },        
+        },
         fourth: {
           img: {
-            link: "https://projectoasis.medium.com/",            
+            link: "https://projectoasis.medium.com/",
             original: require("@/assets/img/icon/social/medium.png"),
             hover: require("@/assets/img/icon/social/medium-hover.png"),
           },
         },
         fifth: {
           img: {
-            link: "https://t.me/projectoasis_official",            
+            link: "https://t.me/projectoasis_official",
             original: require("@/assets/img/icon/social/tele.png"),
             hover: require("@/assets/img/icon/social/tele-hover.png"),
           },
-        },                
+        },
       },
-    }
+    };
   },
   components: {
     "webapp-header": header,

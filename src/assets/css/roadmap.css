@@ -1,3 +1,40 @@
+/* ul#botoes li {
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: middle;
+} */
+span.subtitle.li {
+    font-weight: bold;
+    color: black;
+}
+.card.is-transparent {
+    box-shadow: none !important;
+}
+ul#botoes {
+    padding-bottom: 4em;
+}
+ul#botoes {
+    display:table;
+    list-style-type:none;
+ }
+ 
+ ul#botoes div>li {
+    float: left;
+    /* text-align: center; */
+ }
+ 
+ ul#botoes div>li:nth-of-type(4n + 1) {
+    clear:left;
+ }
+
+.box.listing-roadmaps {
+    background-image: url("../img/roadmaps/roadmapList.png") !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: 100% 100%;
+
+}
 section#roadmaps {
     background: #0099DB !important;
 }
@@ -27,7 +64,21 @@ span.title.tokenomiks-title.is-medium-font {
     background-image: url("../img/roadmaps/leftBackground.png");
     background-color: transparent;
     background-repeat: no-repeat;
-    background-size: 100% 92%;
+    /* background-size: 100% 92%; */
+
+    /* background-size: 100% 96%; */
+    background-size: 100% 100%;
+}
+
+.box.roadmapsQ {
+    background-image: url("../img/roadmaps/leftBackground.png");
+    background-color: transparent;
+    background-size: 100% 100%;
+  }
+.box.roadmapsQ-Right {
+    background-image: url("../img/roadmaps/roadmapList.png") !important;
+    background-color: transparent;
+    background-size: 100% 100%;
 }
 .roadmap-leftQ {
     padding: 5em 0em 0em 3em !important
@@ -54,6 +105,17 @@ span.title.tokenomiks-title.is-medium-font {
 }
 
 @media screen and (max-width: 700px) {
+    span.subtitle.li {
+        padding-left: 15px;
+        font-size: 0.5em !important;
+
+    }
+    ul#botoes {
+        padding-bottom: 0em;
+    }
+    .column.ml-1 {
+        width: 7em !important;
+    }
     .roadmap-image-sction {
         padding: 0em 0em 1em !important;
     }
@@ -71,10 +133,10 @@ span.title.tokenomiks-title.is-medium-font {
     }
 }
 
-.coming-soon {
+.coming-soon, .coming-soon-page {
     margin: 2em;
     height: 75%;
-    padding: 10em;
+    padding: 9.7em;
 }
 
 .coming-soon {
