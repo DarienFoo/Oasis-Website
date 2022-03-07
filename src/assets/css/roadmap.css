@@ -108,6 +108,9 @@ span.title.tokenomiks-title.is-medium-font {
 }
 
 @media screen and (max-width: 700px) {
+    .columns.is-mobile.is-centered.is-vcentered.roadmaps-sections {
+        height: 3.5em;
+    }
     span.subtitle.li {
         padding-left: 15px;
         font-size: 0.5em !important;
@@ -117,7 +120,8 @@ span.title.tokenomiks-title.is-medium-font {
         padding-bottom: 0em;
     }
     .column.ml-1 {
-        width: 7em !important;
+        /* width: 7em !important; */
+        padding: 2px !important;
     }
     .roadmap-image-sction {
         padding: 0em 0em 1em !important;
