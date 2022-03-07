@@ -1,12 +1,23 @@
 <template>
   <div class="hero-body p-0 container">
     <div class="ml-0 mr-0 column is-12" style="" id="flex">
-      <div
-        class="columns is-multiline"
-        style="padding: 5em 0em 3em 0em"
-      >
+      <div class="columns is-mobile is-centered has-padding-tokenomics mt-6">
+        <div class="column is-half is-flex is-justify-content-center">
+          <div
+            class="
+              social-container
+              is-flex is-justify-content-center
+              mb-0
+              tokenomics-header
+            "
+          >
+            <span style="font-size: 2em" class="is-extra-bold">Why Choose Us</span>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-multiline" style="padding: 5em 0em 3em 0em">
         <div class="info-left column is-12 is-6-desktop container main p-0 m-0">
-          <div class="column has-padding-box-section">
+          <!-- <div class="column has-padding-box-section">
             <div
               class="
                 social-container
@@ -17,7 +28,7 @@
             >
               <span style="font-size: 2em" class="is-extra-bold">Why Choose Us</span>
             </div>
-          </div>
+          </div> -->
           <div class="image-click-container is-flex is-justify-content-center">
             <img
               class="image-section"
@@ -49,7 +60,14 @@
                   aria-controls="contentIdForA11y3"
                   @click="replaceImage(collapse.title)"
                 >
-                  <p class="card-header-title chose-text is-extra-bold chose-title">
+                  <p
+                    class="
+                      card-header-title
+                      chose-text
+                      is-extra-bold
+                      chose-title
+                    "
+                  >
                     {{ collapse.title }}
                   </p>
                   <a class="card-header-icon">
@@ -127,7 +145,10 @@ export default {
       this.convertHTMLCode(chose_data[0].description);
       // $(".image-section" ).addClass("fade-in")
 
-      $(".image-section").attr("src", chose_data[0].img_url).fadeOut("2000").fadeIn("1000");
+      $(".image-section")
+        .attr("src", chose_data[0].img_url)
+        .fadeOut("2000")
+        .fadeIn("1000");
     },
   },
 };

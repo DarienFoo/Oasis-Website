@@ -115,6 +115,22 @@ export default {
           img_url: require("@/assets/img/partners/cakemonster.png"),
           link: "#",
         },                
+        {
+          img_url: require("@/assets/img/partners/RSUN1.png"),
+          link: "#",
+        },                        
+        {
+          img_url: require("@/assets/img/partners/Apeswap.png"),
+          link: "#",
+        },                                
+        {
+          img_url: require("@/assets/img/partners/Cryptoblades.png"),
+          link: "#",
+        },                                        
+        {
+          img_url: require("@/assets/img/partners/Paid1.png"),
+          link: "#",
+        },                                                
         
       ],
     };

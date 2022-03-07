@@ -1,6 +1,6 @@
 <template>
   <div class="container teamview">
-    <div class="column is-12 has-padding">
+    <div class="column is-12 has-padding" style="padding-bottom: 0px !important;">
       <div class="columns is-mobile is-centered has-padding-team">
         <div
           class="

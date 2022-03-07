@@ -31,89 +31,6 @@
               </div>
               <div class="box home-slide">
                 <vueper-slides
-                  ref="vueperslides1"
-                  @slide="
-                    $refs.vueperslides2 &&
-                      $refs.vueperslides2.goToSlide($event.currentSlide.index, {
-                        emit: false,
-                      })
-                  "
-                  :bullets="false"
-
-                  class="no-shadow"
-                  :class="{
-                    'offset-slide--first': firstSlide,
-                    'offset-slide--last': lastSlide,
-                  }"
-                  @before-slide="beforeSlide"
-                  :visible-slides="1"
-                  :slide-ratio="1 / 2"
-                  :dragging-distance="35"
-                  :arrows-outside="false"
-                  show-multiple-slides="show-multiple-slides"
-                >
-                  <vueper-slide
-                    v-for="(slide, i) in items"
-                    :key="i"
-                    :image="slide.image"
-                    :link="slide.link"
-                    :openInNew="true"
-                  />
-                </vueper-slides>
-
-                <vueper-slides
-                  class="no-shadow"
-                  ref="vueperslides2"
-                  :slide-ratio="1 / 8"
-                  :arrows="false" :bullets="false"
-                  :dragging-distance="50"
-                  @slide="
-                    $refs.vueperslides1 &&
-                      $refs.vueperslides1.goToSlide($event.currentSlide.index, {
-                        emit: false,
-                      })
-                  "
-                  :visible-slides="1"
-                  fixed-height="100px"
-                >
-                  <vueper-slide
-                    v-for="i in items"
-                    :key="i"
-                    @click.native="
-                      $refs.vueperslides2 &&
-                        $refs.vueperslides2.goToSlide(i - 1)
-                    "
-                  >
-                    <template #content>
-                      <div
-                        class="
-                          container-series
-                          is-flex is-justify-content-center
-                        "
-                      >
-                        <p
-                          style=""
-                          class="
-                            is-size-7-desktop is-size-7-tablet is-extra-bold
-                            has-text-black
-                            nft-title
-                          "
-                        >
-                          <a :href="i.link" target="_blank" class="has-text-black">
-                            <div class="vueperslide__title" style="font-size: 1em !important">{{ i.title }}</div>
-                          </a>
-                        </p>
-                      </div>
-
-                      <!-- <div
-                        class="vueperslide__content-wrapper"
-                      >
-                      
-                      </div> -->
-                    </template>
-                  </vueper-slide>
-                </vueper-slides>
-                <!-- <vueper-slides
                   autoplay
                   class="no-shadow"
                   :class="{
@@ -139,9 +56,25 @@
                     :title="slide.title"
                     @click.native="changeText(slide.title)"
                   ></vueper-slide>
+                </vueper-slides>
+                <!-- <vueper-slides
+                  class="no-shadow"
+                  :visible-slides="3"
+                  :slide-ratio="1 / 4"
+                  :dragging-distance="35"
+                  :breakpoints="{
+                    800: { visibleSlides: 2, slideMultiple: 2 },
+                  }"
+                >
+                  <vueper-slide
+                    v-for="(slide, i) in items"
+                    :key="i"
+                    :image="slide.image"
+                    :link="slide.link"
+                    @click.native="changeText(slide.title)"
+                  />
                 </vueper-slides> -->
-
-                <!-- <div class="container-series is-flex is-justify-content-center">
+                <div class="container-series is-flex is-justify-content-center">
                   <p
                     style=""
                     class="
@@ -154,7 +87,7 @@
                       Natives PUBGM Championship Registration
                     </a>
                   </p>
-                </div> -->
+                </div>
               </div>
             </div>
             <div class="info-right column is-7">
@@ -320,17 +253,17 @@ export default {
       repeat: false,
       items: [
         {
-          title: "Natives PUBGM Championship Registration",
+          title: "First",
           image: require("@/assets/img/container/slider/list/Frame_107.png"),
           link: "https://bountiehunter.io/project-oasis-tournaments/",
         },
         {
-          title: "Natives Gather Town Hall Recap",
+          title: "Second",
           image: require("@/assets/img/container/slider/list/Purple_Pink_Orange_Net_Neutral_Business_Twitter_Ad_2_2.png"),
           link: "https://medium.com/@projectoasis/a-recap-of-our-first-natives-gather-town-hall-3bb2f05701c4 ",
         },
         {
-          title: "The Next Phase - (Oasis Trailer)",
+          title: "Third",
           image: require("@/assets/img/container/slider/list/Frame_109.png"),
           link: "https://youtu.be/-UZdX2NGga4",
         },
@@ -344,7 +277,9 @@ export default {
     //   $("button.vueperslides__arrow.vueperslides__arrow--next").click(
     //     function () {
     //       let ctr = 1;
+
     //       let title = "Second";
+
     //       if (title === "Second") {
     //         ctr = 2;
     //         $("button.vueperslides__arrow.vueperslides__arrow--next").click(
@@ -353,12 +288,14 @@ export default {
     //             ctr = 3;
     //           }
     //         );
+
     //         // ctr++;
     //       }
     //             alert(ctr)
     //       if (ctr === 3) {
     //         title = "Third";
     //       }
+
     //       console.log("ctr", title);
     //       switch (title) {
     //         case "First":
@@ -373,6 +310,7 @@ export default {
     //       }
     //     }
     //   );
+
     //   $(".qololbl").click();
     // });
   },
@@ -381,21 +319,21 @@ export default {
     //   this.firstSlide = !nextSlide.index
     //   this.lastSlide = nextSlide.index === this.slides.length - 1
     // },
-    // changeText(title) {
-    //   console.log("title", title);
+    changeText(title) {
+      console.log("title", title);
 
-    //   switch (title) {
-    //     case "First":
-    //       $(".nft-title").text("Natives PUBGM Championship Registration");
-    //       break;
-    //     case "Second":
-    //       $(".nft-title").text("Natives Gather Town Hall Recap");
-    //       break;
-    //     case "Third":
-    //       $(".nft-title").text("The Next Phase - (Oasis Trailer)");
-    //       break;
-    //   }
-    // },
+      switch (title) {
+        case "First":
+          $(".nft-title").text("Natives PUBGM Championship Registration");
+          break;
+        case "Second":
+          $(".nft-title").text("Natives Gather Town Hall Recap");
+          break;
+        case "Third":
+          $(".nft-title").text("The Next Phase - (Oasis Trailer)");
+          break;
+      }
+    },
   },
 };
 </script>

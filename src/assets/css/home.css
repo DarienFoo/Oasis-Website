@@ -22,7 +22,9 @@ button.vueperslides__arrow.vueperslides__arrow--next {
   background-size: 100% 100%;
   padding: 0em 1em 4em 4em;
   /* margin-right: -2.5em; */
-  margin-right: -0.7em;
+  /* margin-right: -4.5em; */
+  margin-right: -5.2em;
+  /* margin-right: -0.7em; */
 }
 
 button.vueperslides__arrow.vueperslides__arrow--prev {
@@ -30,8 +32,9 @@ button.vueperslides__arrow.vueperslides__arrow--prev {
   background-color: transparent;
   background-size: 100% 100%;
   padding: 0em 5em 4em 0em;
-  /* margin-left: -2.5em; */
-  margin-left: -1em;
+  /* margin-left: -4.5em; */
+  margin-left: -5.5em;
+  /* margin-left: -1em; */
 }
 
 .background-carousel {
@@ -42,7 +45,8 @@ button.vueperslides__arrow.vueperslides__arrow--prev {
 }
 .box.home-slide {
   background-image: url("../img/container/slider/background.png") !important;
-  padding: 9.5% 11.5% 16.5% 7.5%;
+  /* padding: 9.5% 11.5% 16.5% 7.5%; */
+  padding: 11.5% 12.5% 1.5% 7.5%;
   background-color: transparent;
   background-size: 100% 100%;
 }
