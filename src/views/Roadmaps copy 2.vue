@@ -287,7 +287,7 @@ export default {
         return user.title.toLowerCase().includes(title.toLowerCase());
       });
 
-      console.log("FILTER DATA", filter_data[0].infoData);
+      // console.log("FILTER DATA", filter_data[0].infoData);
       this.roadmapsDataList = filter_data[0].infoData;
 
       if (filter_data[0].infoData[0].img_url !== "") {

@@ -119,7 +119,7 @@ export default {
       return output;
     },
     replaceImage(title) {
-      console.log("title", title);
+      // console.log("title", title);
       // $(".image-section").fadeOut(1000)
       let chose_data = this.collapsesChoose.filter((user) => {
         return user.title.toLowerCase().includes(title.toLowerCase());

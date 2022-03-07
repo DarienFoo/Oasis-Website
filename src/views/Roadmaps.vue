@@ -170,7 +170,7 @@
                   </div> -->
                   <!-- <div v-else> -->
                     <li v-for="z in i.dataInfo" :key="z.id">
-                      <div class="columns is-mobile is-centered is-vcentered">
+                      <div class="columns is-mobile is-centered is-vcentered roadmaps-sections">
                         <div class="column is-1 m-2 p-1">
                           <figure class="image is-64x64">
                             <img
@@ -430,7 +430,7 @@ export default {
         return user.title.toLowerCase().includes(title.toLowerCase());
       });
 
-      console.log("FILTER DATA", filter_data[0].infoData);
+      // console.log("FILTER DATA", filter_data[0].infoData);
       this.roadmapsDataList = filter_data[0].infoData;
 
       if (filter_data[0].infoData[0].img_url !== "") {

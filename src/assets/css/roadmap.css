@@ -3,6 +3,9 @@
     list-style-type: none;
     vertical-align: middle;
 } */
+.columns.is-mobile.is-centered.is-vcentered.roadmaps-sections {
+    height: 5em;
+}
 span.subtitle.li {
     font-weight: bold;
     color: black;

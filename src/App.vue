@@ -89,7 +89,7 @@
               <div class="columns">
                 <div class="column is-4">
                   <a
-                    href="https://docs.google.com/document/d/1Bi-FmAAvJgLVvybz4RbSpA6eZCH8weSOuM9YLHqDGq4/edit?usp=sharing"
+                    href="../static/Privacy_Policy_-_Oasis.pdf"
                     target="_blank"
                     >Privacy Policy</a
                   >
