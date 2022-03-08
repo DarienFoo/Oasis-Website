@@ -491,6 +491,8 @@ export default {
         arrows: false,
         fade: true,
         asNavFor: ".slider-nav",
+        autoplay: true,
+        autoplaySpeed: 5000,        
         adaptiveHeight: true,
       })
 //       .on('setPosition', function (event, slick) {
@@ -505,6 +507,8 @@ export default {
         centerMode: true,
         arrows: true,
         focusOnSelect: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
         responsive: [
           {
             breakpoint: 1024,
