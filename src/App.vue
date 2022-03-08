@@ -275,7 +275,14 @@ export default {
 <style lang="scss">
 @import "../node_modules/bulma/bulma.sass";
 @import "vue-glide-js/dist/vue-glide.css";
-
+span.subtitle.li {
+    font-family: "Baloo-Regular" !important;
+    font-weight: 700;
+    color: #000;
+}
+p.subs.teams {
+    font-family: "Baloo-Regular" !important;
+}
 button.button.team-default.is-extra-bold {
     padding: 2em !important;
 }
