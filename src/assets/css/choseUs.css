@@ -65,6 +65,9 @@
 }
 
 @media screen and (max-width: 700px) {
+    .columns.is-multiline.chose-sectiopns {
+        padding: 2em 0em 3em !important;
+    }
     section.hero.coming-soon {
         padding: 4em !important;
     }

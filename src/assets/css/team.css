@@ -1,3 +1,10 @@
+/* 
+#slick1, #slick2, #slickCouncel, #slickMindBenders, #slickLeonardo, #slickDreamers {
+    display: none;
+} */
+div#slick1 div.slick-list.draggable div.slick-track {
+    height: 20em;
+}
 .team-section {
     background-image: url("../img/bg/teams-bg.png");
     height: 100%;

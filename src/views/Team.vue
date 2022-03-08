@@ -1,6 +1,9 @@
 <template>
   <div class="container teamview">
-    <div class="column is-12 has-padding" style="padding-bottom: 0px !important;">
+    <div
+      class="column is-12 has-padding"
+      style="padding-bottom: 0px !important"
+    >
       <div class="columns is-mobile is-centered has-padding-team">
         <div
           class="
@@ -138,11 +141,7 @@
           </div>
         </div>
         <div>
-          <div
-            id="slickMindBenders"
-            class="team-info-char"
-            style="width: 100%"
-          >
+          <div id="slickMindBenders" class="team-info-char" style="width: 100%">
             <div
               class="team-left-container"
               v-for="i in teamList['Mind Benders']"
@@ -173,11 +172,7 @@
           </div>
         </div>
         <div>
-          <div
-            id="slickLeonardo"
-            class="team-info-char"
-            style="width: 100%"
-          >
+          <div id="slickLeonardo" class="team-info-char" style="width: 100%">
             <div
               class="team-left-container"
               v-for="i in teamList['Leonardo']"
@@ -208,11 +203,7 @@
           </div>
         </div>
         <div>
-          <div
-            id="slickDreamers"
-            class="team-info-char"
-            style="width: 100%"
-          >
+          <div id="slickDreamers" class="team-info-char" style="width: 100%">
             <div
               class="team-left-container"
               v-for="i in teamList['Dreamers']"
@@ -384,29 +375,34 @@ export default {
       } else {
         this.rowSlick = 1;
       }
-      $("#slick1").slick({
-        rows: this.rowSlick,
-        dots: false,
-        arrows: true,
-        infinite: false,
-        speed: 100,
-        slidesToShow: 4,
-        responsive: [
-          {
-            breakpoint: 478,
-            settings: {
-              slidesToShow: 3,
+      // if("Tech Magicians") {
+      //   alert("ech")
+      //   $(".slider.slider-for.slick-initialized.slick-slider div div.slick-track").css('height', 20 + 'em !important');
+      // }
+      $("#slick1")
+        .slick({
+          rows: this.rowSlick,
+          dots: false,
+          arrows: true,
+          infinite: false,
+          speed: 100,
+          slidesToShow: 4,
+          responsive: [
+            {
+              breakpoint: 478,
+              settings: {
+                slidesToShow: 3,
+              },
             },
-          },
 
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 3,
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 3,
+              },
             },
-          },
-        ],
-      });
+          ],
+        })
 
       $("#slick2").slick({
         rows: 1,
@@ -487,7 +483,7 @@ export default {
             },
           },
         ],
-      });      
+      });
 
       $(".slider-for").slick({
         slidesToShow: 1,
@@ -495,9 +491,12 @@ export default {
         arrows: false,
         fade: true,
         asNavFor: ".slider-nav",
-        autoplay: true,
-        autoplaySpeed: 5000,
-      });
+        adaptiveHeight: true,
+      })
+//       .on('setPosition', function (event, slick) {
+//       slick.$slides.css('height', 20 + 'em');
+//  });
+      
       $(".slider-nav").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -506,8 +505,6 @@ export default {
         centerMode: true,
         arrows: true,
         focusOnSelect: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
         responsive: [
           {
             breakpoint: 1024,

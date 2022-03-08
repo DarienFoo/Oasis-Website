@@ -15,7 +15,7 @@
           </div>
         </div>
       </div>
-      <div class="columns is-multiline" style="padding: 5em 0em 3em 0em">
+      <div class="columns is-multiline chose-sectiopns" style="padding: 5em 0em 3em 0em">
         <div class="info-left column is-12 is-6-desktop container main p-0 m-0">
           <!-- <div class="column has-padding-box-section">
             <div

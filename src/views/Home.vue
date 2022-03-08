@@ -2,7 +2,7 @@
   <div class="hero-body">
     <div class="ml-0 mr-0 column is-12" id="flex">
       <div class="has-padding-desktop-section">
-        <div class="container">
+        <div class="container mt-6">
           <div class="columns is-vcentered info-container">
             <div
               class="
@@ -29,8 +29,8 @@
                   no one can judge us! Hence, the metaverse of OASIS is born!
                 </p>
               </div>
-              <div class="box home-slide">
-                <vueper-slides
+              <div class="box home-slide is-hidden-mobile">
+                <vueper-slides autoplay
                   ref="vueperslides1"
                   @slide="
                     $refs.vueperslides2 &&
@@ -41,11 +41,6 @@
                   :bullets="false"
 
                   class="no-shadow"
-                  :class="{
-                    'offset-slide--first': firstSlide,
-                    'offset-slide--last': lastSlide,
-                  }"
-                  @before-slide="beforeSlide"
                   :visible-slides="1"
                   :slide-ratio="1 / 2"
                   :dragging-distance="35"
@@ -54,14 +49,14 @@
                 >
                   <vueper-slide
                     v-for="(slide, i) in items"
-                    :key="i"
+                    :key="i.id"
                     :image="slide.image"
                     :link="slide.link"
                     :openInNew="true"
                   />
                 </vueper-slides>
 
-                <vueper-slides
+                <vueper-slides autoplay
                   class="no-shadow"
                   ref="vueperslides2"
                   :slide-ratio="1 / 8"
@@ -78,7 +73,7 @@
                 >
                   <vueper-slide
                     v-for="i in items"
-                    :key="i"
+                    :key="i.id"
                     @click.native="
                       $refs.vueperslides2 &&
                         $refs.vueperslides2.goToSlide(i - 1)
@@ -116,11 +111,6 @@
                 <!-- <vueper-slides
                   autoplay
                   class="no-shadow"
-                  :class="{
-                    'offset-slide--first': firstSlide,
-                    'offset-slide--last': lastSlide,
-                  }"
-                  @before-slide="beforeSlide"
                   :visible-slides="1"
                   :slide-ratio="1 / 2"
                   :dragging-distance="35"
@@ -335,8 +325,6 @@ export default {
           link: "https://youtu.be/-UZdX2NGga4",
         },
       ],
-      // firstSlide: true,
-      // lastSlide: false
     };
   },
   mounted() {
@@ -377,25 +365,6 @@ export default {
     // });
   },
   methods: {
-    // beforeSlide ({ nextSlide }) {
-    //   this.firstSlide = !nextSlide.index
-    //   this.lastSlide = nextSlide.index === this.slides.length - 1
-    // },
-    // changeText(title) {
-    //   console.log("title", title);
-
-    //   switch (title) {
-    //     case "First":
-    //       $(".nft-title").text("Natives PUBGM Championship Registration");
-    //       break;
-    //     case "Second":
-    //       $(".nft-title").text("Natives Gather Town Hall Recap");
-    //       break;
-    //     case "Third":
-    //       $(".nft-title").text("The Next Phase - (Oasis Trailer)");
-    //       break;
-    //   }
-    // },
   },
 };
 </script>
