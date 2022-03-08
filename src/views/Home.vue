@@ -211,8 +211,6 @@
                 class="
                   is-flex is-justify-content-center
                   m-3
-                  pt-5
-                  mt-5
                   is-hidden-mobile
                 "
               >
