@@ -83,7 +83,8 @@ padding: 3em 3em 0em 1em;
 }
 
 .social-container {
-  padding: 1.4em 4em 1.4em 4em;
+  /* padding: 1.4em 4em 1.4em 4em; */
+  padding: 1em 3em 1em 3em;
   background-image: url("../img/container/info-container.png") !important;
   background-color: transparent;
   background-size: 100% 100%;
@@ -133,6 +134,11 @@ button.button.home-btn span.icon {
   position: relative;
   top: -83px;
   left: 20px;
+}
+@media only screen and (min-width: 1400px){
+.has-padding-desktop-section{
+  padding: 0em 2em 0em 7em;
+}
 }
 @media only screen and (min-width: 375px) and (max-width: 380px){
   .info-left.column.is-12.is-5-desktop.container.main.left-padding-mobile {

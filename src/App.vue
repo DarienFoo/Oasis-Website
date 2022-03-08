@@ -276,6 +276,12 @@ export default {
 @import "../node_modules/bulma/bulma.sass";
 @import "vue-glide-js/dist/vue-glide.css";
 
+button.button.team-default.is-extra-bold {
+    padding: 2em !important;
+}
+p.is-extra-bold.title.team-title.is-flex.is-justify-content-center.mb-0.pb-0 {
+    font-size: 1.3em !important;
+}
 html {
   overflow-x: hidden !important;
 }
