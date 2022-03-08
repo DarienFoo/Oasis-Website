@@ -2,9 +2,9 @@
 #slick1, #slick2, #slickCouncel, #slickMindBenders, #slickLeonardo, #slickDreamers {
     display: none;
 } */
-div#slick1 div.slick-list.draggable div.slick-track {
+/* div#slick1 div.slick-list.draggable div.slick-track {
     height: 20em;
-}
+} */
 .team-section {
     background-image: url("../img/bg/teams-bg.png");
     height: 100%;
@@ -209,6 +209,10 @@ img.slick-next.slick-arrow {
     }  
 
 @media screen and (max-width: 700px) {
+    div#slick1 {
+        width: 100% !important;
+        display: inline-block;
+    }
     div#slickMindBenders,div#slickDreamers {
         width: 48% !important;
     }
@@ -248,6 +252,7 @@ img.slick-next.slick-arrow {
     div#slick1 div.slick-track {
         display: block !important;
         /* margin: 0px 45px !important; */
+        /* margin: 0px 113px !important; */
     }
     .team-info-char div.slick-slide {
         display: flex !important;
