@@ -30,7 +30,7 @@
                 </p>
               </div>
               <div class="box home-slide is-hidden-mobile">
-                <vueper-slides
+                <vueper-slides autoplay
                   ref="vueperslides1"
                   @slide="
                     $refs.vueperslides2 &&
@@ -56,7 +56,7 @@
                   />
                 </vueper-slides>
 
-                <vueper-slides
+                <vueper-slides autoplay
                   class="no-shadow"
                   ref="vueperslides2"
                   :slide-ratio="1 / 8"
