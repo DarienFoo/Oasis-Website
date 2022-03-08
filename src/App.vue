@@ -96,7 +96,7 @@
                 </div>
                 <div class="column is-half">
                   <a
-                    href="https://docs.google.com/document/d/1dQsf8izuw5XUVdLvrTbiry3ka-gg53gO-RvVW7wzxlg/edit?usp=sharing"
+                    href="../static/Terms_of_Service_-_Oasis.pdf"
                     target="_blank"
                     >Terms of Service</a
                   >
