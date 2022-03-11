@@ -16,11 +16,7 @@
         </div>
       </div>
       <div
-        class="
-          info-container
-          container-token
-          partner-padding
-        "
+        class="info-container container-token partner-padding"
         style="padding: 2em 0em 3em 0em"
       >
         <div
@@ -28,11 +24,7 @@
           style="padding: 0em 4em 0em"
         >
           <div id="slickPartners">
-            <div
-              class=""
-              v-for="partnerList in partners"
-              :key="partnerList.id"
-            >
+            <div class="" v-for="partnerList in partners" :key="partnerList.id">
               <div class="container">
                 <a :href="partnerList.link" target="__blank">
                   <p class="is-hidden">{{ partnerList.img_url }}</p>
@@ -68,27 +60,7 @@ export default {
     return {
       partners: [
         {
-          img_url: require("@/assets/img/partners/startercapital.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/metaverse.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/DaMoon.png"),
-          link: "#",
-        },
-        {
           img_url: require("@/assets/img/partners/redHat.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/pragma.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/strongnode.png"),
           link: "#",
         },
         {
@@ -96,15 +68,19 @@ export default {
           link: "#",
         },
         {
-          img_url: require("@/assets/img/partners/bsc.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/ge-fi.png"),
-          link: "#",
-        },
-        {
           img_url: require("@/assets/img/partners/mintedlabs.png"),
+          link: "#",
+        },
+        {
+          img_url: require("@/assets/img/partners/RSUN1.png"),
+          link: "#",
+        },        
+        {
+          img_url: require("@/assets/img/partners/pragma.png"),
+          link: "#",
+        },
+        {
+          img_url: require("@/assets/img/partners/bsc.png"),
           link: "#",
         },
         {
@@ -112,26 +88,50 @@ export default {
           link: "#",
         },
         {
-          img_url: require("@/assets/img/partners/cakemonster.png"),
+          img_url: require("@/assets/img/partners/Apeswap.png"),
           link: "#",
         },                
         {
-          img_url: require("@/assets/img/partners/RSUN1.png"),
+          img_url: require("@/assets/img/partners/strongnode.png"),
           link: "#",
-        },                        
+        },
         {
-          img_url: require("@/assets/img/partners/Apeswap.png"),
+          img_url: require("@/assets/img/partners/ge-fi.png"),
           link: "#",
-        },                                
+        },        
+        {
+          img_url: require("@/assets/img/partners/cakemonster.png"),
+          link: "#",
+        },
         {
           img_url: require("@/assets/img/partners/Cryptoblades.png"),
           link: "#",
-        },                                        
+        },
+        {
+          img_url: require("@/assets/img/partners/startercapital.png"),
+          link: "#",
+        },
+        {
+          img_url: require("@/assets/img/partners/strongnode.png"),
+          link: "#",
+        },
+        {
+          img_url: require("@/assets/img/partners/DaMoon.png"),
+          link: "#",
+        },
         {
           img_url: require("@/assets/img/partners/Paid1.png"),
           link: "#",
-        },                                                
-        
+        },
+
+                {
+          img_url: require("@/assets/img/partners/oasis-bitkeep-logo.png"),
+          link: "#",
+        },
+        {
+          img_url: require("@/assets/img/partners/oasis-hyperpaylogo1.png"),
+          link: "#",
+        },
       ],
     };
   },
@@ -142,12 +142,13 @@ export default {
     slickJS() {
       $("#slickPartners").slick({
         rows: 3,
-        autoplay: true,
+        slidesPerRow: 4,
+        // autoplay: true,
         dots: false,
         arrows: true,
         infinite: false,
-        speed: 300,
-        slidesToShow: 4,
+        speed: 600,
+        slidesToShow: 1,
         responsive: [
           {
             breakpoint: 478,

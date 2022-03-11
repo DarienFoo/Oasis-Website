@@ -219,25 +219,25 @@ export default {
       open: 0,
       roadmapsQ: [
         {
-          checked: 1,
+          checked: 0,
           title: "Q1’ 2022",
           isActive: 0,
           img_url: require("@/assets/img/roadmaps/listing/Q1.png"),
         },
         {
-          checked: 1,
+          checked: 0,
           title: "Q2’ 2022",
           isActive: 0,
           img_url: require("@/assets/img/roadmaps/listing/Q2.png"),
         },
         {
-          checked: 1,
+          checked: 0,
           title: "Q3’ 2022",
           isActive: 0,
           img_url: "",
         },
         {
-          checked: 1,
+          checked: 0,
           title: "Q4’ 2022",
           isActive: 0,
           img_url: "",
