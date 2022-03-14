@@ -16,19 +16,7 @@
         </div>
       </div>
       <div class="columns is-multiline chose-sectiopns" style="padding: 5em 0em 3em 0em">
-        <div class="info-left column is-12 is-6-desktop container main p-0 m-0">
-          <!-- <div class="column has-padding-box-section">
-            <div
-              class="
-                social-container
-                is-flex is-justify-content-center
-                m-5
-                mb-0
-              "
-            >
-              <span style="font-size: 2em" class="is-extra-bold">Why Choose Us</span>
-            </div>
-          </div> -->
+        <div class="info-left column is-12 is-6-desktop container main p-0 m-0">          
           <div class="image-click-container is-flex is-justify-content-center">
             <img
               class="image-section"

@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- <router-view/> -->
     <section id="gameSection" class="hero main-section is-fullheight">
       <webapp-header />
       <webapp-home />
@@ -105,21 +104,7 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- <div class="columns is-mobile">
-        <div class="column is-12 container">
-          <p style="font-size: 9px !important;display: flex;text-align: justify;">
-            The information on this website, provided by Project Oasis, does not constitute investment, financial, or trading advice, and should not be treated as such. We cannot, and do not, recommend that you should buy, sell, hold or trade any cryptocurrency. Before making any investment decisions, you should conduct your own due diligence and / or consult a licensed financial advisor. When you purchase OASIS tokens ($OASIS), or use any of the services on projectoasis.io, you shall agree that Project Oasis is not liable for any losses or taxes you might incur and that your are fully responsible for your own personal actions. You also agree that OASIS token ($OASIS) are sold 'as is' and we are not required to provide support or services of any kind. If you live in an area where there are government bans or regulations on cryptocurrencies, it is strongly advised that you do not purchase OASIS tokens ($OASIS) as we cannot guarantee compliance with your local regulations. You must always ensure that you comply with you local regulations wwhen purchasing OASIS tokens ($OASIS) or any other cryptocurrencies.
-            <br/><br/> All information provided on this website is not intended and does not constitute any invitation, solicitation or offer to buy and sell any cryptocurrencies, digital assets and / or securities. You acknowledge that you are obtaining and perusing all information on this website based on your own volition ad self-initiative.
-          </p>
-          <br/>
-
-          <p style="font-size: 9px !important;display: flex;text-align: justify;">
-            You shall be aware that there are always risks associated with Smart Contracts, and you shall use them at your own risk. Project oasis is not a registered broker, analyst or investment advisor. All the information provided on projectoasis.io is provided purely for informational and educational purposes and should not be treated as legal or financial advice. All information we provide should be independently verified and confirmed on your own, or through a legal, financial advisor. We do not accept any liability for any loss or damages whatsoever caused in relation to the information or services we provide. You should be aware that there are always risks involved when trading in any financial market and you should never trade or invest money that you cannot afford to lose. If any doubt you should always consult with a professional financial advisor before making any investment decisions.            
-          </p>
-        </div>
-      </div> -->
+      </div>      
     </footer>
 
     <div class="modal success" id="myModal">
@@ -188,10 +173,6 @@
             before making any investment decisions.
           </p>
         </section>
-        <!-- <footer class="modal-card-foot">
-          <button class="button is-success">Save changes</button>
-          <button class="button">Cancel</button>
-        </footer> -->
       </div>
     </div>
   </div>

@@ -22,8 +22,6 @@
                   aria-controls="contentIdForA11y3"
                   @click="replaceImage(collapse.title)"
                 >
-                  <!-- <p class="card-header-title chose-text"> -->
-
                   <div class="columns is-mobile is-vcentered mb-0 container">
                     <div class="column is-2 pr-0 mt-2">
                       <figure class="image is-48x48">

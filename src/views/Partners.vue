@@ -74,7 +74,7 @@ export default {
         {
           img_url: require("@/assets/img/partners/RSUN1.png"),
           link: "#",
-        },        
+        },
         {
           img_url: require("@/assets/img/partners/pragma.png"),
           link: "#",
@@ -90,7 +90,7 @@ export default {
         {
           img_url: require("@/assets/img/partners/Apeswap.png"),
           link: "#",
-        },                
+        },
         {
           img_url: require("@/assets/img/partners/strongnode.png"),
           link: "#",
@@ -98,7 +98,7 @@ export default {
         {
           img_url: require("@/assets/img/partners/ge-fi.png"),
           link: "#",
-        },        
+        },
         {
           img_url: require("@/assets/img/partners/cakemonster.png"),
           link: "#",
@@ -124,7 +124,7 @@ export default {
           link: "#",
         },
 
-                {
+        {
           img_url: require("@/assets/img/partners/oasis-bitkeep-logo.png"),
           link: "#",
         },

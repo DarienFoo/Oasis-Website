@@ -19,62 +19,6 @@
         class="info-container columns is-multiline container-token"
         style="padding: 5em 4em 3em"
       >
-        <!-- <div class="info-left column is-12 is-4-desktop container main">
-          <div class="box roadmapsQ">
-            <div
-              class="columns is-mobile is-vcentered mb-0 pb-0"
-              v-for="i in roadmapsQ"
-              :key="i.id"
-            >
-              <div class="column is-3 p-0 m-0">
-                <figure class="image is-64x64">
-                  <img
-                    class="is-rounded"
-                    :src="
-                      i.checked
-                        ? require('@/assets/img/roadmaps/status/checkbox-on.png')
-                        : require('@/assets/img/roadmaps/status/checkbox-off.png')
-                    "
-                  />
-                </figure>
-              </div>
-              <div class="column p-0 m-0">
-                <div
-                  class="card is-transparent"
-                  style="cursor: pointer !important"
-                  @click="replaceImage(i.title)"
-                >
-                  <div class="card-image">
-                    <figure class="image">
-                      <a class="">
-                        <img
-                          :src="
-                            i.isActive
-                              ? require('@/assets/img/roadmaps/buttonActive.png')
-                              : require('@/assets/img/roadmaps/buttonDefault.png')
-                          "
-                        />
-                      </a>
-                    </figure>
-                  </div>
-                  <div
-                    class="
-                      card-content
-                      is-overlay is-flex is-align-items-center
-                    "
-                  >
-                    <span class="roadmaps-title is-extra-bold">{{
-                      i.title
-                    }}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="info-right column is-12 is-8-desktop">
-          <div class="box roadmapsQ-Right"></div>
-        </div> -->
         <div
           class="
             info-left
@@ -151,45 +95,34 @@
 
               <ul id="botoes">
                 <div>
-                  <!-- <div v-if="i.dataInfo.length <= 3">
-                    <li>
-                      <figure class="image is-64x64">
-                        <img
-                          class="is-rounded"
-                          :src="
-                            z.checked
-                              ? require('@/assets/img/roadmaps/status/checkbox-on.png')
-                              : require('@/assets/img/roadmaps/status/checkbox-off.png')
-                          "
-                        />
-                      </figure>
-                    </li>
-                    <li>
-                      {{ z.lists }}
-                    </li>
-                  </div> -->
-                  <!-- <div v-else> -->
-                    <li v-for="z in i.dataInfo" :key="z.id">
-                      <div class="columns is-mobile is-centered is-vcentered roadmaps-sections">
-                        <div class="column is-1 m-2 p-1">
-                          <figure class="image is-64x64">
-                            <img
-                              class="is-rounded"
-                              :src="
-                                z.checked
-                                  ? require('@/assets/img/roadmaps/status/checkbox-on.png')
-                                  : require('@/assets/img/roadmaps/status/checkbox-off.png')
-                              "
-                            />
-                          </figure>
-                        </div>
-                        <div class="column ml-1" style="width: 15em;">
-                          <span class="subtitle li" style="font-size: 1em;">{{ z.lists }}</span
-                          ><br />
-                        </div>
+                  <li v-for="z in i.dataInfo" :key="z.id">
+                    <div
+                      class="
+                        columns
+                        is-mobile is-centered is-vcentered
+                        roadmaps-sections
+                      "
+                    >
+                      <div class="column is-1 m-2 p-1">
+                        <figure class="image is-64x64">
+                          <img
+                            class="is-rounded"
+                            :src="
+                              z.checked
+                                ? require('@/assets/img/roadmaps/status/checkbox-on.png')
+                                : require('@/assets/img/roadmaps/status/checkbox-off.png')
+                            "
+                          />
+                        </figure>
                       </div>
-                    </li>
-                  <!-- </div> -->
+                      <div class="column ml-1" style="width: 15em">
+                        <span class="subtitle li" style="font-size: 1em">{{
+                          z.lists
+                        }}</span
+                        ><br />
+                      </div>
+                    </div>
+                  </li>
                 </div>
               </ul>
             </div>
@@ -275,15 +208,15 @@ export default {
                 {
                   checked: 0,
                   lists: "Gamified whitelisting",
-                },    
+                },
                 {
                   checked: 0,
                   lists: "System Layering Architecture",
-                },  
+                },
                 {
                   checked: 0,
                   lists: "Migration to Web 3.0 Technology ",
-                },                
+                },
               ],
             },
           ],
@@ -305,7 +238,8 @@ export default {
                 },
                 {
                   checked: 0,
-                  lists: "Easy Access Integration tool for Oasis Metaverse (features, NFTs, mini-games)",
+                  lists:
+                    "Easy Access Integration tool for Oasis Metaverse (features, NFTs, mini-games)",
                 },
                 {
                   checked: 0,
@@ -314,7 +248,7 @@ export default {
                 {
                   checked: 0,
                   lists: "Early Access Land Development",
-                },                
+                },
               ],
             },
           ],
@@ -345,7 +279,7 @@ export default {
                 {
                   checked: 0,
                   lists: "TBA",
-                },   
+                },
               ],
             },
           ],
@@ -376,7 +310,7 @@ export default {
                 {
                   checked: 0,
                   lists: "TBA",
-                },   
+                },
               ],
             },
           ],
@@ -407,7 +341,7 @@ export default {
                 {
                   checked: 0,
                   lists: "TBA",
-                },   
+                },
               ],
             },
           ],
@@ -429,8 +363,6 @@ export default {
       let filter_data = this.roadmapsData.filter((user) => {
         return user.title.toLowerCase().includes(title.toLowerCase());
       });
-
-      // console.log("FILTER DATA", filter_data[0].infoData);
       this.roadmapsDataList = filter_data[0].infoData;
 
       if (filter_data[0].infoData[0].img_url !== "") {

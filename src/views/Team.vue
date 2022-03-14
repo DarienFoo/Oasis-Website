@@ -375,34 +375,29 @@ export default {
       } else {
         this.rowSlick = 1;
       }
-      // if("Tech Magicians") {
-      //   alert("ech")
-      //   $(".slider.slider-for.slick-initialized.slick-slider div div.slick-track").css('height', 20 + 'em !important');
-      // }
-      $("#slick1")
-        .slick({
-          rows: this.rowSlick,
-          dots: false,
-          arrows: true,
-          infinite: false,
-          speed: 100,
-          slidesToShow: 4,
-          responsive: [
-            {
-              breakpoint: 478,
-              settings: {
-                slidesToShow: 3,
-              },
+      $("#slick1").slick({
+        rows: this.rowSlick,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        speed: 100,
+        slidesToShow: 4,
+        responsive: [
+          {
+            breakpoint: 478,
+            settings: {
+              slidesToShow: 3,
             },
+          },
 
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 3,
-              },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
             },
-          ],
-        })
+          },
+        ],
+      });
 
       $("#slick2").slick({
         rows: 1,
@@ -492,13 +487,9 @@ export default {
         fade: true,
         asNavFor: ".slider-nav",
         autoplay: true,
-        autoplaySpeed: 5000,        
+        autoplaySpeed: 5000,
         adaptiveHeight: true,
-      })
-//       .on('setPosition', function (event, slick) {
-//       slick.$slides.css('height', 20 + 'em');
-//  });
-      
+      });
       $(".slider-nav").slick({
         slidesToShow: 3,
         slidesToScroll: 1,

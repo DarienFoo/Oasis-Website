@@ -99,52 +99,9 @@
                           </a>
                         </p>
                       </div>
-
-                      <!-- <div
-                        class="vueperslide__content-wrapper"
-                      >
-                      
-                      </div> -->
                     </template>
                   </vueper-slide>
-                </vueper-slides>
-                <!-- <vueper-slides
-                  autoplay
-                  class="no-shadow"
-                  :visible-slides="1"
-                  :slide-ratio="1 / 2"
-                  :dragging-distance="35"
-                  :arrows-outside="false"
-                  show-multiple-slides="show-multiple-slides"
-                  :breakpoints="{
-                    800: { visibleSlides: 2, slideMultiple: 2 },
-                  }"
-                >
-                  <vueper-slide
-                    v-for="(slide, i) in items"
-                    :key="i"
-                    :image="slide.image"
-                    :link="slide.link"
-                    :openInNew="true"
-                    :title="slide.title"
-                    @click.native="changeText(slide.title)"
-                  ></vueper-slide>
-                </vueper-slides> -->
-
-                <!-- <div class="container-series is-flex is-justify-content-center">
-                  <p
-                    style=""
-                    class="
-                      is-size-7-desktop is-size-7-tablet is-extra-bold
-                      has-text-black
-                      nft-title
-                    "
-                  >
-                    <a href="#" class="has-text-black">
-                      Natives PUBGM Championship Registration
-                    </a>
-                  </p>
-                </div> -->
+                </vueper-slides>              
               </div>
             </div>
             <div class="info-right column is-7">

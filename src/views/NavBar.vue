@@ -57,10 +57,10 @@
               <img class="icon-nav" src="@/assets/img/navbar/logo/team.png" width="25">                                    
           </a>
           <a class="navbar-item text-items " data-text="Partners" v-scroll-to="'#partners'"></a>
-          <a class="navbar-item text-items" data-text="Litepaper" href="https://projectoasis.io/assets/img/Oasis-Litepaper.pdf" target="_blank">
+          <a class="navbar-item text-items" data-text="Litepaper" href="../../static/Oasis-Litepaper.pdf" target="_blank">
               <img class="icon-nav" src="@/assets/img/navbar/logo/litepaper.png" width="25">                                  
           </a>
-          <a class="navbar-item text-items" data-text="One Pager" href="https://projectoasis.io/assets/img/Oasis-1pager-3Oct.pdf" target="_blank">
+          <a class="navbar-item text-items" data-text="One Pager" href="../../static/Oasis-1pager-3Oct.pdf" target="_blank">
               <img class="icon-nav" src="@/assets/img/navbar/logo/onepager.png" width="25">                                  
           </a>
         </div>
