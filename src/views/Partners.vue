@@ -76,6 +76,10 @@ export default {
           link: "#",
         },
         {
+          img_url: require("@/assets/img/partners/metaverse.png"),
+          link: "#",
+        },        
+        {
           img_url: require("@/assets/img/partners/pragma.png"),
           link: "#",
         },
