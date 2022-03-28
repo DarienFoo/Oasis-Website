@@ -265,9 +265,9 @@ export default {
       repeat: false,
       items: [
         {
-          title: "Natives PUBGM Championship Registration",
-          image: require("@/assets/img/container/slider/list/Frame_107.png"),
-          link: "https://bountiehunter.io/project-oasis-tournaments/",
+          title: "BOUNTIE IDO, 6th March 2022",
+          image: require("@/assets/img/container/slider/list/ido.jpeg"),
+          link: "https://projectoasis.medium.com/ol%C3%A1-launchpad-x-bountie-hunter-ido-details-whitelisting-guide-cf4efe1cb613",
         },
         {
           title: "Natives Gather Town Hall Recap",
