@@ -11,7 +11,7 @@
               tokenomics-header
             "
           >
-            <span style="font-size: 2em" class="is-extra-bold">Roadmaps</span>
+            <span style="font-size: 2em" class="is-extra-bold">Roadmap</span>
           </div>
         </div>
       </div>
@@ -115,11 +115,14 @@
                           />
                         </figure>
                       </div>
-                      <div class="column ml-1" style="width: 15em">
-                        <span class="subtitle li" style="font-size: 1em">{{
-                          z.lists
-                        }}</span
+                      <!-- <div class="column ml-1" style="width: 15em;min-height: 4.5em;max-height: 10em"> -->
+                      <div class="column ml-1 results" style="width: 15em;">                                                
+                        <span class="subtitle li" style="font-size: 1em">
+                          {{z.lists}}
+                        </span
                         ><br />
+
+
                       </div>
                     </div>
                   </li>
@@ -149,10 +152,11 @@ export default {
   components: {},
   data() {
     return {
+      test: "This is <br/> long text This is <br/> long text",
       open: 0,
       roadmapsQ: [
         {
-          checked: 0,
+          checked: 1,
           title: "Q1’ 2022",
           isActive: 0,
           img_url: require("@/assets/img/roadmaps/listing/Q1.png"),
@@ -190,31 +194,31 @@ export default {
               img_url: require("@/assets/img/roadmaps/listing/Q1.png"),
               dataInfo: [
                 {
-                  checked: 0,
+                  checked: 1,
                   lists: "Zone Sharding System",
                 },
                 {
-                  checked: 0,
+                  checked: 1,
                   lists: "Rework of Core Functions/UI",
                 },
                 {
-                  checked: 0,
+                  checked: 1,
                   lists: "Lunar New Year Event",
                 },
                 {
-                  checked: 0,
+                  checked: 1,
                   lists: "Website 2.0",
                 },
                 {
-                  checked: 0,
+                  checked: 1,
                   lists: "Gamified whitelisting",
                 },
                 {
-                  checked: 0,
+                  checked: 1,
                   lists: "System Layering Architecture",
                 },
                 {
-                  checked: 0,
+                  checked: 1,
                   lists: "Migration to Web 3.0 Technology ",
                 },
               ],
@@ -230,7 +234,7 @@ export default {
               dataInfo: [
                 {
                   checked: 0,
-                  lists: "Oasis Carnival (Minigames) - P2E Beta",
+                  lists: "Oasis Carnival (Minigames) - P2E Beta ",
                 },
                 {
                   checked: 0,
@@ -239,7 +243,7 @@ export default {
                 {
                   checked: 0,
                   lists:
-                    "Easy Access Integration tool for Oasis Metaverse (features, NFTs, mini-games)",
+                    "Easy Access Integration tool for Oasis Metaverse",
                 },
                 {
                   checked: 0,
@@ -356,10 +360,6 @@ export default {
   },
   methods: {
     replaceImage(title) {
-      let chose_data = this.roadmapsQ.filter((user) => {
-        return user.title.toLowerCase().includes(title.toLowerCase());
-      });
-
       let filter_data = this.roadmapsData.filter((user) => {
         return user.title.toLowerCase().includes(title.toLowerCase());
       });

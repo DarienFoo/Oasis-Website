@@ -3,7 +3,13 @@
     <div class="ml-0 mr-0 column is-12" style="" id="flex">
       <div
         class="columns is-multiline container-token"
-        style="padding: 1em 2em 8em 0em; width: 100%;display: flex;justify-content: center;padding: 1em 2em 8em 0em;"
+        style="
+          padding: 1em 2em 8em 0em;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          padding: 1em 2em 8em 0em;
+        "
       >
         <div class="columns is-mobile is-centered column is-12 container">
           <div class="column is-4-fullhd is-4-desktop is-6-tablet is-10-mobile">

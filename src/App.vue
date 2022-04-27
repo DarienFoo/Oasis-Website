@@ -19,11 +19,7 @@
     <section id="partners" class="partner-section">
       <webapp-partners />
     </section>
-    <!-- <section id="disclaimer" class="disclaimer-section">
-      <webapp-disclaimer />
-    </section> -->
-
-    <footer class="footer" style="padding: 0.76em !important">
+    <footer class="footer" id="footer" style="padding: 0.76em !important">
       <div
         class="
           info-container
@@ -84,12 +80,10 @@
           <div class="columns is-mobile">
             <div class="column is-12">
               <p>Copyright @ projectoasis.io</p>
-              <a @click="disclaimer()">Read our Legal and Risk Disclaimer</a>              
+              <a @click="disclaimer()">Read our Legal and Risk Disclaimer</a>
               <div class="columns">
                 <div class="column is-4">
-                  <a
-                    href="../static/Privacy_Policy_-_Oasis.pdf"
-                    target="_blank"
+                  <a href="../static/Privacy_Policy_-_Oasis.pdf" target="_blank"
                     >Privacy Policy</a
                   >
                 </div>
@@ -100,12 +94,32 @@
                     >Terms of Service</a
                   >
                 </div>
-              </div>              
+              </div>
             </div>
           </div>
         </div>
-      </div>      
+      </div>
     </footer>
+
+    <a
+      class="scrollBottom arrow-container animated fadeInDown"
+      v-scroll-to="'#footer'"
+    >
+      <div class="arrow-2">
+        <font-awesome-icon icon="fa-solid fa-angle-down" />
+      </div>
+      <div class="arrow-1 animated hinge infinite zoomIn"></div>
+    </a>
+
+    <a
+      class="scrollTop arrow-container animated fadeInDown"
+      v-scroll-to="'#gameSection'"
+    >
+      <div class="arrow-2">
+        <font-awesome-icon icon="fa-solid fa-angle-up" />
+      </div>
+      <div class="arrow-1 animated hinge infinite zoomIn"></div>
+    </a>
 
     <div class="modal success" id="myModal">
       <div class="modal-background"></div>
@@ -242,6 +256,21 @@ export default {
     "webapp-partners": Partners,
     // "webapp-disclaimer": Disclaimer,
   },
+  mounted() {
+    function onScroll() {
+      if (
+        window.pageYOffset + window.innerHeight >=
+        document.documentElement.scrollHeight - 50
+      ) {
+        $(".scrollBottom").hide();
+        $(".scrollTop").show();
+      } else {
+        $(".scrollBottom").show();
+        $(".scrollTop").hide();
+      }
+    }
+    window.addEventListener("scroll", onScroll);
+  },
   methods: {
     disclaimer() {
       $("#myModal").addClass("is-active");
@@ -254,21 +283,273 @@ export default {
 </script>
 
 <style lang="scss">
+@media screen and (min-width: 1024px) {
+  p.is-size-6-desktop.is-size-7-tablet.is-size-7-mobile.text-center {
+    font-size: 0.8rem !important;
+  }
+}
+//Test
+.containerScroll {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0.25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+//end test
+// Add new
+.scrollTop {
+  display: none;
+}
+
+#containerTest {
+  width: 119px;
+  height: 109px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: deepskyblue;
+  width: 111px;
+  height: 111px;
+  position: absolute;
+  opacity: 0;
+  animation: scaleIn 2s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+}
+
+.item {
+  z-index: 100;
+  padding: 5px;
+}
+
+.item img {
+  width: 47px;
+}
+@keyframes scaleIn {
+  from {
+    transform: scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(0.8, 0.8);
+    opacity: 0;
+  }
+}
+// end
+
 @import "../node_modules/bulma/bulma.sass";
 @import "vue-glide-js/dist/vue-glide.css";
+
+svg.svg-inline--fa.fa-angle-down,
+svg.svg-inline--fa.fa-angle-up {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  color: #ffff !important;
+  width: 100%;
+  margin-top: 15px;
+  /* align-items: center; */
+  /* height: 100%; */
+}
+.arrow-container {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 25px;
+  /* left: 0; */
+  right: 36px;
+}
+.arrow-1 {
+  width: 100px;
+  height: 100px;
+  background: #000000;
+  opacity: 0.5;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.arrow-2 {
+  width: 60px;
+  height: 60px;
+  background: #000000;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  display: table;
+}
+
+.arrow-2:before {
+  width: 52px;
+  height: 52px;
+  content: "";
+  // border: 2px solid #ffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+}
+
+.arrow-2 i.fa {
+  font-size: 30px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #006064;
+}
+
+/* Custom Animate.css */
+
+// .animated.hinge {
+//   -webkit-animation-duration: 4s;
+//   animation-duration: 2s;
+// }
+.animated.hinge {
+  -webkit-animation-duration: 4s;
+  width: 72%;
+  height: 72%;
+  /* display: flex; */
+  animation-duration: 2s;
+  left: 14px;
+  top: 14%;
+  /* justify-content: center; */
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.4, 0.4, 0.4);
+    transform: scale3d(0.4, 0.4, 0.4);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.4, 0.4, 0.4);
+    transform: scale3d(0.4, 0.4, 0.4);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+.scrollBottom {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
 span.subtitle.li {
-    font-family: "Baloo-Regular" !important;
-    font-weight: 700;
-    color: #000;
+  font-family: "Baloo-Regular" !important;
+  font-weight: 700;
+  color: #000;
 }
 p.subs.teams {
-    font-family: "Baloo-Regular" !important;
+  font-family: "Baloo-Regular" !important;
 }
 button.button.team-default.is-extra-bold {
-    padding: 2em !important;
+  padding: 2em !important;
 }
 p.is-extra-bold.title.team-title.is-flex.is-justify-content-center.mb-0.pb-0 {
-    font-size: 1.3em !important;
+  font-size: 1.3em !important;
 }
 html {
   overflow-x: hidden !important;
@@ -305,39 +586,6 @@ a.navbar-item {
   background-color: #fafafa;
   padding: 3rem 1.5rem 1rem;
 }
-// div.home-slide .offsetslidefirst {
-//   .vueperslides__track-inner {
-//     transform: translate3d(33.333%, 0px, 0px) !important;
-//   }
-// }
-// div.home-slide .vueperslide.vueperslide--active.vueperslide--visible {
-//   width: 50% !important;
-// }
-
-// div.home-slide .offsetslidelast {
-//   .vueperslides__track-inner {
-//     transform: translate3d(-99%, 0px, 0px) !important;
-//   }
-// }
-// div.home-slide .vueperslide {
-//   transition: 0.3s ease-in-out;
-//   /* opacity: 0.3; */
-//   /* filter: blur(1px); */
-//   transform: scale(0.8);
-//   border-radius: 12px !important;
-//   &.vueperslide--visible:first-child {
-//     margin-left: -37px !important;
-//   }
-//   &.vueperslide--active {
-//     opacity: 1 !important;
-//     transform: scale(1);
-//     filter: blur(0);
-//   }
-// }
-// div.home-slide .vueperslide.vueperslide--active.vueperslide--visible {
-//   width: 53.3333% !important;
-// }
-
 div.home-slide .vueperslide {
   transition: 0.3s ease-in-out;
   /* opacity: 0.3; */
@@ -403,6 +651,9 @@ div.home-slide .vueperslide {
   background: transparent !important;
 }
 @media screen and (max-width: 700px) {
+  .has-margin {
+    margin-left: 0em !important;
+  }
   span.title.tokenomiks-title.is-medium-font {
     font-size: 14px !important;
   }
@@ -421,6 +672,9 @@ div.home-slide .vueperslide {
   }
 }
 @media screen and (min-width: 1400px) {
+  p.is-size-6-desktop.is-size-7-tablet.is-size-7-mobile.text-center {
+    font-size: 1rem !important;
+  }
   .glide.glide--ltr.glide--slider.glide--swipeable {
     padding: 3em 4em 0% 2em !important;
   }

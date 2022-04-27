@@ -1,6 +1,13 @@
 section#tekonomiks {
     background: #0099DB !important;
 }
+span.subtitle.is-size-6.has-text-black {
+    font-size: 0.7rem;
+}
+.info-right.column.is-12.is-6-desktop.tokenomics-right {
+    display: flex;
+    align-items: center;
+}
 
 .tokenomics-header {
     width: 71% !important;
@@ -15,7 +22,8 @@ section#tekonomiks {
 }
 
 .tokenomics-data {
-    padding: 3em 5em 3em 5em !important
+    /* padding: 3em 5em 3em 5em !important */
+    padding: 1em 3em 1em 3em !important;
 }
 
 .token-desc {
@@ -76,5 +84,19 @@ section#tekonomiks {
 
     .image-section-token {
         margin: auto !important;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    figure.image.is-64x64.tokenomiks-icon img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+    span.title.tokenomiks-title.is-medium-font {
+        font-size: 1.5em !important;
+    }
+    figure.image.is-64x64.tokenomiks-icon {
+        height: 128px;
+        width: 128px;
     }
 }

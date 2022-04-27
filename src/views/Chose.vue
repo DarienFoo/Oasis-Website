@@ -94,25 +94,25 @@ export default {
         {
           title: "One-Of-A-Kind Nostalgic 2D Metaverse",
           description:
-            "ProjectOASIS is meant to be a throwback to memory lane where games are light, easy and fun in our 2D metaverse. Mesmerize yourself in the OASIS while immersing yourself in the good old days.",
+            "ProjectOasis is a throwback to the good old days where games are light, easy and fun in our 2D metaverse. Participate in DeFi activities and socialize with others in Oasis while immersing yourself in the good old days.",
           img_url: require("@/assets/img/container/choseUs/metaverse.png"),
         },
         {
           title: "Gamified DeFi",
           description:
-            "The team at OASIS believes that the social gamification of DeFi will attract a new generation of DeFi adopters and enrich the overall gaming experience in OASIS. The enticing proposition is: <br /><br /> <b-icon pack='fas' icon='hand-point-right'> </b-icon><span style='position: absolute; margin-top: 2px !important'>Oasis OLá Launchpad</span><br/><br/>",
+            "Team OASIS believes that the social gamification of DeFi will attract a new generation of DeFi adopters and enrich the overall GameFi experience. Our vision for Oasis is to be a gamified ecosystem that includes everything from <strong>Staking (Oasis Swap)</strong>, <strong>IDOs (OLá Launchpad)</strong> & <strong>INOs (OLáMint)</strong>, with <strong>P2E (Play-to-Earn) elements</strong>.",
           img_url: require("@/assets/img/container/choseUs/defi.png"),
         },
         {
           title: "Cross-Chain “Realms”",
           description:
-            "Oasis will primarily support Binance Smart Chain on launch. In the near future, Natives can expect cross-chain interoperability through different realms on Oasis!",
+            'Oasis at present mainly supports Binance Smart Chain (BSC). In the near future, expect Oasis to evolve from a metaverse into a multiverse, allowing Natives to traverse across multiple chains to other "realms" the crypto space!',
           img_url: require("@/assets/img/container/choseUs/realms.png"),
         },
         {
           title: "The Council",
           description:
-            "The COUNCIL acts as a DAO in the Oasis metaverse that is governed by all Natives who hold OASIS tokens.The future of the Oasis metaverse is shaped by votes and proposal made by the Natives!",
+            "The COUNCIL acts as a Decentralised Autonomous Organisation (DAO) in the Oasis metaverse, which is governed by all Natives who hold OASIS tokens. The future of the Oasis metaverse is shaped by votes and proposal made by Natives for Natives!",
           img_url: require("@/assets/img/container/choseUs/council.png"),
         },
       ],

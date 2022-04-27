@@ -12,6 +12,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .subs-team {
     padding: 0em 2em 0em 2em !important;
 }
@@ -116,15 +117,18 @@
     width: 94% !important;
     overflow: inherit !important;
 }
+
 .team-info-char div.slick-slide {
     margin: 8px !important;
     width: 206px !important;
 }
+
 .team-info-char div.slick-track {
     display: flex;
     justify-content: center;
     /* width: 100% !important; */
 }
+
 .slick-list {
     width: 95%;
     margin: 0 auto;
@@ -174,10 +178,12 @@ img.slick-next.slick-arrow {
     .team-title {
         font-size: 0.5em;
     }
+
     p.subs.teams {
         font-size: 0.3em !important;
     }
 }
+
 .subs {
     font-size: 0.6em !important;
     text-align: center !important;
@@ -202,20 +208,23 @@ img.slick-next.slick-arrow {
     padding: 0em 0em 0em 0em;
 }
 
-  @media only screen and (min-width: 390px) and (max-width: 884px){
+@media only screen and (min-width: 390px) and (max-width: 884px) {
     .slick-list.draggable {
         margin-left: 1em !important;
     }
-    }  
+}
 
 @media screen and (max-width: 700px) {
     div#slick1 {
         width: 100% !important;
         display: inline-block;
     }
-    div#slickMindBenders,div#slickDreamers {
+
+    div#slickMindBenders,
+    div#slickDreamers {
         width: 48% !important;
     }
+
     p.is-extra-bold.title.team-title.is-flex.is-justify-content-center.mb-0.pb-0 {
         font-size: 0.6em !important;
     }
@@ -233,9 +242,11 @@ img.slick-next.slick-arrow {
     .team-info-char div.slick-slide {
         margin: auto !important;
     }
+
     .team-title {
         font-size: 1em !important;
     }
+
     /* .team-left-container {
         width: auto !important;
     } */
@@ -243,32 +254,26 @@ img.slick-next.slick-arrow {
         width: 9em !important;
         margin: 0.4em;
     }
+
     /* .slick-list.draggable {
         margin-left: 0.6em !important;
     } */
     .team-title-header {
         padding: 2em 6em 0em 6em !important;
     }
+
     div#slick1 div.slick-track {
         display: block !important;
-        /* margin: 0px 45px !important; */
-        /* margin: 0px 113px !important; */
     }
+
     .team-info-char div.slick-slide {
         display: flex !important;
-        /* width: 206px !important; */
         width: 163px !important;
     }
-    /* .team-info-char div.slick-slide {
-        margin: 0px 45px !important;
-        width: 248px !important;
-    }
-    .team-info-char div.slick-track {
-        width: auto !important;
-    } */
     .teamview {
         padding: 0px !important;
     }
+
     .has-padding {
         padding: 1em !important;
     }

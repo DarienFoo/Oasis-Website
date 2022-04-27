@@ -13,20 +13,23 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .disclaimer-card-header {
     background-image: url("../img/container/info-container.png") !important;
     background-color: transparent;
     background-size: 100% 100%;
     padding-left: 25px;
 }
+
 .disclaimer-box {
     background-image: url("../img/container/info.png") !important;
     background-color: transparent;
     background-size: 100% 100%;
     margin: 1em 0em
 }
+
 .disclaimer-title {
-    font-size:1em !important
+    font-size: 1em !important
 }
 
 button.slick-next.slick-arrow:before {
@@ -40,7 +43,8 @@ button.slick-next.slick-arrow:before {
     top: -1.7em !important;
 }
 
-button.slick-prev.slick-arrow.slick-disabled:before, button.slick-prev.slick-arrow:before {
+button.slick-prev.slick-arrow.slick-disabled:before,
+button.slick-prev.slick-arrow:before {
     content: '' !important;
     background-image: url("../img/icon/arrow-left.png") !important;
     background-color: transparent;

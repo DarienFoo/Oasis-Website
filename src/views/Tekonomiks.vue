@@ -19,14 +19,14 @@
         class="info-container columns is-multiline container-token"
         style="padding: 5em 0em 3em 0em"
       >
-        <div class="info-left column is-12 is-5-desktop container main p-0 m-0">
+        <div class="info-left column is-12 is-6-desktop container main p-0 m-0">
           <div class="is-flex is-justify-content-center image-section-token">
             <a @click="showImageModal()">
               <img class="" src="@/assets/img/tokenomiks/chart.png" />
             </a>
           </div>
         </div>
-        <div class="info-right column is-12 is-7-desktop tokenomics-right">
+        <div class="info-right column is-12 is-6-desktop tokenomics-right">
           <div class="tekonomics-container is-flex is-justify-content-center">
             <div class="no-padding-mobile tokenomics-data">
               <div class="columns is-mobile is-vcentered">
@@ -38,16 +38,13 @@
                     is-medium-font
                   "
                 >
-                  The team at OASIS believes that the social gamification of
-                  DeFi will attract a new generation of DeFi adopters and enrich
-                  the overall gaming experience in OASIS. The enticing
-                  proposition is:
+                 
                 </div>
               </div>
 
               <div class="columns is-mobile is-vcentered has-border-3px mb-0">
                 <div class="column is-3 p-0 m-0">
-                  <figure class="image is-96x96">
+                  <figure class="image is-64x64 tokenomiks-icon">
                     <img src="@/assets/img/tokenomiks/coinrestart.png" alt="" />
                   </figure>
                 </div>
@@ -64,7 +61,7 @@
 
               <div class="columns is-mobile is-vcentered has-border-3px mb-0">
                 <div class="column is-3 p-0 m-0">
-                  <figure class="image is-96x96">
+                  <figure class="image is-64x64 tokenomiks-icon">
                     <img
                       src="@/assets/img/tokenomiks/coingangster.png"
                       alt=""
@@ -83,7 +80,7 @@
 
               <div class="columns is-mobile is-vcentered">
                 <div class="column is-3 p-0 m-0">
-                  <figure class="image is-96x96">
+                  <figure class="image is-64x64 tokenomiks-icon">
                     <img src="@/assets/img/tokenomiks/coinbag.png" alt="" />
                   </figure>
                 </div>
@@ -105,7 +102,7 @@
     <div class="modal" id="modalImage">
       <div class="modal-background"></div>
       <div class="modal-content container is-flex is-justify-content-center is-align-items-center">
-          <img class="" src="@/assets/img/tokenomiks/chart.png" width="600"/>
+          <img class="" src="@/assets/img/tokenomiks/chart.png" width="900"/>
       </div>
       <button class="modal-close is-large" @click="closeModal()" aria-label="close"></button>
     </div>

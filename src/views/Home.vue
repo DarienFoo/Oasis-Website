@@ -17,16 +17,16 @@
                 <h1 class="is-size-3 has-text-weight-bold is-extra-bold">
                   ProjectOasis?
                 </h1>
+                <h1 class="is-size-6 has-text-weight-bold is-extra-bold">
+                  Gamified DeFi in a social environment
+                </h1>
                 <p
                   class="
                     is-size-6-desktop is-size-7-tablet is-size-7-mobile
                     text-center
                   "
                 >
-                  As a group of gaming enthusiasts, it has always been a dream
-                  to create an ecosphere where everyone can come together to
-                  interact, play, compete and to grow together in a world where
-                  no one can judge us! Hence, the metaverse of OASIS is born!
+                  Welcome to the Oasis metaverse! A virtual ecosphere where you can gather to play games, socialize, and perform DeFi activities in-game such as staking crypto tokens, NFT minting, participating in IDOs, and more. Our dream is to build a place where everyone can come together to interact, play, compete and grow with one another.
                 </p>
               </div>
               <div class="box home-slide is-hidden-mobile">
@@ -148,7 +148,7 @@
                           target="_blank"
                           href="https://pancakeswap.finance/swap?outputCurrency=0xb19289b436b2F7A92891ac391D8f52580d3087e4"
                           class="button pancake-btn play is-transparent-bg"
-                          style="width: 100% !important; height: 45px"
+                          style="width: 100% !important; height: 45px;image-rendering: -webkit-optimize-contrast;"
                         >
                         </a>
 
@@ -281,45 +281,6 @@ export default {
         },
       ],
     };
-  },
-  mounted() {
-    // $(document).ready(function (e) {
-    //   $("button.vueperslides__arrow.vueperslides__arrow--next").click(
-    //     function () {
-    //       let ctr = 1;
-    //       let title = "Second";
-    //       if (title === "Second") {
-    //         ctr = 2;
-    //         $("button.vueperslides__arrow.vueperslides__arrow--next").click(
-    //           function () {
-    //             alert(ctr)
-    //             ctr = 3;
-    //           }
-    //         );
-    //         // ctr++;
-    //       }
-    //             alert(ctr)
-    //       if (ctr === 3) {
-    //         title = "Third";
-    //       }
-    //       console.log("ctr", title);
-    //       switch (title) {
-    //         case "First":
-    //           $(".nft-title").text("Natives PUBGM Championship Registration");
-    //           break;
-    //         case "Second":
-    //           $(".nft-title").text("Natives Gather Town Hall Recap");
-    //           break;
-    //         case "Third":
-    //           $(".nft-title").text("The Next Phase - (Oasis Trailer)");
-    //           break;
-    //       }
-    //     }
-    //   );
-    //   $(".qololbl").click();
-    // });
-  },
-  methods: {
   },
 };
 </script>

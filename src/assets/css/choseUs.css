@@ -11,15 +11,18 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .has-padding-box-section {
     padding: 0em 3em 0em 3em;
 }
+
 .chose-desc {
     font-family: 'Baloo-Medium', cursive;
     padding: 0em 3em 0em 2em;
     font-size: 0.8em;
     color: black !important;
 }
+
 .chose-title {
     padding: 0em 0em 0em 1.3em;
 }
@@ -37,6 +40,7 @@
 .has-padding-choses-section {
     padding: 2em 0em 0em 6em;
 }
+
 .chose-card-header {
     background-image: url("../img/container/choseUs/card-header-box.png") !important;
     background-color: transparent;
@@ -68,26 +72,32 @@
     .columns.is-multiline.chose-sectiopns {
         padding: 2em 0em 3em !important;
     }
+
     section.hero.coming-soon {
         padding: 4em !important;
     }
+
     .chose-text {
         font-size: 1.1em !important;
     }
+
     /* .partner-padding div {
         padding: 1em !important;
     } */
     .slickPartners {
         padding: 0px !important;
     }
+
     .info-right.column.is-12.is-6-desktop.has-padding-choses-section {
         padding: 2em !important;
     }
+
     .image-click-container {
         margin: 1.4em;
         padding: 2em;
         margin-left: 1.4em !important;
     }
+
     .collapse-main-section {
         padding: 0px !important;
         margin: 0px !important;
@@ -95,25 +105,27 @@
 }
 
 .fade-in {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
 }
+
 .fade-out {
-	opacity: 0;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
+    opacity: 0;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
 }
 
 @keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

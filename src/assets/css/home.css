@@ -8,6 +8,7 @@
 button.button.home-btn.is-transparent-bg {
   padding: 4% !important;
 }
+
 button.vueperslides__arrow.vueperslides__arrow--next svg,
 button.vueperslides__arrow.vueperslides__arrow--prev svg {
   width: 30px;
@@ -43,6 +44,7 @@ button.vueperslides__arrow.vueperslides__arrow--prev {
   background-size: 100% 100%;
   padding: 3em 3em 0em 1em;
 }
+
 .box.home-slide {
   background-image: url("../img/container/slider/background.png") !important;
   /* padding: 9.5% 11.5% 16.5% 7.5%; */
@@ -50,6 +52,7 @@ button.vueperslides__arrow.vueperslides__arrow--prev {
   background-color: transparent;
   background-size: 100% 100%;
 }
+
 /* .background-carousel {
   background-image: url("../img/container/slider/background.png") !important;
 background-color: transparent;
@@ -59,7 +62,7 @@ padding: 3em 3em 0em 1em;
 } */
 .has-margin {
   margin-right: 2em !important;
-  margin-left: 2em !important;
+  margin-left: 2em;
 }
 
 .box.info {
@@ -92,6 +95,14 @@ padding: 3em 3em 0em 1em;
 
 .c-backdrop.vcc {
   background: transparent !important;
+}
+
+hr {
+  background-color: #f5f5f5;
+  border: none;
+  display: block;
+  height: 2px;
+  margin: 0.7rem 0;
 }
 
 .container-series {
@@ -136,18 +147,21 @@ button.button.home-btn span.icon {
   top: -83px;
   left: 20px;
 }
-@media only screen and (min-width: 1400px){
-.has-padding-desktop-section{
-  padding: 0em 2em 0em 7em;
+
+@media only screen and (min-width: 1400px) {
+  .has-padding-desktop-section {
+    padding: 0em 2em 0em 7em;
+  }
 }
-}
-@media only screen and (min-width: 375px) and (max-width: 380px){
+
+@media only screen and (min-width: 375px) and (max-width: 380px) {
   .info-left.column.is-12.is-5-desktop.container.main.left-padding-mobile {
     padding-top: 14em !important;
-}
+  }
 }
 
 @media screen and (max-width: 700px) {
+
   /* .left-padding-mobile {
     padding-top: 8em !important;
   } */
@@ -156,16 +170,20 @@ button.button.home-btn span.icon {
     display: flex !important;
     justify-content: center !important;
   }
+
   .home-oasis {
     padding-top: 19% !important;
   }
+
   span.is-extra-bold {
     font-size: 1em !important;
-}
+  }
+
   div#app {
     overflow-x: hidden;
     width: 100% !important;
-}
+  }
+
   .info-right.column.is-12.is-7-desktop {
     padding: 0em;
     height: 46vh;
@@ -283,10 +301,13 @@ div#dropdown-menu-home div.dropdown-content {
 .pancake-btn {
   background: url("../img/button/pancake_btn.png") no-repeat scroll 0 0 transparent;
 }
+
 .apeswap-btn {
   background: url("../img/button/apeswap_btn.png") no-repeat scroll 0 0 transparent;
 }
-.pancake-btn, .apeswap-btn {
+
+.pancake-btn,
+.apeswap-btn {
   cursor: pointer;
   font-weight: bold;
   background-size: cover;
@@ -295,5 +316,5 @@ div#dropdown-menu-home div.dropdown-content {
   border: none;
   font-size: 1em !important;
   margin: 2%;
-    height: 3em;
+  height: 3em;
 }

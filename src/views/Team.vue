@@ -348,16 +348,21 @@ export default {
           title: "Tech Magicians",
         },
         {
-          title: "Mind Benders",
+          // title: "Mind Benders",
+          title: "Advisor",          
         },
         {
-          title: "Leonardo Da Picasso",
+          title: "Cool Council",          
+          // title: "Leonardo Da Picasso",
+
         },
         {
-          title: "Advisor",
+          // title: "Advisor",
+          title: "Mind Benders",          
         },
         {
-          title: "Cool Councel",
+          title: "Leonardo Da Picasso",          
+          // title: "Cool Council",
         },
         {
           title: "Dreamers",
