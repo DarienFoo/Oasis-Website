@@ -33,10 +33,10 @@
           <div class="footer-logo">
             <a class="title is-6"
               ><img
-                src="@/assets/img/logo.png"
+                src="@/assets/img/newlogoV2.png"
                 alt="Logo"
-                width="140"
-                height="28"
+                width="165"
+                height="40"
             /></a>
           </div>
         </div>

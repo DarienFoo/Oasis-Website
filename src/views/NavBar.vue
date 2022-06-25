@@ -25,8 +25,8 @@
         </div>
 
         <a class="navbar-item logo-ui">
-          <figure class="image is-64x64 logo">
-            <img src="@/assets/img/logo.png" />
+          <figure class="image logo">
+            <img src="@/assets/img/newlogoV2.png" style="height: 80px; width: 114px;"/>
           </figure>
         </a>
       </div>

@@ -107,8 +107,8 @@
             <div class="info-right column is-7">
               <div class="is-flex is-justify-content-center pt-6 mt-6">
                 <img
-                  src="@/assets/img/oasis-web-animatedrocky-2.gif"
-                  width="500"
+                  src="@/assets/img/boy_dancing.gif"
+                  width="300"
                 />
               </div>
               <div class="is-flex is-justify-content-center buttons">
@@ -265,19 +265,19 @@ export default {
       repeat: false,
       items: [
         {
-          title: "BOUNTIE IDO, 6th March 2022",
-          image: require("@/assets/img/container/slider/list/ido.jpeg"),
-          link: "https://projectoasis.medium.com/ol%C3%A1-launchpad-x-bountie-hunter-ido-details-whitelisting-guide-cf4efe1cb613",
+          title: "Oasis Vanguard : Game Mechanics and Rewards",
+          image: require("@/assets/img/container/slider/list/Oasis Vanguard.png"),
+          link: "https://projectoasis.medium.com/oasis-diaries-5-legend-of-the-vanguard-77bd4b48d09e",
         },
         {
-          title: "Natives Gather Town Hall Recap",
-          image: require("@/assets/img/container/slider/list/Purple_Pink_Orange_Net_Neutral_Business_Twitter_Ad_2_2.png"),
-          link: "https://medium.com/@projectoasis/a-recap-of-our-first-natives-gather-town-hall-3bb2f05701c4 ",
+          title: "Oasis Vanguard Staking Campaign : Cauliflower Edition",
+          image: require("@/assets/img/container/slider/list/stacking.jpeg"),
+          link: "https://projectoasis.medium.com/oasis-vanguard-staking-campaign-cauliflower-farm-edition-4f88f7810c9b ",
         },
         {
-          title: "The Next Phase - (Oasis Trailer)",
-          image: require("@/assets/img/container/slider/list/Frame_109.png"),
-          link: "https://youtu.be/-UZdX2NGga4",
+          title: "The Four Elemental Lands",
+          image: require("@/assets/img/container/slider/list/Elemental Lands.gif"),
+          link: "https://projectoasis.medium.com/oasis-diaries-4-the-four-elemental-lands-f4d82da818a",
         },
       ],
     };
