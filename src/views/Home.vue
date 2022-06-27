@@ -107,8 +107,8 @@
             <div class="info-right column is-7">
               <div class="is-flex is-justify-content-center pt-6 mt-6">
                 <img
-                  src="@/assets/img/oasis-web-animatedrocky-2.gif"
-                  width="500"
+                  src="@/assets/img/new_boy_run.gif"
+                  width="350"
                 />
               </div>
               <div class="is-flex is-justify-content-center buttons">
