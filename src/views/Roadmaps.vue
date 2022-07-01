@@ -238,7 +238,7 @@ export default {
                 },
                 {
                   checked: 0,
-                  lists: "Interactable partnership module with building tools",
+                  lists: "Interactable Partnership Module",
                 },
                 {
                   checked: 0,
