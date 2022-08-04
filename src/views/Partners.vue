@@ -60,81 +60,112 @@ export default {
     return {
       partners: [
         {
-          img_url: require("@/assets/img/partners/redHat.png"),
-          link: "#",
+          img_url: require("@/assets/img/partners/SPINTOP.png"),
+          link: "https://spintop.network/",
         },
         {
           img_url: require("@/assets/img/partners/rugdoc.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/mintedlabs.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/RSUN1.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/metaverse.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/pragma.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/bsc.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/rd.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/Apeswap.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/strongnode.png"),
-          link: "#",
-        },
-        {
-          img_url: require("@/assets/img/partners/ge-fi.png"),
-          link: "#",
+          link: "https://rugdoc.io/",
         },
         {
           img_url: require("@/assets/img/partners/cakemonster.png"),
-          link: "#",
+          link: "https://cake.monster/",
+        },
+        {
+          img_url: require("@/assets/img/partners/tofu.png"),
+          link: "https://tofunft.com/bsc",
+        },
+        {
+          img_url: require("@/assets/img/partners/SAMURAILEGENDS.png"),
+          link: "https://samurailegends.io/",
+        },
+        {
+          img_url: require("@/assets/img/partners/Portalverse.png"),
+          link: "https://www.portalverse.net/",
+        },
+        {
+          img_url: require("@/assets/img/partners/pragma.png"),
+          link: "https://pragma.ooo/",
+        },
+        {
+          img_url: require("@/assets/img/partners/bscnews.png"),
+          link: "https://www.bsc.news/",
+        },
+        {
+          img_url: require("@/assets/img/partners/Bountie.png"),
+          link: "https://bountiehunter.io/",
+        },
+        {
+          img_url: require("@/assets/img/partners/Apeswap.png"),
+          link: "https://apeswap.finance/",
+        },
+        {
+          img_url: require("@/assets/img/partners/Acryptos.png"),
+          link: "https://app-v2.acryptos.com/#/BSC/vaults/all",
+        },
+         {
+          img_url: require("@/assets/img/partners/OCTOGAMEX.png"),
+          link: "https://octogamex.com/",
+        },
+        {
+          img_url: require("@/assets/img/partners/ge-fi.png"),
+          link: "https://www.ge.finance/?utm_medium=social&utm_source=linktree&utm_campaign=gefi+finance+vault#/home",
+        },
+        {
+          img_url: require("@/assets/img/partners/mintedlabs.png"),
+          link: "https://minted-lab.com/",
         },
         {
           img_url: require("@/assets/img/partners/Cryptoblades.png"),
-          link: "#",
+          link: "https://www.cryptoblades.io/",
         },
         {
           img_url: require("@/assets/img/partners/startercapital.png"),
-          link: "#",
+          link: "https://starter.capital/#/",
         },
         {
           img_url: require("@/assets/img/partners/strongnode.png"),
-          link: "#",
+          link: "https://strongnode.io/",
         },
         {
-          img_url: require("@/assets/img/partners/DaMoon.png"),
-          link: "#",
+          img_url: require("@/assets/img/partners/LOVELACE.png"),
+          link: "https://lovelace.world/",
         },
         {
           img_url: require("@/assets/img/partners/Paid1.png"),
-          link: "#",
+          link: "https://paidnetwork.com/",
         },
-
+ {
+          img_url: require("@/assets/img/partners/PACOCA.png"), 
+          link: "https://pacoca.io/",
+        },
         {
           img_url: require("@/assets/img/partners/oasis-bitkeep-logo.png"),
-          link: "#",
+          link: "https://bitkeep.com/",
         },
         {
           img_url: require("@/assets/img/partners/oasis-hyperpaylogo1.png"),
-          link: "#",
+          link: "https://www.hyperpay.com/",
+        },
+        {
+          img_url: require("@/assets/img/partners/redHat.png"),
+          link: "https://redhatcapital.io/",
+        },
+        {
+          img_url: require("@/assets/img/partners/rd.png"),
+          link: "https://www.rdauditors.com/",
+        },
+         {
+          img_url: require("@/assets/img/partners/FORMLESS.png"),
+          link: "http://www.formless.me/home",
+        },
+        {
+          img_url: require("@/assets/img/partners/DaMoon.png"),
+          link: "https://twitter.com/DaMoonSOC1",
+        },
+        {
+          img_url: require("@/assets/img/partners/ENCENTIVE.png"),
+          link: "Encentive.io",
         },
       ],
     };

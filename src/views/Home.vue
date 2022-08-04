@@ -264,15 +264,25 @@ export default {
       increment: 1,
       repeat: false,
       items: [
-        {
-          title: "Oasis Vanguard : Game Mechanics and Rewards",
-          image: require("@/assets/img/container/slider/list/Oasis Vanguard.png"),
-          link: "https://projectoasis.medium.com/oasis-diaries-5-legend-of-the-vanguard-77bd4b48d09e",
+        { 
+        title: "OASIS Diaries #8: Towards a Social Metaverse",
+        image: require("@/assets/img/container/slider/list/OASIS Diaries8.gif"),
+        link: "https://projectoasis.medium.com/oasis-diaries-8-towards-a-social-metaverse-upcoming-features-a6e9b5b24b3d"
         },
         {
-          title: "Oasis Vanguard Staking Campaign : Cauliflower Edition",
-          image: require("@/assets/img/container/slider/list/stacking.jpeg"),
-          link: "https://projectoasis.medium.com/oasis-vanguard-staking-campaign-cauliflower-farm-edition-4f88f7810c9b ",
+          title: "OASIS Vanguard: How-to-Play Guide🛡",
+          image: require("@/assets/img/container/slider/list/How to play OV.gif"),
+          link: "https://projectoasis.medium.com/oasis-vanguard-how-to-play-guide-5cbbed11c420",
+        },
+        {
+          title: "ProjectOasis: Q2 Wrap-up",
+          image: require("@/assets/img/container/slider/list/Q2 Wrap-up banner.gif"),
+          link: "https://projectoasis.medium.com/projectoasis-q2-wrap-up-8a8d9cc460d3",
+        },
+        {
+          title: "OASIS Vanguard Leaderboard Reward Scheme",
+          image: require("@/assets/img/container/slider/list/REWARD NUGS.gif"),
+          link: "https://projectoasis.medium.com/oasis-vanguard-leaderboard-reward-scheme-186cad419631",
         },
         {
           title: "The Four Elemental Lands",

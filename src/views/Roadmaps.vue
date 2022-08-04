@@ -162,7 +162,7 @@ export default {
           img_url: require("@/assets/img/roadmaps/listing/Q1.png"),
         },
         {
-          checked: 0,
+          checked: 1,
           title: "Q2’ 2022",
           isActive: 0,
           img_url: require("@/assets/img/roadmaps/listing/Q2.png"),
@@ -233,24 +233,24 @@ export default {
               img_url: require("@/assets/img/roadmaps/listing/Q2.png"),
               dataInfo: [
                 {
-                  checked: 0,
+                  checked: 1,
                   lists: "Oasis Carnival (Minigames) - P2E Beta ",
                 },
                 {
-                  checked: 0,
+                  checked: 1,
                   lists: "Interactable Partnership Module",
                 },
                 {
-                  checked: 0,
+                  checked: 1,
                   lists:
                     "Easy Access Integration tool for Oasis Metaverse",
                 },
                 {
-                  checked: 0,
+                  checked: 1,
                   lists: "Revolutionary Social Interaction Integration",
                 },
                 {
-                  checked: 0,
+                  checked: 1,
                   lists: "Early Access Land Development",
                 },
               ],
@@ -266,23 +266,35 @@ export default {
               dataInfo: [
                 {
                   checked: 0,
-                  lists: "TBA",
+                  lists: "Beginning of the Multiverse",
                 },
                 {
                   checked: 0,
-                  lists: "TBA",
+                  lists: "Omni-Present NFT",
                 },
                 {
                   checked: 0,
-                  lists: "TBA",
+                  lists: "In-game Communication Suite & Livestream Integration",
                 },
                 {
                   checked: 0,
-                  lists: "TBA",
+                  lists: "Land Management Tools (Alpha)",
                 },
                 {
                   checked: 0,
-                  lists: "TBA",
+                  lists: "Social Expression Module",
+                },
+                {
+                  checked: 0,
+                  lists: "Oasis Dressing Room",
+                },
+                {
+                  checked: 0,
+                  lists: "Tutorial System Development",
+                },
+                {
+                  checked: 0, 
+                  lists: "Revamped Quest System",
                 },
               ],
             },
