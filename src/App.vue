@@ -31,13 +31,12 @@
       >
         <div class="info-left column is-5-desktop container main is-offset-1">
           <div class="footer-logo">
-            <a class="title is-6"
-              ><img
+            <img
                 src="@/assets/img/newlogoV2.png"
                 alt="Logo"
                 width="165"
                 height="40"
-            /></a>
+            />
           </div>
         </div>
         <div
