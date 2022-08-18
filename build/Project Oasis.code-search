@@ -1,0 +1,17 @@
+# Query: Project Oasis
+# ContextLines: 1
+
+3 results - 1 file
+
+src/App.vue:
+  141            <p style="font-size: 9px">
+  142:             The information on this website, provided by ProjectOasis, does not
+  143              constitute investment, financial, or trading advice, and should not
+
+  148              tokens ($OASIS), or use any of the services on projectoasis.io, you
+  149:             shall agree that ProjectOasis is not liable for any losses or taxes
+  150              you might incur and that your are fully responsible for your own
+
+  174              You shall be aware that there are always risks associated with Smart
+  175:             Contracts, and you shall use them at your own risk. ProjectOasis is
+  176              not a registered broker, analyst or investment advisor. All the
