@@ -161,6 +161,16 @@ button.button.home-btn span.icon {
 }
 
 @media screen and (max-width: 700px) {
+  .title {
+    font-size: 1.3rem !important;
+    margin-bottom: 0rem !important;
+  }
+  .desc {
+    font-size: 0.8rem !important;
+  }
+  .contentDesc {
+    font-size: 0.6rem !important;
+  }
 
   /* .left-padding-mobile {
     padding-top: 8em !important;

@@ -14,14 +14,25 @@
               "
             >
               <div class="box is-size-1 is-size-5-mobile info mb-0">
-                <h1 class="is-size-3 has-text-weight-bold is-extra-bold">
+                <h1 class="title has-text-weight-bold is-extra-bold mb-0" style="font-size:1.8vw">
                   Welcome to ProjectOasis!
                 </h1>
-                <h1 class="is-size-5 has-text-weight-bold is-extra-bold">
+                <h1 class="desc has-text-weight-bold is-extra-bold" style="font-size:1.3vw">
                   Gamified DeFi Social Experience
 
                 </h1>
                 <p
+                  class="
+                  contentDesc
+                    text-center
+                    mt-3
+                  "
+                  style="font-size:0.9vw"
+                >
+                  A virtual ecosphere where you can gather to play games, socialize, and perform DeFi activities in-game such as staking crypto tokens, NFT minting, participating in IDOs, and more. Our dream is to build a place where everyone can come together to interact, play, compete and grow with one another.
+
+                </p>                
+                <!-- <p
                   class="
                     is-size-6-desktop is-size-6-tablet is-size-7-mobile
                     text-center
@@ -29,7 +40,7 @@
                 >
                   <br>A virtual ecosphere where you can gather to play games, socialize, and perform DeFi activities in-game such as staking crypto tokens, NFT minting, participating in IDOs, and more. Our dream is to build a place where everyone can come together to interact, play, compete and grow with one another.
 
-                </p>
+                </p> -->
               </div>
               <div class="box home-slide is-hidden-mobile">
                 <vueper-slides autoplay

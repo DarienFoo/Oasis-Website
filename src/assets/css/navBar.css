@@ -54,7 +54,7 @@ a.navbar-item,
 .navbar-item,
 body,
 button {
-    font-family: "Baloo-Regular", cursive;
+    font-family: "Baloo-Regular", cursive !important;
 }
 
 .is-extra-bold {

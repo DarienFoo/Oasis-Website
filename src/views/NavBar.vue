@@ -32,7 +32,7 @@
       </div>
 
       <div
-        class="navbar-menu container navbar-menu"
+        class="navbar-menu navbar-menu"
         :class="{ 'is-active': showNav }"
         id="navMenu"
       >
