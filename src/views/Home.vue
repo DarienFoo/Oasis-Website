@@ -15,18 +15,20 @@
             >
               <div class="box is-size-1 is-size-5-mobile info mb-0">
                 <h1 class="is-size-3 has-text-weight-bold is-extra-bold">
-                  ProjectOasis?
+                  Welcome to ProjectOasis!
                 </h1>
-                <h1 class="is-size-6 has-text-weight-bold is-extra-bold">
-                  Gamified DeFi in a social environment
+                <h1 class="is-size-5 has-text-weight-bold is-extra-bold">
+                  Gamified DeFi Social Experience
+
                 </h1>
                 <p
                   class="
-                    is-size-6-desktop is-size-7-tablet is-size-7-mobile
+                    is-size-6-desktop is-size-6-tablet is-size-7-mobile
                     text-center
                   "
                 >
-                  Welcome to the Oasis metaverse! A virtual ecosphere where you can gather to play games, socialize, and perform DeFi activities in-game such as staking crypto tokens, NFT minting, participating in IDOs, and more. Our dream is to build a place where everyone can come together to interact, play, compete and grow with one another.
+                  <br>A virtual ecosphere where you can gather to play games, socialize, and perform DeFi activities in-game such as staking crypto tokens, NFT minting, participating in IDOs, and more. Our dream is to build a place where everyone can come together to interact, play, compete and grow with one another.
+
                 </p>
               </div>
               <div class="box home-slide is-hidden-mobile">
@@ -264,6 +266,12 @@ export default {
       increment: 1,
       repeat: false,
       items: [
+        { 
+        title: "OASIS Diaries #9: Attributed NFTs Makeover & Girl Power",
+        image: require("@/assets/img/container/slider/list/OASIS Diaries 9.png"),
+        link: "https://projectoasis.medium.com/oasis-diaries-9-attributed-nfts-makeover-girl-power-7afea3860d12"
+        },
+
         { 
         title: "OASIS Diaries #8: Towards a Social Metaverse",
         image: require("@/assets/img/container/slider/list/OASIS Diaries8.gif"),

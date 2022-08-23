@@ -59,7 +59,20 @@
           <a
             class="navbar-item text-items"
             data-text="Game"
-            v-scroll-to="'#gameSection'"
+            href="https://game.projectoasis.io"
+            target="_blank"
+          >
+            <img
+              class="icon-nav"
+              src="@/assets/img/navbar/logo/game.png"
+              width="25"
+            />
+          </a> 
+          <a
+            class="navbar-item text-items"
+            data-text="Guides"
+            href="https://www.youtube.com/playlist?list=PLqfg9du2-jVvj66ZsQ8GBpv1k0r4-T0zQ"
+            target="_blank"
           >
             <img
               class="icon-nav"
