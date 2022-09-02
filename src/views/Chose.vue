@@ -11,7 +11,7 @@
               tokenomics-header
             "
           >
-            <span style="font-size: 2em" H2class="is-extra-bold">Project Highlights</span>
+            <span style="font-size: 2em" H2 class="is-extra-bold">Project Highlights</span>
           </div>
         </div>
       </div>

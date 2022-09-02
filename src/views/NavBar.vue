@@ -76,13 +76,13 @@
           >
             <img
               class="icon-nav"
-              src="@/assets/img/navbar/logo/game.png"
+              src="@/assets/img/navbar/logo/guide.png"
               width="25"
             />
           </a>
           <a
             class="navbar-item text-items"
-            data-text="Why Us?"
+            data-text="Highlights"
             v-scroll-to="'#chooseUs'"
           >
             <img
@@ -128,7 +128,12 @@
             class="navbar-item text-items"
             data-text="Partners"
             v-scroll-to="'#partners'"
-          ></a>
+          >
+           <img
+              class="icon-nav"
+              src="@/assets/img/navbar/logo/heart.png"
+              width="25"
+          /></a>
           <a
             class="navbar-item text-items"
             data-text="Litepaper"
@@ -158,7 +163,11 @@
             data-text="Buy Avatars"
             href="https://tofunft.com/collection/oasis-attributed-nft/items"
             target="_blank"
-          >
+          > <img
+              class="icon-nav"
+              src="@/assets/img/navbar/logo/game.png"
+              width="25"
+            />
             <!-- <img
               class="icon-nav"
               src="@/assets/img/navbar/logo/onepager.png"
