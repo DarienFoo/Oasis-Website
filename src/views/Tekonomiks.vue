@@ -11,7 +11,7 @@
               tokenomics-header
             "
           >
-            <span style="font-size: 2em" class="is-extra-bold">Tokenomics</span>
+            <span style="font-size: 2em" H2 class="is-extra-bold">Tokenomics</span>
           </div>
         </div>
       </div>

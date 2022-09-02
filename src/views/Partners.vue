@@ -11,7 +11,7 @@
               tokenomics-header
             "
           >
-            <span style="font-size: 2em" class="is-extra-bold">Partners</span>
+            <span style="font-size: 2em" H2 class="is-extra-bold">Our Partners</span>
           </div>
         </div>
       </div>
@@ -165,7 +165,7 @@ export default {
         },
         {
           img_url: require("@/assets/img/partners/ENCENTIVE.png"),
-          link: "Encentive.io",
+          link: "https://Encentive.io",
         },
       ],
     };

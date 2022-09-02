@@ -11,7 +11,7 @@
               tokenomics-header
             "
           >
-            <span style="font-size: 2em" class="is-extra-bold">Why Choose Us</span>
+            <span style="font-size: 2em" H2class="is-extra-bold">Project Highlights</span>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@
                   aria-controls="contentIdForA11y3"
                   @click="replaceImage(collapse.title)"
                 >
-                  <p
+                  <h2
                     class="
                       card-header-title
                       chose-text
@@ -57,7 +57,7 @@
                     "
                   >
                     {{ collapse.title }}
-                  </p>
+                  </h2>
                   <a class="card-header-icon">
                     <b-image
                       pack="fa"
@@ -100,7 +100,7 @@ export default {
         {
           title: "Gamified DeFi",
           description:
-            "Team OASIS believes that the social gamification of DeFi will attract a new generation of DeFi adopters and enrich the overall GameFi experience. Our vision for Oasis is to be a gamified ecosystem that includes everything from <strong>Staking (Oasis Swap)</strong>, <strong>IDOs (OLá Launchpad)</strong> & <strong>INOs (OLáMint)</strong>, with <strong>P2E (Play-to-Earn) elements</strong>.",
+            "Team OASIS believes that the social gamification of DeFi will attract a new generation of DeFi adopters and enrich the overall GameFi experience. Our vision for Oasis is to be a gamified ecosystem that includes everything from <strong>Staking (Oasis Swap)</strong>, <strong>IDOs (OLá Launchpad)</strong> & <strong>INOs (OLáMint)</strong>, with <strong>P2E (Play-to-Earn) elements such as our minigame OASIS Vanguard.</strong>.",
           img_url: require("@/assets/img/container/choseUs/defi.png"),
         },
         {

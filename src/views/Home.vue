@@ -18,7 +18,7 @@
                   Welcome to ProjectOasis!
                 </h1>
                 <h1 class="desc has-text-weight-bold is-extra-bold" style="font-size:1.3vw">
-                  Gamified DeFi Social Experience
+                  Gamified Metaverse Social Experience
 
                 </h1>
                 <p

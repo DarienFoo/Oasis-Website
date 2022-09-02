@@ -79,7 +79,7 @@
           </div>
           <div class="columns is-mobile">
             <div class="column is-12">
-              <p>Copyright @ projectoasis.io</p>
+              <p>Copyright 2022 @ projectoasis.io</p>
               <a @click="disclaimer()">Read our Legal and Risk Disclaimer</a>
               <div class="columns">
                 <div class="column is-4">

@@ -20,7 +20,7 @@
               tokenomics-header
             "
           >
-            <span style="font-size: 1.7em" class="is-extra-bold"
+            <span style="font-size: 1.7em" H2 class="is-extra-bold"
               >Meet the Team</span
             >
           </div>
