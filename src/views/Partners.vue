@@ -59,7 +59,10 @@ export default {
   data() {
     return {
       partners: [
-        {
+      {
+          img_url: require("@/assets/img/partners/OMV.png"),
+          link: "https://www.oasismetaverse.ventures/",
+        },{
           img_url: require("@/assets/img/partners/SPINTOP.png"),
           link: "https://spintop.network/",
         },
@@ -120,7 +123,7 @@ export default {
           link: "https://www.cryptoblades.io/",
         },
         {
-          img_url: require("@/assets/img/partners/startercapital.png"),
+          img_url: require("@/assets/img/partners/Startercapital.png"),
           link: "https://starter.capital/#/",
         },
         {
