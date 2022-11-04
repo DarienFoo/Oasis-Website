@@ -265,11 +265,6 @@ export default {
             img_url: require("@/assets/img/teams/tech/Avatar-Tech-3.png"),
             desc: "Software Architect",
           },
-          {
-            name: "Allan",
-            img_url: require("@/assets/img/teams/tech/Avatar-Tech-4.png"),
-            desc: "Game Developer",
-          },
         ],
         "Mind Benders": [
           {
@@ -335,11 +330,6 @@ export default {
             name: "Vince",
             img_url: require("@/assets/img/teams/dreamers/Avatar-Dreamers-W.png"),
             desc: "Founder",
-          },
-          {
-            name: "Luve",
-            img_url: require("@/assets/img/teams/dreamers/Avatar-Dreamers-2-S.png"),
-            desc: "Co-founder",
           },
         ],
       },

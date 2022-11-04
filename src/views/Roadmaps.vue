@@ -265,7 +265,7 @@ export default {
               img_url: require("@/assets/img/roadmaps/listing/Q3.png"),
               dataInfo: [
                 {
-                  checked: 0,
+                  checked: 1,
                   lists: "Beginning of the Multiverse",
                 },
                 {
@@ -273,7 +273,7 @@ export default {
                   lists: "Omni-Present NFT",
                 },
                 {
-                  checked: 0,
+                  checked: 1,
                   lists: "In-game Communication Suite & Livestream Integration",
                 },
                 {
@@ -281,7 +281,7 @@ export default {
                   lists: "Land Management Tools (Alpha)",
                 },
                 {
-                  checked: 0,
+                  checked: 1,
                   lists: "Social Expression Module",
                 },
                 {

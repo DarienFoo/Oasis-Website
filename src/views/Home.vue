@@ -277,6 +277,19 @@ export default {
       increment: 1,
       repeat: false,
       items: [
+
+      { 
+        title: "ProjectOasis 1st Birthday Event Schedule",
+        image: require("@/assets/img/container/slider/list/birthday1.gif"),
+        link: "https://projectoasis.medium.com/projectoasis-1st-birthday-event-schedule-273b975c805a"
+        },
+
+      { 
+        title: "ProjectOasis: Q3 Wrap-up & A New Direction",
+        image: require("@/assets/img/container/slider/list/Q3wrap.png"),
+        link: "https://projectoasis.medium.com/projectoasis-q3-wrap-up-a-new-direction-64489f39e518"
+        },
+    
         { 
         title: "OASIS Diaries #9: Attributed NFTs Makeover & Girl Power",
         image: require("@/assets/img/container/slider/list/OASIS Diaries 9.png"),

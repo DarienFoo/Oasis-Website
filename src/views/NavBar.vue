@@ -56,17 +56,13 @@
         </div>
 
         <div class="navbar">
-          <a
-            class="navbar-item text-items"
-            data-text="Game"
-            href="https://game.projectoasis.io"
-            target="_blank"
-          >
+          
             <img
               class="icon-nav"
               src="@/assets/img/navbar/logo/game.png"
               width="25"
             />
+            
           </a> 
           <a
             class="navbar-item text-items"
@@ -79,7 +75,11 @@
               src="@/assets/img/navbar/logo/guide.png"
               width="25"
             />
+
+            
           </a>
+
+          
           <a
             class="navbar-item text-items"
             data-text="Highlights"
@@ -101,6 +101,20 @@
               src="@/assets/img/navbar/logo/token.png"
               width="25"
             />
+          </a>
+          <a
+            class="navbar-item text-items"
+            data-text="Blog"
+            href="https://projectoasis.io/blog/"
+            target="_blank"
+          >
+            <img
+              class="icon-nav"
+              src="@/assets/img/navbar/logo/guide.png"
+              width="25"
+            />
+
+            
           </a>
           <a
             class="navbar-item text-items"
@@ -163,11 +177,14 @@
             data-text="Buy Avatars"
             href="https://tofunft.com/collection/oasis-attributed-nft/items"
             target="_blank"
-          > <img
+          > 
+          <img
               class="icon-nav"
               src="@/assets/img/navbar/logo/game.png"
               width="25"
             />
+
+            
             <!-- <img
               class="icon-nav"
               src="@/assets/img/navbar/logo/onepager.png"
