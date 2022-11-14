@@ -26,7 +26,34 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
 
 Vue.use(VueGtag, {
-  config: { id: "G-9YM9LBZ87N" }
+  enabled: true,
+  bootstrap: true,
+  onReady: () => console.log("ready!!!!!!!"),
+  onError: null,
+  onBeforeTrack: () => console.log("not tracked"),
+  onAfterTrack: event => console.log(event),
+  customResourceURL: "https://www.googletagmanager.com/gtag/js",
+  customPreconnectOrigin: "https://www.googletagmanager.com",
+  deferScriptLoad: false,
+  pageTrackerTemplate: null,
+  pageTrackerExcludedRoutes: [],
+  pageTrackerEnabled: true,
+  pageTrackerScreenviewEnabled: false,
+  pageTrackerUseFullPath: false,
+  pageTrackerPrependBase: true,
+  pageTrackerSkipSamePath: true,
+  disableScriptLoad: false,
+  appName: null,
+  globalDataLayerName: "dataLayer",
+  globalObjectName: "gtag",
+  defaultGroupName: "default",
+  includes: null,
+  config: {
+    id: "G-9YM9LBZ87N",
+    params: {
+      send_page_view: true
+    }
+  }
 });
 
 /* eslint-disable no-new */
