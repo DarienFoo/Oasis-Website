@@ -1,33 +1,38 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import Vue from 'vue'
-import App from './App'
-import router from './router'
+import Vue from "vue";
+import App from "./App";
+import router from "./router";
+import VueGtag from "vue-gtag";
 import "./../node_modules/bulma/css/bulma.css";
 
 /* import the fontawesome core */
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { library } from "@fortawesome/fontawesome-svg-core";
 
 /* import specific icons */
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
-import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
+import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 /* import font awesome icon component */
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* add icons to the library */
-library.add(faAngleDown)
-library.add(faAngleUp)
+library.add(faAngleDown);
+library.add(faAngleUp);
 
 /* add font awesome icon component */
-Vue.component('font-awesome-icon', FontAwesomeIcon)
-Vue.config.productionTip = false
+Vue.component("font-awesome-icon", FontAwesomeIcon);
+Vue.config.productionTip = false;
+
+Vue.use(VueGtag, {
+  config: { id: "G-9YM9LBZ87N" }
+});
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
+  el: "#app",
   router,
   components: { App },
-  template: '<App/>'
-})
+  template: "<App/>"
+});
