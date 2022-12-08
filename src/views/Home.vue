@@ -277,7 +277,12 @@ export default {
       increment: 1,
       repeat: false,
       items: [
-
+     
+      { 
+        title: "Incoming Collectible Item, Fishing Game",
+        image: require("@/assets/img/container/slider/list/fish.gif"),
+        link: "https://projectoasis.io/blog/oasis-diaries-10-incoming-collectible-item-fishing-game/"
+        },
       { 
         title: "ProjectOasis 1st Birthday Event Schedule",
         image: require("@/assets/img/container/slider/list/birthday1.gif"),
@@ -290,11 +295,7 @@ export default {
         link: "https://projectoasis.medium.com/projectoasis-q3-wrap-up-a-new-direction-64489f39e518"
         },
     
-        { 
-        title: "OASIS Diaries #9: Attributed NFTs Makeover & Girl Power",
-        image: require("@/assets/img/container/slider/list/OASIS Diaries 9.png"),
-        link: "https://projectoasis.medium.com/oasis-diaries-9-attributed-nfts-makeover-girl-power-7afea3860d12"
-        },
+      
 
         { 
         title: "OASIS Diaries #8: Towards a Social Metaverse",
