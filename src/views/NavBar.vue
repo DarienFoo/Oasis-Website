@@ -116,7 +116,7 @@
 
             
           </a>
-          <a
+          <!-- <a
             class="navbar-item text-items"
             data-text="Roadmap"
             v-scroll-to="'#roadmaps'"
@@ -126,7 +126,7 @@
               src="@/assets/img/navbar/logo/roadmap.png"
               width="25"
             />
-          </a>
+          </a> -->
           <a
             class="navbar-item text-items"
             data-text="Team"

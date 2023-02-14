@@ -10,9 +10,9 @@
     <section id="tekonomiks" class="hero is-fullheight tekonomiks-section">
       <webapp-tekonomiks />
     </section>
-    <section id="roadmaps" class="hero is-fullheight roadmaps-section">
+    <!-- <section id="roadmaps" class="hero is-fullheight roadmaps-section">
       <webapp-roadmaps />
-    </section>
+    </section> -->
     <section id="team" class="team-section">
       <webapp-team />
     </section>
