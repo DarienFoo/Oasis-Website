@@ -277,7 +277,11 @@ export default {
       increment: 1,
       repeat: false,
       items: [
-     
+      { 
+        title: "OASIS Diaries #15: The Game Engine that Powers Oasis — Lapis",
+        image: require("@/assets/img/container/slider/list/staking.jpeg"),
+        link: "https://projectoasis.io/blog/oasis-diaries-15-the-game-engine-that-powers-oasis/"
+        },
       { 
         title: "Incoming Collectible Item, Fishing Game",
         image: require("@/assets/img/container/slider/list/fish.gif"),
