@@ -116,6 +116,22 @@
 
             
           </a>
+
+
+          <a
+            class="navbar-item text-items"
+            data-text="Staking"
+            href="https://staking.projectoasis.io/"
+            target="_blank"
+          >
+            <img
+              class="icon-nav"
+              src="@/assets/img/navbar/logo/guide.png"
+              width="25"
+            />
+
+            
+          </a>
           <!-- <a
             class="navbar-item text-items"
             data-text="Roadmap"
