@@ -98,7 +98,7 @@
           >
             <img
               class="icon-nav"
-              src="@/assets/img/navbar/logo/token.png"
+              src="@/assets/img/navbar/logo/Tokenomics.png"
               width="25"
             />
           </a>
@@ -110,14 +110,27 @@
           >
             <img
               class="icon-nav"
-              src="@/assets/img/navbar/logo/guide.png"
+              src="@/assets/img/navbar/logo/blog.png"
               width="25"
             />
 
             
           </a>
 
+          <a
+            class="navbar-item text-items"
+            data-text="Launchpad"
+            href="https://launchpad.projectoasis.io/"
+            target="_blank"
+          >
+            <img
+              class="icon-nav"
+              src="@/assets/img/navbar/logo/launchpad.png"
+              width="25"
+            />
 
+            
+          </a>
           <a
             class="navbar-item text-items"
             data-text="Staking"
@@ -126,7 +139,7 @@
           >
             <img
               class="icon-nav"
-              src="@/assets/img/navbar/logo/guide.png"
+              src="@/assets/img/navbar/logo/STAKING.png"
               width="25"
             />
 
@@ -164,30 +177,7 @@
               src="@/assets/img/navbar/logo/heart.png"
               width="25"
           /></a>
-          <a
-            class="navbar-item text-items"
-            data-text="Litepaper"
-            href="../../static/Oasis-Litepaper.pdf"
-            target="_blank"
-          >
-            <img
-              class="icon-nav"
-              src="@/assets/img/navbar/logo/litepaper.png"
-              width="25"
-            />
-          </a>
-          <a
-            class="navbar-item text-items"
-            data-text="One Pager"
-            href="../../static/Oasis-1pager-3Oct.pdf"
-            target="_blank"
-          >
-            <img
-              class="icon-nav"
-              src="@/assets/img/navbar/logo/onepager.png"
-              width="25"
-            />
-          </a>
+     
           <a
             class="navbar-item text-items"
             data-text="Buy Avatars"
